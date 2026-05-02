@@ -4,12 +4,6 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 
-BAD_PATTERNS = {
-    "bad_lambda_tm": "NOV\u00CE\u203AK\u00E2\u201E\u00A2",
-    "bad_lambda_tm_b2": "NOV\u00CE\u203AK\u00E2\u201E\u00A2 B2",
-    "bad_lambda_only": "NOV\u00CE\u203AK",
-}
-
 TEXT_EXTENSIONS = {
     ".md",
     ".html",
@@ -26,6 +20,24 @@ SKIP_PARTS = {
     ".git",
 }
 
+RAW_BRAND = "NOV\u039BK\u2122"
+
+def mojibake_round(value: str) -> str:
+    return value.encode("utf-8").decode("cp1252", errors="replace")
+
+patterns = {
+    "raw_unicode_brand": RAW_BRAND,
+    "raw_unicode_brand_b2": f"{RAW_BRAND} B2",
+    "raw_unicode_product": f"{RAW_BRAND} B2 Action Catalog",
+}
+
+value = RAW_BRAND
+for index in range(1, 6):
+    value = mojibake_round(value)
+    patterns[f"mojibake_round_{index}_brand"] = value
+    patterns[f"mojibake_round_{index}_brand_b2"] = f"{value} B2"
+    patterns[f"mojibake_round_{index}_product"] = f"{value} B2 Action Catalog"
+
 failures = []
 
 for path in ROOT.rglob("*"):
@@ -41,8 +53,8 @@ for path in ROOT.rglob("*"):
     except UnicodeDecodeError:
         continue
 
-    for label, pattern in BAD_PATTERNS.items():
-        if pattern in text:
+    for label, pattern in patterns.items():
+        if pattern and pattern in text:
             failures.append((str(path.relative_to(ROOT)), label))
 
 if failures:

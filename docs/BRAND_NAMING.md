@@ -1,32 +1,34 @@
-# NOVÃŽâ€ºKÃ¢â€žÂ¢ B2 - Brand Naming
+# NOV&#923;K&trade; B2 - Brand Naming
 
 ## Canonical public display name
 
 TEXT-BEGIN
-NOVÃŽâ€ºKÃ¢â€žÂ¢ B2
+NOV&#923;K&trade; B2
 TEXT-END
 
 ## Product line
 
 TEXT-BEGIN
-NOVÃŽâ€ºKÃ¢â€žÂ¢ B2 Action Catalog
+NOV&#923;K&trade; B2 Action Catalog
 TEXT-END
 
-## Machine-safe names that stay unchanged
+## Source encoding rule
+
+Human-facing Markdown and HTML should store the stylized brand as ASCII-safe HTML entities:
 
 TEXT-BEGIN
+NOV&#923;K&trade; B2
+TEXT-END
+
+Machine-readable files, scripts, JSON, CSV, schema IDs, repo slugs, paths, action IDs, generated evidence paths, and automation contracts should use ASCII-safe names:
+
+TEXT-BEGIN
+NOVAK B2
 novak-b2
 novak-b2-action-catalog
 novak.b2.action.v1
 NOVAK-B2-Windows-SelfCheck
-action-layers/windows/end-user
 TEXT-END
-
-## Rule
-
-Use NOVÃŽâ€ºKÃ¢â€žÂ¢ B2 for human-facing documentation, site titles, headings, GitHub descriptions, and presentation material.
-
-Use ASCII machine-safe names for repository slugs, paths, schema identifiers, action IDs, script names, generated evidence paths, and automation contracts.
 
 ## Current boundary
 
@@ -37,12 +39,18 @@ Do not rename schema IDs.
 Do not rename script paths.
 Do not rename evidence folder paths.
 TEXT-END
+
 ## Encoding guard
 
 TEXT-BEGIN
-Correct display name: [blocked-brand-mojibake]
-Known bad mojibake is blocked by tools/python/validate_no_brand_mojibake.py.
-Do not place the raw bad mojibake string in documentation.
+Raw stylized Unicode is not stored in source files.
+Known brand mojibake is blocked by tools/python/validate_no_brand_mojibake.py.
+Do not write raw mojibake strings into documentation.
 Machine-safe identifiers remain ASCII.
-Run: python tools/python/validate_no_brand_mojibake.py
+TEXT-END
+
+Run:
+
+TEXT-BEGIN
+python tools/python/validate_no_brand_mojibake.py
 TEXT-END
