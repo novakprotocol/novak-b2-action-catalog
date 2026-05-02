@@ -1,541 +1,605 @@
-# Catalog by Action Type
+# Catalog by action type
 
-Total actions: 440
+## App self-help check (21)
 
-## Certificate count
+- `ENDUSER_APPSELFHELP_ACROBAT_PROCESS_COUNT_V1` - Acrobat process count
+- `ENDUSER_APPSELFHELP_CHROME_PROCESS_COUNT_V1` - Chrome process count
+- `ENDUSER_APPSELFHELP_EDGE_EVENT_COUNT_24H_V1` - Edge adjacent event count 24h
+- `ENDUSER_APPSELFHELP_EDGE_PROCESS_COUNT_V1` - Edge process count
+- `ENDUSER_APPSELFHELP_EXCEL_PROCESS_COUNT_V1` - Excel process count
+- `ENDUSER_APPSELFHELP_OFFICE_APP_ERRORS_24H_V1` - Office application warning/error count 24h
+- `ENDUSER_APPSELFHELP_OFFICE_APP_ERRORS_7D_V1` - Office application warning/error count 7d
+- `ENDUSER_APPSELFHELP_OFFICE_APPX_PACKAGE_COUNT_V2` - Office Appx package count
+- `ENDUSER_APPSELFHELP_OFFICE_CLICKTORUN_SERVICE_STATUS_V2` - Office ClickToRun service status
+- `ENDUSER_APPSELFHELP_OFFICE_PROCESS_GROUP_V2` - Office process group count
+- `ENDUSER_APPSELFHELP_ONEDRIVE_EVENT_COUNT_24H_V1` - OneDrive adjacent event count 24h
+- `ENDUSER_APPSELFHELP_ONEDRIVE_PROCESS_COUNT_V1` - OneDrive process count
+- `ENDUSER_APPSELFHELP_OUTLOOK_EVENT_COUNT_24H_V1` - Outlook adjacent event count 24h
+- `ENDUSER_APPSELFHELP_OUTLOOK_PROCESS_COUNT_V1` - Outlook process count
+- `ENDUSER_APPSELFHELP_POWERPOINT_PROCESS_COUNT_V1` - PowerPoint process count
+- `ENDUSER_APPSELFHELP_PRINT_SPOOLER_STATUS_V2` - Print Spooler service status
+- `ENDUSER_APPSELFHELP_READER_PROCESS_COUNT_V1` - Adobe Reader process count
+- `ENDUSER_APPSELFHELP_TEAMS_APPX_PACKAGE_COUNT_V1` - Teams Appx package count
+- `ENDUSER_APPSELFHELP_TEAMS_EVENT_COUNT_24H_V1` - Teams adjacent event count 24h
+- `ENDUSER_APPSELFHELP_TEAMS_PROCESS_GROUP_V1` - Teams process group count
+- `ENDUSER_APPSELFHELP_WORD_PROCESS_COUNT_V1` - Word process count
 
-Count: 3
+## Cache visibility check (9)
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_CERT_CA_COUNT_V2_V1` | Current user CA certificate count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Certificate count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/420-cert-ca-count-v2.ps1` |
-| `ENDUSER_EVERYDAY_CERT_MY_COUNT_V2_V1` | Current user My certificate count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Certificate count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/418-cert-my-count-v2.ps1` |
-| `ENDUSER_EVERYDAY_CERT_ROOT_COUNT_V2_V1` | Current user Root certificate count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Certificate count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/419-cert-root-count-v2.ps1` |
+- `ENDUSER_APPSELFHELP_ACROBAT_USER_FOLDER_PRESENCE_V1` - Acrobat user folder presence
+- `ENDUSER_APPSELFHELP_ADOBE_FOLDER_PRESENCE_V1` - Adobe app data folder presence
+- `ENDUSER_APPSELFHELP_CHROME_USER_DATA_FOLDER_PRESENCE_V1` - Chrome user data folder presence
+- `ENDUSER_APPSELFHELP_EDGE_USER_DATA_FOLDER_PRESENCE_V1` - Edge user data folder presence
+- `ENDUSER_APPSELFHELP_OFFICE_CACHE_FOLDER_PRESENCE_V1` - Office cache folder presence
+- `ENDUSER_APPSELFHELP_OFFICE_UPLOAD_CENTER_CACHE_PRESENCE_V1` - Office upload cache folder presence
+- `ENDUSER_APPSELFHELP_ONEDRIVE_LOGS_FOLDER_PRESENCE_V1` - OneDrive logs folder presence
+- `ENDUSER_APPSELFHELP_TEAMS_CACHE_FOLDER_PRESENCE_V1` - Teams classic cache folder presence
+- `ENDUSER_APPSELFHELP_TEAMS_NEW_CACHE_FOLDER_PRESENCE_V1` - New Teams cache folder presence
 
-## CIM count
+## Certificate count (3)
 
-Count: 5
+- `ENDUSER_EVERYDAY_CERT_CA_COUNT_V2_V1` - Current user CA certificate count
+- `ENDUSER_EVERYDAY_CERT_MY_COUNT_V2_V1` - Current user My certificate count
+- `ENDUSER_EVERYDAY_CERT_ROOT_COUNT_V2_V1` - Current user Root certificate count
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_CIM_DESKTOP_MONITOR_COUNT_V1` | Desktop monitor count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | CIM count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/423-cim-desktop-monitor-count.ps1` |
-| `ENDUSER_EVERYDAY_CIM_KEYBOARD_COUNT_V1` | Keyboard count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | CIM count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/424-cim-keyboard-count.ps1` |
-| `ENDUSER_EVERYDAY_CIM_POINTING_DEVICE_COUNT_V1` | Pointing device count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | CIM count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/425-cim-pointing-device-count.ps1` |
-| `ENDUSER_EVERYDAY_CIM_SOUND_DEVICE_COUNT_V1` | Sound device count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | CIM count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/421-cim-sound-device-count.ps1` |
-| `ENDUSER_EVERYDAY_CIM_USB_CONTROLLER_COUNT_V1` | USB controller count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | CIM count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/422-cim-usb-controller-count.ps1` |
+## CIM count (5)
 
-## Command availability
+- `ENDUSER_EVERYDAY_CIM_DESKTOP_MONITOR_COUNT_V1` - Desktop monitor count
+- `ENDUSER_EVERYDAY_CIM_KEYBOARD_COUNT_V1` - Keyboard count
+- `ENDUSER_EVERYDAY_CIM_POINTING_DEVICE_COUNT_V1` - Pointing device count
+- `ENDUSER_EVERYDAY_CIM_SOUND_DEVICE_COUNT_V1` - Sound device count
+- `ENDUSER_EVERYDAY_CIM_USB_CONTROLLER_COUNT_V1` - USB controller count
 
-Count: 33
+## Command availability (33)
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_COMMAND_ARP_EXE_V1` | arp.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/368-command-arp-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_CLEANMGR_EXE_V1` | cleanmgr.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/374-command-cleanmgr-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_CMD_EXE_V1` | cmd.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/370-command-cmd-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_COMPMGMT_MSC_V1` | compmgmt.msc command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/376-command-compmgmt-msc.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_CONTROL_EXE_V1` | control.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/371-command-control-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_DXDIAG_EXE_V1` | dxdiag.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/377-command-dxdiag-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_EVENTVWR_MSC_V1` | eventvwr.msc command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/375-command-eventvwr-msc.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_HOSTNAME_EXE_V1` | hostname.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/363-command-hostname-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_MAGNIFY_EXE_V1` | magnify.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/378-command-magnify-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_MSINFO32_EXE_V1` | msinfo32.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/372-command-msinfo32-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_NET_EXE_V1` | net.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/364-command-net-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_NETSTAT_EXE_V1` | netstat.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/365-command-netstat-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_100_V1` | Optional Windows tool availability 100 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/440-command-optional-tool-100.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_88_V1` | Optional Windows tool availability 88 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/428-command-optional-tool-88.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_89_V1` | Optional Windows tool availability 89 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/429-command-optional-tool-89.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_90_V1` | Optional Windows tool availability 90 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/430-command-optional-tool-90.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_91_V1` | Optional Windows tool availability 91 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/431-command-optional-tool-91.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_92_V1` | Optional Windows tool availability 92 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/432-command-optional-tool-92.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_93_V1` | Optional Windows tool availability 93 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/433-command-optional-tool-93.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_94_V1` | Optional Windows tool availability 94 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/434-command-optional-tool-94.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_95_V1` | Optional Windows tool availability 95 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/435-command-optional-tool-95.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_96_V1` | Optional Windows tool availability 96 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/436-command-optional-tool-96.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_97_V1` | Optional Windows tool availability 97 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/437-command-optional-tool-97.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_98_V1` | Optional Windows tool availability 98 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/438-command-optional-tool-98.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_99_V1` | Optional Windows tool availability 99 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/439-command-optional-tool-99.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_OSK_EXE_V1` | osk.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/379-command-osk-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_PATHPING_EXE_V1` | pathping.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/366-command-pathping-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_PERFMON_EXE_V1` | perfmon.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/373-command-perfmon-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_POWERSHELL_EXE_V1` | powershell.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/369-command-powershell-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_ROUTE_EXE_V1` | route.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/367-command-route-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_SNIPPINGTOOL_EXE_V1` | snippingtool.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/380-command-snippingtool-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_WHERE_EXE_V1` | where.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/361-command-where-exe.ps1` |
-| `ENDUSER_EVERYDAY_COMMAND_WHOAMI_EXE_V1` | whoami.exe command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Command availability | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/362-command-whoami-exe.ps1` |
+- `ENDUSER_EVERYDAY_COMMAND_ARP_EXE_V1` - arp.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_CLEANMGR_EXE_V1` - cleanmgr.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_CMD_EXE_V1` - cmd.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_COMPMGMT_MSC_V1` - compmgmt.msc command availability
+- `ENDUSER_EVERYDAY_COMMAND_CONTROL_EXE_V1` - control.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_DXDIAG_EXE_V1` - dxdiag.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_EVENTVWR_MSC_V1` - eventvwr.msc command availability
+- `ENDUSER_EVERYDAY_COMMAND_HOSTNAME_EXE_V1` - hostname.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_MAGNIFY_EXE_V1` - magnify.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_MSINFO32_EXE_V1` - msinfo32.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_NET_EXE_V1` - net.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_NETSTAT_EXE_V1` - netstat.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_100_V1` - Optional Windows tool availability 100
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_88_V1` - Optional Windows tool availability 88
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_89_V1` - Optional Windows tool availability 89
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_90_V1` - Optional Windows tool availability 90
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_91_V1` - Optional Windows tool availability 91
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_92_V1` - Optional Windows tool availability 92
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_93_V1` - Optional Windows tool availability 93
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_94_V1` - Optional Windows tool availability 94
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_95_V1` - Optional Windows tool availability 95
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_96_V1` - Optional Windows tool availability 96
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_97_V1` - Optional Windows tool availability 97
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_98_V1` - Optional Windows tool availability 98
+- `ENDUSER_EVERYDAY_COMMAND_OPTIONAL_TOOL_99_V1` - Optional Windows tool availability 99
+- `ENDUSER_EVERYDAY_COMMAND_OSK_EXE_V1` - osk.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_PATHPING_EXE_V1` - pathping.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_PERFMON_EXE_V1` - perfmon.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_POWERSHELL_EXE_V1` - powershell.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_ROUTE_EXE_V1` - route.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_SNIPPINGTOOL_EXE_V1` - snippingtool.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_WHERE_EXE_V1` - where.exe command availability
+- `ENDUSER_EVERYDAY_COMMAND_WHOAMI_EXE_V1` - whoami.exe command availability
 
-## Environment presence
+## Command presence (2)
 
-Count: 4
+- `ENDUSER_APPSELFHELP_ONEDRIVE_SETUP_COMMAND_PRESENCE_V1` - OneDrive setup command presence
+- `ENDUSER_APPSELFHELP_WINGET_COMMAND_PRESENCE_V1` - Winget command presence
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_ENV_OFFICE_PRESENCE_V1` | Office-related environment variable presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Environment presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/357-env-office-presence.ps1` |
-| `ENDUSER_EVERYDAY_ENV_PATH_PRESENCE_V1` | PATH environment variable presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Environment presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/359-env-path-presence.ps1` |
-| `ENDUSER_EVERYDAY_ENV_PROXY_PRESENCE_V2_V1` | Proxy environment variable presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Environment presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/360-env-proxy-presence-v2.ps1` |
-| `ENDUSER_EVERYDAY_ENV_USER_PROFILE_PRESENCE_V1` | User profile environment variable presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Environment presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/358-env-user-profile-presence.ps1` |
+## Environment presence (6)
 
-## Event count
+- `ENDUSER_APPSELFHELP_OFFICE_ENV_PRESENCE_V2` - Office environment signal presence
+- `ENDUSER_APPSELFHELP_ONEDRIVE_SYNC_ROOT_ENV_PRESENCE_V1` - OneDrive sync environment presence
+- `ENDUSER_EVERYDAY_ENV_OFFICE_PRESENCE_V1` - Office-related environment variable presence
+- `ENDUSER_EVERYDAY_ENV_PATH_PRESENCE_V1` - PATH environment variable presence
+- `ENDUSER_EVERYDAY_ENV_PROXY_PRESENCE_V2_V1` - Proxy environment variable presence
+- `ENDUSER_EVERYDAY_ENV_USER_PROFILE_PRESENCE_V1` - User profile environment variable presence
 
-Count: 15
+## Event count (15)
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_EVENTS_APP_ERROR_7D_V1` | Application error event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/398-events-app-error-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_APP_HANG_7D_V1` | Application hang event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/397-events-app-hang-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_DEFENDER_7D_V1` | Defender event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/409-events-defender-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_DHCP_24H_V1` | DHCP event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/401-events-dhcp-24h.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_DISK_7D_V1` | Disk event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/408-events-disk-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_DNS_CLIENT_24H_V1` | DNS Client event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/400-events-dns-client-24h.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_KERNEL_POWER_7D_V1` | Kernel-Power event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/407-events-kernel-power-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_NLA_24H_V1` | Network Location Awareness event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/402-events-nla-24h.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_OFFLINEFILES_7D_V1` | Offline Files event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/404-events-offlinefiles-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_POWERSHELL_7D_V1` | PowerShell event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/411-events-powershell-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_PRINT_7D_V1` | Print event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/406-events-print-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_SMBCLIENT_7D_V1` | SMB client event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/403-events-smbclient-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_TASK_SCHEDULER_7D_V1` | Task Scheduler event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/410-events-task-scheduler-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_USERPROFILE_7D_V1` | User Profile Service event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/405-events-userprofile-7d.ps1` |
-| `ENDUSER_EVERYDAY_EVENTS_WINDOWS_ERROR_REPORTING_7D_V1` | Windows Error Reporting event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Event count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/399-events-windows-error-reporting-7d.ps1` |
+- `ENDUSER_EVERYDAY_EVENTS_APP_ERROR_7D_V1` - Application error event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_APP_HANG_7D_V1` - Application hang event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_DEFENDER_7D_V1` - Defender event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_DHCP_24H_V1` - DHCP event count last 24h
+- `ENDUSER_EVERYDAY_EVENTS_DISK_7D_V1` - Disk event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_DNS_CLIENT_24H_V1` - DNS Client event count last 24h
+- `ENDUSER_EVERYDAY_EVENTS_KERNEL_POWER_7D_V1` - Kernel-Power event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_NLA_24H_V1` - Network Location Awareness event count last 24h
+- `ENDUSER_EVERYDAY_EVENTS_OFFLINEFILES_7D_V1` - Offline Files event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_POWERSHELL_7D_V1` - PowerShell event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_PRINT_7D_V1` - Print event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_SMBCLIENT_7D_V1` - SMB client event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_TASK_SCHEDULER_7D_V1` - Task Scheduler event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_USERPROFILE_7D_V1` - User Profile Service event count last 7 days
+- `ENDUSER_EVERYDAY_EVENTS_WINDOWS_ERROR_REPORTING_7D_V1` - Windows Error Reporting event count last 7 days
 
-## Extension summary
+## Evidence summary (1)
 
-Count: 3
+- `ENDUSER_APPSELFHELP_SUPPORT_EVIDENCE_ROOT_SUMMARY_V1` - Support evidence root summary
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_OFFICE_EXT_DESKTOP_V1` | Desktop Office/PDF extension summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Extension summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/350-office-ext-desktop.ps1` |
-| `ENDUSER_EVERYDAY_OFFICE_EXT_DOCUMENTS_V1` | Documents Office/PDF extension summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Extension summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/353-office-ext-documents.ps1` |
-| `ENDUSER_EVERYDAY_OFFICE_EXT_DOWNLOADS_V1` | Downloads Office/PDF extension summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Extension summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/356-office-ext-downloads.ps1` |
+## Extension summary (3)
 
-## Network state count
+- `ENDUSER_EVERYDAY_OFFICE_EXT_DESKTOP_V1` - Desktop Office/PDF extension summary
+- `ENDUSER_EVERYDAY_OFFICE_EXT_DOCUMENTS_V1` - Documents Office/PDF extension summary
+- `ENDUSER_EVERYDAY_OFFICE_EXT_DOWNLOADS_V1` - Downloads Office/PDF extension summary
 
-Count: 1
+## File association check (22)
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_NETWORK_STATE_COUNT_V2_V1` | TCP network state count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Network state count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/427-network-state-count-v2.ps1` |
+- `ENDUSER_APPSELFHELP_CHROME_FILE_ASSOC_HTML_V1` - HTML association presence for browser review
+- `ENDUSER_APPSELFHELP_EDGE_FILE_ASSOC_HTML_V1` - HTML association presence
+- `ENDUSER_APPSELFHELP_EXCEL_FILE_ASSOC_XLS_V1` - XLS association presence
+- `ENDUSER_APPSELFHELP_EXCEL_FILE_ASSOC_XLSM_V1` - XLSM association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_CSV_V1` - CSV file association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_HTM_V1` - HTM file association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_HTML_V1` - HTML file association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_JPG_V1` - JPG file association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_PDF_V1` - PDF file association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_PNG_V1` - PNG file association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_TXT_V1` - TXT file association presence
+- `ENDUSER_APPSELFHELP_FILE_ASSOC_ZIP_V1` - ZIP file association presence
+- `ENDUSER_APPSELFHELP_OFFICE_FILE_ASSOC_DOCX_V1` - DOCX association presence
+- `ENDUSER_APPSELFHELP_OFFICE_FILE_ASSOC_ONE_V1` - OneNote association presence
+- `ENDUSER_APPSELFHELP_OFFICE_FILE_ASSOC_PPTX_V1` - PPTX association presence
+- `ENDUSER_APPSELFHELP_OFFICE_FILE_ASSOC_XLSX_V1` - XLSX association presence
+- `ENDUSER_APPSELFHELP_OUTLOOK_MAILTO_ASSOC_PRESENCE_V1` - MAILTO association presence
+- `ENDUSER_APPSELFHELP_PDF_FILE_ASSOC_V1` - PDF association presence
+- `ENDUSER_APPSELFHELP_POWERPOINT_FILE_ASSOC_PPT_V1` - PPT association presence
+- `ENDUSER_APPSELFHELP_POWERPOINT_FILE_ASSOC_PPTX_V1` - PPTX association presence
+- `ENDUSER_APPSELFHELP_WORD_FILE_ASSOC_DOC_V1` - DOC association presence
+- `ENDUSER_APPSELFHELP_WORD_FILE_ASSOC_DOCM_V1` - DOCM association presence
 
-## Old file summary
+## Network state count (1)
 
-Count: 6
+- `ENDUSER_EVERYDAY_NETWORK_STATE_COUNT_V2_V1` - TCP network state count
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_OLD_FILES_DESKTOP_30D_V1` | Desktop files older than 30 days summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Old file summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/348-old-files-desktop-30d.ps1` |
-| `ENDUSER_EVERYDAY_OLD_FILES_DESKTOP_90D_V1` | Desktop files older than 90 days summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Old file summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/349-old-files-desktop-90d.ps1` |
-| `ENDUSER_EVERYDAY_OLD_FILES_DOCUMENTS_30D_V1` | Documents files older than 30 days summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Old file summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/351-old-files-documents-30d.ps1` |
-| `ENDUSER_EVERYDAY_OLD_FILES_DOCUMENTS_90D_V1` | Documents files older than 90 days summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Old file summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/352-old-files-documents-90d.ps1` |
-| `ENDUSER_EVERYDAY_OLD_FILES_DOWNLOADS_30D_V1` | Downloads files older than 30 days summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Old file summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/354-old-files-downloads-30d.ps1` |
-| `ENDUSER_EVERYDAY_OLD_FILES_DOWNLOADS_90D_V1` | Downloads files older than 90 days summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Old file summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/355-old-files-downloads-90d.ps1` |
+## Old file summary (6)
 
-## Path health
+- `ENDUSER_EVERYDAY_OLD_FILES_DESKTOP_30D_V1` - Desktop files older than 30 days summary
+- `ENDUSER_EVERYDAY_OLD_FILES_DESKTOP_90D_V1` - Desktop files older than 90 days summary
+- `ENDUSER_EVERYDAY_OLD_FILES_DOCUMENTS_30D_V1` - Documents files older than 30 days summary
+- `ENDUSER_EVERYDAY_OLD_FILES_DOCUMENTS_90D_V1` - Documents files older than 90 days summary
+- `ENDUSER_EVERYDAY_OLD_FILES_DOWNLOADS_30D_V1` - Downloads files older than 30 days summary
+- `ENDUSER_EVERYDAY_OLD_FILES_DOWNLOADS_90D_V1` - Downloads files older than 90 days summary
 
-Count: 7
+## Open user-help surface (16)
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_PATH_HEALTH_DESKTOP_V1` | Desktop path health | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Path health | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/341-path-health-desktop.ps1` |
-| `ENDUSER_EVERYDAY_PATH_HEALTH_DOCUMENTS_V1` | Documents path health | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Path health | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/342-path-health-documents.ps1` |
-| `ENDUSER_EVERYDAY_PATH_HEALTH_DOWNLOADS_V1` | Downloads path health | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Path health | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/343-path-health-downloads.ps1` |
-| `ENDUSER_EVERYDAY_PATH_HEALTH_MUSIC_V1` | Music path health | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Path health | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/346-path-health-music.ps1` |
-| `ENDUSER_EVERYDAY_PATH_HEALTH_PICTURES_V1` | Pictures path health | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Path health | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/344-path-health-pictures.ps1` |
-| `ENDUSER_EVERYDAY_PATH_HEALTH_USERPROFILE_V1` | UserProfile path health | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Path health | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/347-path-health-userprofile.ps1` |
-| `ENDUSER_EVERYDAY_PATH_HEALTH_VIDEOS_V1` | Videos path health | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Path health | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/345-path-health-videos.ps1` |
+- `ENDUSER_APPSELFHELP_CAMERA_PRIVACY_SETTINGS_OPEN_V1` - Open Camera privacy settings
+- `ENDUSER_APPSELFHELP_DEFAULT_APPS_SETTINGS_OPEN_V1` - Open Default apps settings
+- `ENDUSER_APPSELFHELP_DISPLAY_SETTINGS_OPEN_V1` - Open Display settings
+- `ENDUSER_APPSELFHELP_KEYBOARD_SETTINGS_OPEN_V1` - Open Keyboard settings
+- `ENDUSER_APPSELFHELP_MICROPHONE_SETTINGS_OPEN_V1` - Open Microphone privacy settings
+- `ENDUSER_APPSELFHELP_MOUSE_SETTINGS_OPEN_V1` - Open Mouse settings
+- `ENDUSER_APPSELFHELP_NETWORK_TROUBLESHOOTER_OPEN_V1` - Open Network status settings
+- `ENDUSER_APPSELFHELP_OFFICE_OPEN_APPS_FEATURES_SETTINGS_V1` - Open Apps & features settings
+- `ENDUSER_APPSELFHELP_OFFICE_OPEN_DEFAULT_APPS_SETTINGS_V1` - Open Default apps settings
+- `ENDUSER_APPSELFHELP_PRINTER_SETTINGS_OPEN_V1` - Open Printers settings
+- `ENDUSER_APPSELFHELP_PROXY_SETTINGS_OPEN_V1` - Open Proxy settings
+- `ENDUSER_APPSELFHELP_SCANNER_CAMERA_SETTINGS_OPEN_V1` - Open Bluetooth & devices settings
+- `ENDUSER_APPSELFHELP_SOUND_SETTINGS_OPEN_V1` - Open Sound settings
+- `ENDUSER_APPSELFHELP_TEAMS_OPEN_APPS_SETTINGS_V1` - Open Apps settings for Teams review
+- `ENDUSER_APPSELFHELP_VPN_SETTINGS_OPEN_V1` - Open VPN settings
+- `ENDUSER_APPSELFHELP_WIFI_SETTINGS_OPEN_V1` - Open Wi-Fi settings
 
-## Process group count
+## Path health (7)
 
-Count: 8
+- `ENDUSER_EVERYDAY_PATH_HEALTH_DESKTOP_V1` - Desktop path health
+- `ENDUSER_EVERYDAY_PATH_HEALTH_DOCUMENTS_V1` - Documents path health
+- `ENDUSER_EVERYDAY_PATH_HEALTH_DOWNLOADS_V1` - Downloads path health
+- `ENDUSER_EVERYDAY_PATH_HEALTH_MUSIC_V1` - Music path health
+- `ENDUSER_EVERYDAY_PATH_HEALTH_PICTURES_V1` - Pictures path health
+- `ENDUSER_EVERYDAY_PATH_HEALTH_USERPROFILE_V1` - UserProfile path health
+- `ENDUSER_EVERYDAY_PATH_HEALTH_VIDEOS_V1` - Videos path health
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_BROWSER_PROCESS_GROUP_V1` | Browser process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/381-browser-process-group.ps1` |
-| `ENDUSER_EVERYDAY_COLLABORATION_PROCESS_GROUP_V1` | Collaboration process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/383-collaboration-process-group.ps1` |
-| `ENDUSER_EVERYDAY_OFFICE_PROCESS_GROUP_V1` | Office process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/382-office-process-group.ps1` |
-| `ENDUSER_EVERYDAY_PDF_PROCESS_GROUP_V1` | PDF process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/386-pdf-process-group.ps1` |
-| `ENDUSER_EVERYDAY_REMOTE_ACCESS_PROCESS_GROUP_V1` | Remote access process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/388-remote-access-process-group.ps1` |
-| `ENDUSER_EVERYDAY_SECURITY_PROCESS_GROUP_V1` | Security/Defender process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/385-security-process-group.ps1` |
-| `ENDUSER_EVERYDAY_SHELL_PROCESS_GROUP_V1` | Windows shell process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/384-shell-process-group.ps1` |
-| `ENDUSER_EVERYDAY_SYNC_PROCESS_GROUP_V1` | Sync process group count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Process group count | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/387-sync-process-group.ps1` |
+## Plan-only guidance (21)
 
-## Registry presence
+- `ENDUSER_APPSELFHELP_ACROBAT_CACHE_PLAN_V1` - Acrobat cache guidance plan
+- `ENDUSER_APPSELFHELP_ACROBAT_RESTART_PLAN_V1` - Acrobat restart guidance plan
+- `ENDUSER_APPSELFHELP_CHROME_CACHE_CLEAR_PLAN_V1` - Chrome cache guidance plan
+- `ENDUSER_APPSELFHELP_CHROME_RESET_SETTINGS_PLAN_V1` - Chrome reset settings guidance plan
+- `ENDUSER_APPSELFHELP_EDGE_CACHE_CLEAR_PLAN_V1` - Edge cache guidance plan
+- `ENDUSER_APPSELFHELP_EDGE_RESET_SETTINGS_PLAN_V1` - Edge reset settings guidance plan
+- `ENDUSER_APPSELFHELP_EXCEL_SAFE_MODE_PLAN_V1` - Excel safe mode guidance plan
+- `ENDUSER_APPSELFHELP_HELPDESK_ESCALATION_PROMPT_PLAN_V1` - Help desk escalation prompt plan
+- `ENDUSER_APPSELFHELP_OFFICE_REPAIR_GUIDANCE_PLAN_V1` - Office repair guidance plan
+- `ENDUSER_APPSELFHELP_ONEDRIVE_OPEN_FOLDER_PLAN_V1` - OneDrive open-folder guidance plan
+- `ENDUSER_APPSELFHELP_ONEDRIVE_RESTART_PLAN_V1` - OneDrive restart guidance plan
+- `ENDUSER_APPSELFHELP_OUTLOOK_CACHE_PLAN_V1` - Outlook cache guidance plan
+- `ENDUSER_APPSELFHELP_OUTLOOK_STARTUP_PLAN_V1` - Outlook startup plan
+- `ENDUSER_APPSELFHELP_PDF_DEFAULT_APP_PLAN_V1` - PDF default app guidance plan
+- `ENDUSER_APPSELFHELP_POWERPOINT_SAFE_MODE_PLAN_V1` - PowerPoint safe mode guidance plan
+- `ENDUSER_APPSELFHELP_RUNBOOK_PLAN_V1` - App self-help runbook plan
+- `ENDUSER_APPSELFHELP_SAFETY_BOUNDARY_V1` - App self-help safety boundary
+- `ENDUSER_APPSELFHELP_STORE_CACHE_PLAN_V1` - Microsoft Store cache guidance plan
+- `ENDUSER_APPSELFHELP_TEAMS_CACHE_CLEAR_PLAN_V1` - Teams cache guidance plan
+- `ENDUSER_APPSELFHELP_TEAMS_RESTART_PLAN_V1` - Teams restart guidance plan
+- `ENDUSER_APPSELFHELP_WORD_TEMPLATE_PLAN_V1` - Word template guidance plan
 
-Count: 6
+## Process group count (8)
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_REG_EXPLORER_ADVANCED_HIDDEN_V1` | Explorer hidden files setting presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Registry presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/412-reg-explorer-advanced-hidden.ps1` |
-| `ENDUSER_EVERYDAY_REG_EXPLORER_HIDE_FILE_EXT_V1` | Explorer hide file extensions setting presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Registry presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/414-reg-explorer-hide-file-ext.ps1` |
-| `ENDUSER_EVERYDAY_REG_EXPLORER_SHOW_SUPER_HIDDEN_V1` | Explorer super hidden setting presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Registry presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/413-reg-explorer-show-super-hidden.ps1` |
-| `ENDUSER_EVERYDAY_REG_ONEDRIVE_ACCOUNTS_PRESENCE_V1` | OneDrive accounts key presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Registry presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/416-reg-onedrive-accounts-presence.ps1` |
-| `ENDUSER_EVERYDAY_REG_RUN_KEY_PRESENCE_V1` | Current-user Run key presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Registry presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/415-reg-run-key-presence.ps1` |
-| `ENDUSER_EVERYDAY_REG_TERMINAL_CLIENT_PRESENCE_V1` | Terminal Server Client key presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Registry presence | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/417-reg-terminal-client-presence.ps1` |
+- `ENDUSER_EVERYDAY_BROWSER_PROCESS_GROUP_V1` - Browser process group count
+- `ENDUSER_EVERYDAY_COLLABORATION_PROCESS_GROUP_V1` - Collaboration process group count
+- `ENDUSER_EVERYDAY_OFFICE_PROCESS_GROUP_V1` - Office process group count
+- `ENDUSER_EVERYDAY_PDF_PROCESS_GROUP_V1` - PDF process group count
+- `ENDUSER_EVERYDAY_REMOTE_ACCESS_PROCESS_GROUP_V1` - Remote access process group count
+- `ENDUSER_EVERYDAY_SECURITY_PROCESS_GROUP_V1` - Security/Defender process group count
+- `ENDUSER_EVERYDAY_SHELL_PROCESS_GROUP_V1` - Windows shell process group count
+- `ENDUSER_EVERYDAY_SYNC_PROCESS_GROUP_V1` - Sync process group count
 
-## Scheduled task summary
+## Registry presence (12)
 
-Count: 1
+- `ENDUSER_APPSELFHELP_DEFAULT_PRINTER_PRESENCE_V2` - Default printer presence
+- `ENDUSER_APPSELFHELP_EDGE_HTTP_ASSOC_PRESENCE_V1` - HTTP association presence
+- `ENDUSER_APPSELFHELP_EDGE_HTTPS_ASSOC_PRESENCE_V1` - HTTPS association presence
+- `ENDUSER_APPSELFHELP_ONEDRIVE_REG_ACCOUNT_PRESENCE_V2` - OneDrive account registry presence
+- `ENDUSER_APPSELFHELP_OUTLOOK_DEFAULT_MAIL_CLIENT_PRESENCE_V1` - Default mail client registry presence
+- `ENDUSER_APPSELFHELP_OUTLOOK_PROFILE_REG_PRESENCE_V1` - Outlook profile registry presence
+- `ENDUSER_EVERYDAY_REG_EXPLORER_ADVANCED_HIDDEN_V1` - Explorer hidden files setting presence
+- `ENDUSER_EVERYDAY_REG_EXPLORER_HIDE_FILE_EXT_V1` - Explorer hide file extensions setting presence
+- `ENDUSER_EVERYDAY_REG_EXPLORER_SHOW_SUPER_HIDDEN_V1` - Explorer super hidden setting presence
+- `ENDUSER_EVERYDAY_REG_ONEDRIVE_ACCOUNTS_PRESENCE_V1` - OneDrive accounts key presence
+- `ENDUSER_EVERYDAY_REG_RUN_KEY_PRESENCE_V1` - Current-user Run key presence
+- `ENDUSER_EVERYDAY_REG_TERMINAL_CLIENT_PRESENCE_V1` - Terminal Server Client key presence
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_SCHEDULED_TASK_SUMMARY_V2_V1` | Scheduled task summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Scheduled task summary | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/426-scheduled-task-summary-v2.ps1` |
+## Scheduled task summary (1)
 
-## Script
+- `ENDUSER_EVERYDAY_SCHEDULED_TASK_SUMMARY_V2_V1` - Scheduled task summary
 
-Count: 340
+## Script (340)
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_CHECK_DNS_CLIENT_SERVICE_STATUS_V1` | Enduser Check Dns Client Service Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/30-Check-DnsClientServiceStatus.ps1` |
-| `ENDUSER_CHECK_LONG_PATHS_POLICY_V1` | Enduser Check Long Paths Policy V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/44-Check-LongPathsPolicy.ps1` |
-| `ENDUSER_CHECK_LOW_LOCAL_DISK_SPACE_V1` | Enduser Check Low Local Disk Space V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/42-Check-LowLocalDiskSpace.ps1` |
-| `ENDUSER_CHECK_OFFLINE_FILES_SERVICE_STATUS_V1` | Enduser Check Offline Files Service Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/33-Check-OfflineFilesServiceStatus.ps1` |
-| `ENDUSER_CHECK_PENDING_REBOOT_INDICATORS_V1` | Enduser Check Pending Reboot Indicators V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/27-Check-PendingRebootIndicators.ps1` |
-| `ENDUSER_CHECK_TIME_SERVICE_STATUS_V1` | Enduser Check Time Service Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/29-Check-TimeServiceStatus.ps1` |
-| `ENDUSER_CHECK_WEBCLIENT_SERVICE_STATUS_V1` | Enduser Check Webclient Service Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/32-Check-WebClientServiceStatus.ps1` |
-| `ENDUSER_CHECK_WINDOWS_SEARCH_SERVICE_STATUS_V1` | Enduser Check Windows Search Service Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/34-Check-WindowsSearchServiceStatus.ps1` |
-| `ENDUSER_CHECK_WORKSTATION_SERVICE_STATUS_V1` | Enduser Check Workstation Service Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/31-Check-WorkstationServiceStatus.ps1` |
-| `ENDUSER_GET_CURRENT_USER_GROUP_COUNT_V1` | Enduser Get Current User Group Count V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/58-Get-CurrentUserGroupCount.ps1` |
-| `ENDUSER_GET_DNS_CACHE_NO_NAME_SUMMARY_V1` | Enduser Get Dns Cache No Name Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/50-Get-DnsCacheNoNameSummary.ps1` |
-| `ENDUSER_GET_DNS_CLIENT_SUMMARY_V1` | Enduser Get Dns Client Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/03-Get-DnsClientSummary.ps1` |
-| `ENDUSER_GET_DOMAIN_JOIN_SUMMARY_V1` | Enduser Get Domain Join Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/28-Get-DomainJoinSummary.ps1` |
-| `ENDUSER_GET_DRIVE_LETTER_SUMMARY_V1` | Enduser Get Drive Letter Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/41-Get-DriveLetterSummary.ps1` |
-| `ENDUSER_GET_FIREWALL_PROFILE_SUMMARY_V1` | Enduser Get Firewall Profile Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/46-Get-FirewallProfileSummary.ps1` |
-| `ENDUSER_GET_GPRESULT_USER_SUMMARY_V1` | Enduser Get Gpresult User Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/17-Get-GpResultUserSummary.ps1` |
-| `ENDUSER_GET_KERBEROS_TICKET_COUNT_V1` | Enduser Get Kerberos Ticket Count V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/49-Get-KerberosTicketCount.ps1` |
-| `ENDUSER_GET_KNOWN_FOLDERS_NO_PATH_SUMMARY_V1` | Enduser Get Known Folders No Path Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/36-Get-KnownFoldersNoPathSummary.ps1` |
-| `ENDUSER_GET_LOCAL_DRIVE_SPACE_V1` | Enduser Get Local Drive Space V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/12-Get-LocalDriveSpace.ps1` |
-| `ENDUSER_GET_MAPPED_DRIVES_V1` | Enduser Get Mapped Drives V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/10-Get-MappedDrives.ps1` |
-| `ENDUSER_GET_NETWORK_ADAPTER_STATUS_V1` | Enduser Get Network Adapter Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/02-Get-NetworkAdapterStatus.ps1` |
-| `ENDUSER_GET_ONEDRIVE_BASIC_STATUS_V1` | Enduser Get Onedrive Basic Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/13-Get-OneDriveBasicStatus.ps1` |
-| `ENDUSER_GET_ONEDRIVE_NO_PATH_SUMMARY_V1` | Enduser Get Onedrive No Path Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/35-Get-OneDriveNoPathSummary.ps1` |
-| `ENDUSER_GET_POWERSHELL_EXECUTION_POLICY_SUMMARY_V1` | Enduser Get Powershell Execution Policy Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/45-Get-PowerShellExecutionPolicySummary.ps1` |
-| `ENDUSER_GET_PROXY_ENABLED_NO_enterpriseLUE_SUMMARY_V1` | Enduser Get Proxy Enabled No Enterpriselue Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/47-Get-ProxyEnabledNoValueSummary.ps1` |
-| `ENDUSER_GET_RECENT_DISK_NTFS_ERROR_COUNT_V1` | Enduser Get Recent Disk Ntfs Error Count V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/53-Get-RecentDiskNtfsErrorCount.ps1` |
-| `ENDUSER_GET_RECENT_EXPLORER_CRASH_COUNT_V1` | Enduser Get Recent Explorer Crash Count V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/59-Get-RecentExplorerCrashCount.ps1` |
-| `ENDUSER_GET_RECENT_GROUP_POLICY_ERROR_COUNT_V1` | Enduser Get Recent Group Policy Error Count V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/54-Get-RecentGroupPolicyErrorCount.ps1` |
-| `ENDUSER_GET_RECENT_NETWORK_ERROR_COUNT_V1` | Enduser Get Recent Network Error Count V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/52-Get-RecentNetworkErrorCount.ps1` |
-| `ENDUSER_GET_RECENT_STORAGE_EVENTS_V1` | Enduser Get Recent Storage Events V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/16-Get-RecentStorageRelatedEvents.ps1` |
-| `ENDUSER_GET_RECYCLE_BIN_NO_NAME_SUMMARY_V1` | Enduser Get Recycle Bin No Name Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/43-Get-RecycleBinNoNameSummary.ps1` |
-| `ENDUSER_GET_SELFCHECK_EVIDENCE_ROOT_SUMMARY_V1` | Enduser Get Selfcheck Evidence Root Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/55-Get-SelfCheckEvidenceRootSummary.ps1` |
-| `ENDUSER_GET_SMB_CLIENT_BASIC_STATUS_V1` | Enduser Get Smb Client Basic Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/14-Get-SmbClientBasicStatus.ps1` |
-| `ENDUSER_GET_SMB_CONNECTIONS_V1` | Enduser Get Smb Connections V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/15-Get-SmbConnections.ps1` |
-| `ENDUSER_GET_SMB_MAPPING_NO_PATH_SUMMARY_V1` | Enduser Get Smb Mapping No Path Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/51-Get-SmbMappingNoPathSummary.ps1` |
-| `ENDUSER_GET_STORAGE_ENVIRONMENT_enterpriseRIABLE_SUMMARY_V1` | Enduser Get Storage Environment Enterpriseriable Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/57-Get-StorageEnvironmentVariableSummary.ps1` |
-| `ENDUSER_GET_USER_COMPUTER_CONTEXT_V1` | Enduser Get User Computer Context V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/01-Get-UserComputerContext.ps1` |
-| `ENDUSER_GET_WINDOWS_UPTIME_V1` | Enduser Get Windows Uptime V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/26-Get-WindowsUptime.ps1` |
-| `ENDUSER_GET_WINHTTP_PROXY_NO_enterpriseLUE_SUMMARY_V1` | Enduser Get Winhttp Proxy No Enterpriselue Summary V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/48-Get-WinHttpProxyNoValueSummary.ps1` |
-| `ENDUSER_NEW_SUPPORT_EVIDENCE_BUNDLE_V1` | Enduser New Support Evidence Bundle V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/20-New-SupportEvidenceBundle.ps1` |
-| `ENDUSER_NOADMIN_BLUETOOTH_SERVICE_STATUS_V1` | Bluetooth support service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/229-bluetooth-service-status.ps1` |
-| `ENDUSER_NOADMIN_CERTUTIL_COMMAND_AenterpriseILABLE_V1` | Certutil command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/244-certutil-command-available.ps1` |
-| `ENDUSER_NOADMIN_CIPHER_COMMAND_AenterpriseILABLE_V1` | Cipher command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/243-cipher-command-available.ps1` |
-| `ENDUSER_NOADMIN_COMMAND_IPCONFIG_AenterpriseILABLE_V1` | ipconfig command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/239-command-ipconfig-available.ps1` |
-| `ENDUSER_NOADMIN_COMMAND_NETSH_AenterpriseILABLE_V1` | netsh command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/238-command-netsh-available.ps1` |
-| `ENDUSER_NOADMIN_COMMAND_PRINTUI_AenterpriseILABLE_V1` | printui.dll command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/170-command-printui-available.ps1` |
-| `ENDUSER_NOADMIN_COMMAND_WMIC_AenterpriseILABLE_V1` | WMIC command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/171-command-wmic-available.ps1` |
-| `ENDUSER_NOADMIN_CURRENTUSER_CA_CERT_COUNT_V1` | CurrentUser CA certificate count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/248-currentuser-ca-cert-count.ps1` |
-| `ENDUSER_NOADMIN_CURRENTUSER_MY_CERT_COUNT_V1` | CurrentUser My certificate count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/246-currentuser-my-cert-count.ps1` |
-| `ENDUSER_NOADMIN_CURRENTUSER_ROOT_CERT_COUNT_V1` | CurrentUser Root certificate count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/247-currentuser-root-cert-count.ps1` |
-| `ENDUSER_NOADMIN_DEFAULT_PRINTER_PRESENT_V1` | Default printer present | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/163-default-printer-present.ps1` |
-| `ENDUSER_NOADMIN_DESKTOP_EXTENSION_SUMMARY_V1` | Desktop file extension summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/188-desktop-extension-summary.ps1` |
-| `ENDUSER_NOADMIN_DESKTOP_TOP_LEVEL_SUMMARY_V1` | Desktop top-level summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/181-desktop-top-level-summary.ps1` |
-| `ENDUSER_NOADMIN_DISKDRIVE_COUNT_USER_VISIBLE_V1` | Disk drive count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/196-diskdrive-count-user-visible.ps1` |
-| `ENDUSER_NOADMIN_DOCUMENTS_EXTENSION_SUMMARY_V1` | Documents file extension summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/189-documents-extension-summary.ps1` |
-| `ENDUSER_NOADMIN_DOCUMENTS_TOP_LEVEL_SUMMARY_V1` | Documents top-level summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/182-documents-top-level-summary.ps1` |
-| `ENDUSER_NOADMIN_DOWNLOADS_EXTENSION_SUMMARY_V1` | Downloads file extension summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/190-downloads-extension-summary.ps1` |
-| `ENDUSER_NOADMIN_DOWNLOADS_TOP_LEVEL_SUMMARY_V1` | Downloads top-level summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/183-downloads-top-level-summary.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_BITS_24H_V1` | BITS event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/255-events-bits-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_DEFENDER_OPERATIONAL_24H_V2_V1` | Defender Operational event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/253-events-defender-operational-24h-v2.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_EDGE_24H_V1` | Edge event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/218-events-edge-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_GROUP_POLICY_OPERATIONAL_24H_V1` | GroupPolicy Operational event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/251-events-group-policy-operational-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_OFFICE_24H_V1` | Office-related event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/215-events-office-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_ONEDRIVE_24H_V1` | OneDrive event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/216-events-onedrive-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_PRINT_SERVICE_ADMIN_7D_V1` | PrintService Admin event count last 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/168-events-print-service-admin-7d.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_PRINT_SERVICE_OPERATIONAL_24H_V1` | PrintService Operational warning/error count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/169-events-print-service-operational-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_SECURITY_24H_V2_V1` | Security log warning/error count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/252-events-security-24h-v2.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_SPOOLER_SYSTEM_24H_V1` | Spooler/System event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/179-events-spooler-system-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_TASK_SCHEDULER_OPERATIONAL_24H_V2_V1` | TaskScheduler Operational event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/254-events-task-scheduler-operational-24h-v2.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_TEAMS_24H_V1` | Teams event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/217-events-teams-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_VPNISH_NETWORK_24H_V1` | VPN/network-ish event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/240-events-vpnish-network-24h.ps1` |
-| `ENDUSER_NOADMIN_EVENTS_WMI_ACTIVITY_24H_V1` | WMI Activity event count last 24h | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/256-events-wmi-activity-24h.ps1` |
-| `ENDUSER_NOADMIN_EXPLORER_ADenterpriseNCED_HIDDEN_PRESENCE_V1` | Explorer Advanced Hidden setting presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/199-explorer-advanced-hidden-presence.ps1` |
-| `ENDUSER_NOADMIN_EXPLORER_RECENT_DOCS_PRESENCE_V1` | Explorer RecentDocs registry presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/200-explorer-recent-docs-presence.ps1` |
-| `ENDUSER_NOADMIN_FAVORITES_TOP_LEVEL_SUMMARY_V1` | Favorites top-level summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/187-favorites-top-level-summary.ps1` |
-| `ENDUSER_NOADMIN_FAX_SERVICE_STATUS_V1` | Fax service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/176-fax-service-status.ps1` |
-| `ENDUSER_NOADMIN_FIXED_DISK_FREE_BELOW_15_V1` | Fixed disk below 15 percent free check | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/192-fixed-disk-free-below-15.ps1` |
-| `ENDUSER_NOADMIN_FIXED_DISK_FREE_BELOW_20_V1` | Fixed disk below 20 percent free check | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/193-fixed-disk-free-below-20.ps1` |
-| `ENDUSER_NOADMIN_GPRESULT_COMMAND_AenterpriseILABLE_V2_V1` | GPResult command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/241-gpresult-command-available-v2.ps1` |
-| `ENDUSER_NOADMIN_GPUPDATE_COMMAND_AenterpriseILABLE_V1` | GPUpdate command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/245-gpupdate-command-available.ps1` |
-| `ENDUSER_NOADMIN_IKEEXT_SERVICE_STATUS_V1` | IKE/AuthIP service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/233-ikeext-service-status.ps1` |
-| `ENDUSER_NOADMIN_IPHLPSVC_SERVICE_STATUS_V1` | IP Helper service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/234-iphlpsvc-service-status.ps1` |
-| `ENDUSER_NOADMIN_MUSIC_TOP_LEVEL_SUMMARY_V1` | Music top-level summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/185-music-top-level-summary.ps1` |
-| `ENDUSER_NOADMIN_NCA_SERVICE_STATUS_V1` | Network Connectivity Assistant service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/237-nca-service-status.ps1` |
-| `ENDUSER_NOADMIN_NCB_SERVICE_STATUS_V1` | Network Connection Broker service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/236-ncb-service-status.ps1` |
-| `ENDUSER_NOADMIN_NETPROFM_SERVICE_STATUS_V1` | Network List service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/235-netprofm-service-status.ps1` |
-| `ENDUSER_NOADMIN_NETWORK_ADAPTER_CIM_COUNT_V1` | Network adapter CIM count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/225-network-adapter-cim-count.ps1` |
-| `ENDUSER_NOADMIN_NETWORK_ADAPTER_CONFIG_CIM_COUNT_V1` | Network adapter configuration CIM count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/226-network-adapter-config-cim-count.ps1` |
-| `ENDUSER_NOADMIN_NETWORK_CATEGORY_COUNTS_V2_V1` | Network adapter category counts | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/221-network-category-counts-v2.ps1` |
-| `ENDUSER_NOADMIN_NETWORK_DRIVE_SUMMARY_V1` | Network drive summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/194-network-drive-summary.ps1` |
-| `ENDUSER_NOADMIN_OFFICE_APPX_PACKAGE_COUNT_V1` | Current-user AppX package count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/213-office-appx-package-count.ps1` |
-| `ENDUSER_NOADMIN_OFFICE_CLICKTORUN_SERVICE_STATUS_V1` | Office ClickToRun service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/212-office-clicktorun-service-status.ps1` |
-| `ENDUSER_NOADMIN_ONEDRIVE_SETUP_COMMAND_AenterpriseILABLE_V1` | OneDrive setup command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/211-onedrive-setup-command-available.ps1` |
-| `ENDUSER_NOADMIN_PARTITION_COUNT_USER_VISIBLE_V1` | Partition count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/197-partition-count-user-visible.ps1` |
-| `ENDUSER_NOADMIN_PICTURES_TOP_LEVEL_SUMMARY_V1` | Pictures top-level summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/184-pictures-top-level-summary.ps1` |
-| `ENDUSER_NOADMIN_PNP_BLUETOOTH_CLASS_SUMMARY_V1` | PnP Bluetooth class summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/228-pnp-bluetooth-class-summary.ps1` |
-| `ENDUSER_NOADMIN_PNP_NET_CLASS_SUMMARY_V1` | PnP Net class summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/227-pnp-net-class-summary.ps1` |
-| `ENDUSER_NOADMIN_PNP_PRINTER_CLASS_SUMMARY_V1` | PnP printer class summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/167-pnp-printer-class-summary.ps1` |
-| `ENDUSER_NOADMIN_POWERSHELL_MODULE_COUNT_USER_VISIBLE_V1` | PowerShell module count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/214-powershell-module-count-user-visible.ps1` |
-| `ENDUSER_NOADMIN_PRINT_JOB_CIM_COUNT_V1` | Print job CIM instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/166-print-job-cim-count.ps1` |
-| `ENDUSER_NOADMIN_PRINT_JOB_SUMMARY_V1` | Print job count summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/162-print-job-summary.ps1` |
-| `ENDUSER_NOADMIN_PRINT_SPOOLER_STATUS_V1` | Print Spooler service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/164-print-spooler-status.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_CIM_COUNT_V1` | Printer CIM instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/165-printer-cim-count.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_DRIVER_CIM_COUNT_V1` | Printer driver CIM count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/174-printer-driver-cim-count.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_PORT_CIM_COUNT_V1` | Printer port CIM count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/175-printer-port-cim-count.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_PROCESS_SPOOLSV_COUNT_V1` | Spoolsv process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/178-printer-process-spoolsv-count.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_REGISTRY_CONNECTIONS_PRESENT_V1` | Printer connections registry presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/172-printer-registry-connections-present.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_REGISTRY_DEFAULTS_PRESENT_V1` | Printer defaults registry presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/173-printer-registry-defaults-present.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_SUMMARY_V1` | Printer summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/161-printer-summary.ps1` |
-| `ENDUSER_NOADMIN_PRINTER_USER_SETTINGS_PRESENCE_V1` | Printer user settings presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/180-printer-user-settings-presence.ps1` |
-| `ENDUSER_NOADMIN_PROBLEM_REPORTS_REGISTRY_PRESENCE_V1` | Problem Reports registry presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/258-problem-reports-registry-presence.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_ACROBAT_COUNT_V1` | Adobe Reader/Acrobat process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/209-process-acrobat-count.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_CHROME_COUNT_V1` | Chrome process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/208-process-chrome-count.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_EDGE_COUNT_V2_V1` | Edge process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/207-process-edge-count-v2.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_EXCEL_COUNT_V1` | Excel process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/202-process-excel-count.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_ONEDRIVE_COUNT_V2_V1` | OneDrive process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/210-process-onedrive-count-v2.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_ONENOTE_COUNT_V1` | OneNote process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/204-process-onenote-count.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_OUTLOOK_COUNT_V2_V1` | Outlook process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/205-process-outlook-count-v2.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_POWERPOINT_COUNT_V1` | PowerPoint process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/203-process-powerpoint-count.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_TEAMS_COUNT_V2_V1` | Teams process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/206-process-teams-count-v2.ps1` |
-| `ENDUSER_NOADMIN_PROCESS_WINWORD_COUNT_V1` | Word process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/201-process-winword-count.ps1` |
-| `ENDUSER_NOADMIN_REGISTRY_OFFICE_COMMON_PRESENT_V1` | Office common registry presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/220-registry-office-common-present.ps1` |
-| `ENDUSER_NOADMIN_REGISTRY_ONEDRIVE_ACCOUNT_PRESENT_V1` | OneDrive account registry presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/219-registry-onedrive-account-present.ps1` |
-| `ENDUSER_NOADMIN_REMOTE_ACCESS_SERVICE_STATUS_V1` | Remote Access service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/232-remote-access-service-status.ps1` |
-| `ENDUSER_NOADMIN_REMOTE_DESKTOP_USER_SETTING_PRESENCE_V1` | Remote Desktop user setting presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/259-remote-desktop-user-setting-presence.ps1` |
-| `ENDUSER_NOADMIN_ROUTE_CIM_COUNT_V1` | Route table CIM count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/224-route-cim-count.ps1` |
-| `ENDUSER_NOADMIN_SCHEDULED_TASK_STATE_COUNTS_V1` | Scheduled task state counts | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/249-scheduled-task-state-counts.ps1` |
-| `ENDUSER_NOADMIN_SHADOWCOPY_COUNT_USER_VISIBLE_V1` | Shadow copy count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/195-shadowcopy-count-user-visible.ps1` |
-| `ENDUSER_NOADMIN_STARTUP_APPROVED_COUNT_V1` | Startup approved entry count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/250-startup-approved-count.ps1` |
-| `ENDUSER_NOADMIN_SUPPORT_EVIDENCE_ROOT_SUMMARY_V2_V1` | Support evidence root summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/260-support-evidence-root-summary-v2.ps1` |
-| `ENDUSER_NOADMIN_TCP_CONNECTION_STATE_COUNTS_V1` | TCP connection state counts | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/222-tcp-connection-state-counts.ps1` |
-| `ENDUSER_NOADMIN_TEMP_FOLDER_SUMMARY_V1` | User temp folder summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/191-temp-folder-summary.ps1` |
-| `ENDUSER_NOADMIN_UDP_ENDPOINT_COUNT_V1` | UDP endpoint count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/223-udp-endpoint-count.ps1` |
-| `ENDUSER_NOADMIN_USER_SHELL_FOLDERS_PERSONAL_PRESENCE_V1` | User Shell Folders Personal presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/198-user-shell-folders-personal-presence.ps1` |
-| `ENDUSER_NOADMIN_VIDEOS_TOP_LEVEL_SUMMARY_V1` | Videos top-level summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/186-videos-top-level-summary.ps1` |
-| `ENDUSER_NOADMIN_WHOAMI_COMMAND_AenterpriseILABLE_V1` | Whoami command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/242-whoami-command-available.ps1` |
-| `ENDUSER_NOADMIN_WINDOWS_ERROR_REPORTING_SERVICE_STATUS_V1` | Windows Error Reporting service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/257-windows-error-reporting-service-status.ps1` |
-| `ENDUSER_NOADMIN_WLAN_AUTOCONFIG_STATUS_V1` | WLAN AutoConfig service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/230-wlan-autoconfig-status.ps1` |
-| `ENDUSER_NOADMIN_WWAN_AUTOCONFIG_STATUS_V1` | WWAN AutoConfig service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/231-wwan-autoconfig-status.ps1` |
-| `ENDUSER_NOADMIN_XPS_SERVICE_STATUS_V1` | XPS service status check | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-admin-v4/scripts/checks/177-xps-service-status.ps1` |
-| `ENDUSER_NOINPUT_BATTERY_INSTANCE_COUNT_V1` | Battery instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/069-battery-instance-count.ps1` |
-| `ENDUSER_NOINPUT_BIOS_PROPERTY_PRESENCE_V1` | BIOS property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/068-bios-property-presence.ps1` |
-| `ENDUSER_NOINPUT_CIM_DISKDRIVE_COUNT_V1` | Disk drive instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/144-cim-diskdrive-count.ps1` |
-| `ENDUSER_NOINPUT_CIM_PARTITION_COUNT_V1` | Disk partition instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/145-cim-partition-count.ps1` |
-| `ENDUSER_NOINPUT_CIM_SHADOWCOPY_COUNT_V1` | Shadow copy instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/143-cim-shadowcopy-count.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_GPRESULT_AenterpriseILABLE_V1` | GPResult command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/114-command-gpresult-available.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_KLIST_AenterpriseILABLE_V1` | Klist command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/115-command-klist-available.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_NET_USE_AenterpriseILABLE_V1` | Net use command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/116-command-net-use-available.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_NSLOOKUP_AenterpriseILABLE_V1` | Nslookup command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/112-command-nslookup-available.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_PING_AenterpriseILABLE_V1` | Ping command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/111-command-ping-available.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_ROBOCOPY_AenterpriseILABLE_V1` | Robocopy command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/117-command-robocopy-available.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_TRACERT_AenterpriseILABLE_V1` | Tracert command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/113-command-tracert-available.ps1` |
-| `ENDUSER_NOINPUT_COMMAND_WEVTUTIL_AenterpriseILABLE_V1` | Wevtutil command availability | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/118-command-wevtutil-available.ps1` |
-| `ENDUSER_NOINPUT_COMPUTER_MANUFACTURER_PRESENCE_V1` | Computer manufacturer/model property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/065-computer-manufacturer-presence.ps1` |
-| `ENDUSER_NOINPUT_COMPUTER_MEMORY_PRESENCE_V1` | Computer memory property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/066-computer-memory-presence.ps1` |
-| `ENDUSER_NOINPUT_DNS_CONFIG_COUNTS_V1` | DNS config counts with values redacted | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/108-dns-config-counts.ps1` |
-| `ENDUSER_NOINPUT_DRIVE_ALL_SUMMARY_V1` | All logical drive summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/133-drive-all-summary.ps1` |
-| `ENDUSER_NOINPUT_DRIVE_FIXED_SUMMARY_V1` | Fixed disk drive summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/134-drive-fixed-summary.ps1` |
-| `ENDUSER_NOINPUT_DRIVE_NETWORK_SUMMARY_V1` | Network drive summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/135-drive-network-summary.ps1` |
-| `ENDUSER_NOINPUT_DRIVE_REMOenterpriseBLE_SUMMARY_V1` | Removable drive summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/136-drive-removable-summary.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_APPLICATION_ERRORS_24H_V1` | Recent application warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/152-events-application-errors-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_DEFENDER_24H_V1` | Recent Defender warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/158-events-defender-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_DISK_NTFS_24H_V1` | Recent disk/NTFS warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/147-events-disk-ntfs-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_EXPLORER_7D_V1` | Recent Explorer-related warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/156-events-explorer-7d.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_GROUP_POLICY_24H_V1` | Recent Group Policy warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/149-events-group-policy-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_NETWORK_24H_V1` | Recent network warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/146-events-network-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_ONEDRIVE_7D_V1` | Recent OneDrive-related warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/155-events-onedrive-7d.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_POWERSHELL_24H_V1` | Recent PowerShell warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/153-events-powershell-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_SECURITY_AUDIT_COUNT_24H_V1` | Recent Security log warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/157-events-security-audit-count-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_SERVICE_CONTROL_24H_V1` | Recent Service Control Manager warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/150-events-service-control-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_SMB_24H_V1` | Recent SMB/client warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/148-events-smb-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_TASK_SCHEDULER_24H_V1` | Recent Task Scheduler warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/159-events-task-scheduler-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_TERMINAL_SERVICES_24H_V1` | Recent Terminal Services warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/160-events-terminal-services-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_WINDOWS_UPDATE_24H_V1` | Recent Windows Update warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/151-events-windows-update-24h.ps1` |
-| `ENDUSER_NOINPUT_EVENTS_WMI_24H_V1` | Recent WMI warning/error count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/154-events-wmi-24h.ps1` |
-| `ENDUSER_NOINPUT_EVIDENCE_ROOT_SUMMARY_V1` | Self-check evidence root summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/141-evidence-root-summary.ps1` |
-| `ENDUSER_NOINPUT_FIREWALL_PROFILE_COUNTS_V1` | Firewall profile enabled counts | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/110-firewall-profile-counts.ps1` |
-| `ENDUSER_NOINPUT_HOTFIX_COUNT_V1` | Installed hotfix count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/071-hotfix-count.ps1` |
-| `ENDUSER_NOINPUT_KNOWN_FOLDER_DESKTOP_V1` | Known folder Desktop summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/126-known-folder-desktop.ps1` |
-| `ENDUSER_NOINPUT_KNOWN_FOLDER_DOCUMENTS_V1` | Known folder Documents summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/127-known-folder-documents.ps1` |
-| `ENDUSER_NOINPUT_KNOWN_FOLDER_DOWNLOADS_V1` | Known folder Downloads summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/128-known-folder-downloads.ps1` |
-| `ENDUSER_NOINPUT_KNOWN_FOLDER_FAVORITES_V1` | Known folder Favorites summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/132-known-folder-favorites.ps1` |
-| `ENDUSER_NOINPUT_KNOWN_FOLDER_MUSIC_V1` | Known folder Music summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/130-known-folder-music.ps1` |
-| `ENDUSER_NOINPUT_KNOWN_FOLDER_PICTURES_V1` | Known folder Pictures summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/129-known-folder-pictures.ps1` |
-| `ENDUSER_NOINPUT_KNOWN_FOLDER_VIDEOS_V1` | Known folder Videos summary | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/131-known-folder-videos.ps1` |
-| `ENDUSER_NOINPUT_LOGGED_ON_USER_PRESENCE_V1` | Logged-on user property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/072-logged-on-user-presence.ps1` |
-| `ENDUSER_NOINPUT_LOGICAL_DISK_COUNT_V1` | Logical disk instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/076-logical-disk-count.ps1` |
-| `ENDUSER_NOINPUT_NETWORK_ADAPTER_COUNTS_V1` | Network adapter status counts | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/106-network-adapter-counts.ps1` |
-| `ENDUSER_NOINPUT_NETWORK_PROFILE_COUNTS_V1` | Network profile category counts | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/107-network-profile-counts.ps1` |
-| `ENDUSER_NOINPUT_OS_ARCHITECTURE_PRESENCE_V1` | OS architecture property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/064-os-architecture-presence.ps1` |
-| `ENDUSER_NOINPUT_OS_CAPTION_PRESENCE_V1` | OS caption property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/061-os-caption-presence.ps1` |
-| `ENDUSER_NOINPUT_OS_INSTALL_DATE_PRESENCE_V1` | OS install date property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/063-os-install-date-presence.ps1` |
-| `ENDUSER_NOINPUT_OS_VERSION_PRESENCE_V1` | OS version/build property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/062-os-version-presence.ps1` |
-| `ENDUSER_NOINPUT_PAGEFILE_COUNT_V1` | Pagefile usage instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/074-pagefile-count.ps1` |
-| `ENDUSER_NOINPUT_PORTABLE_CHASSIS_PRESENCE_V1` | System enclosure property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/070-portable-chassis-presence.ps1` |
-| `ENDUSER_NOINPUT_POWER_PLAN_PRESENCE_V1` | Active power plan presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/142-power-plan-presence.ps1` |
-| `ENDUSER_NOINPUT_PRINT_QUEUE_COUNT_V1` | Printer instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/075-print-queue-count.ps1` |
-| `ENDUSER_NOINPUT_PROCESS_EDGE_COUNT_V1` | Microsoft Edge process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/123-process-edge-count.ps1` |
-| `ENDUSER_NOINPUT_PROCESS_EXPLORER_COUNT_V1` | Explorer process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/120-process-explorer-count.ps1` |
-| `ENDUSER_NOINPUT_PROCESS_ONEDRIVE_COUNT_V1` | OneDrive process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/119-process-onedrive-count.ps1` |
-| `ENDUSER_NOINPUT_PROCESS_OUTLOOK_COUNT_V1` | Outlook process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/122-process-outlook-count.ps1` |
-| `ENDUSER_NOINPUT_PROCESS_TEAMS_COUNT_V1` | Teams process count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/121-process-teams-count.ps1` |
-| `ENDUSER_NOINPUT_PROCESSOR_COUNT_V1` | Processor instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/067-processor-count.ps1` |
-| `ENDUSER_NOINPUT_PROXY_ENV_PRESENCE_V1` | Proxy environment variable presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/124-proxy-env-presence.ps1` |
-| `ENDUSER_NOINPUT_REGISTRY_LONG_PATHS_PRESENT_V1` | Long paths policy presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/137-registry-long-paths-present.ps1` |
-| `ENDUSER_NOINPUT_REGISTRY_MAPPED_DRIVES_KEY_PRESENT_V1` | Network mapped drives key presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/140-registry-mapped-drives-key-present.ps1` |
-| `ENDUSER_NOINPUT_REGISTRY_OFFLINE_FILES_POLICY_PRESENT_V1` | Offline files policy presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/138-registry-offline-files-policy-present.ps1` |
-| `ENDUSER_NOINPUT_REGISTRY_USER_SHELL_FOLDERS_PRESENT_V1` | User shell folders key presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/139-registry-user-shell-folders-present.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_BITS_STATUS_V1` | BITS service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/088-service-bits-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_CRYPTSVC_STATUS_V1` | Cryptographic Services status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/095-service-cryptsvc-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_CSCSERVICE_STATUS_V1` | Offline Files service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/086-service-cscservice-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_DHCP_STATUS_V1` | DHCP Client service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/092-service-dhcp-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_DNSCACHE_STATUS_V1` | DNS Client service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/082-service-dnscache-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_EVENTLOG_STATUS_V1` | Windows Event Log service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/090-service-eventlog-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_LANMANSERVER_STATUS_V1` | Server service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/084-service-lanmanserver-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_LANMANWORKSTATION_STATUS_V1` | Workstation service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/083-service-lanmanworkstation-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_LMHOSTS_STATUS_V1` | TCP/IP NetBIOS Helper service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/097-service-lmhosts-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_MPSSVC_STATUS_V1` | Windows Firewall service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/099-service-mpssvc-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_NETLOGON_STATUS_V1` | Netlogon service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/094-service-netlogon-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_NLASVC_STATUS_V1` | Network Location Awareness service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/093-service-nlasvc-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_POLICYAGENT_STATUS_V1` | IPsec Policy Agent service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/098-service-policyagent-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_SCHEDULE_STATUS_V1` | Task Scheduler service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/091-service-schedule-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_SENSE_STATUS_V1` | Defender for Endpoint/Sense service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/100-service-sense-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_STORSVC_STATUS_V1` | Storage Service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/104-service-storsvc-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_SWPRV_STATUS_V1` | Software Protection Provider service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/103-service-swprv-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_VSS_STATUS_V1` | Volume Shadow Copy service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/102-service-vss-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_W32TIME_STATUS_V1` | Windows Time service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/081-service-w32time-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_WEBCLIENT_STATUS_V1` | WebClient service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/085-service-webclient-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_WERSVC_STATUS_V1` | Windows Error Reporting service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/105-service-wersvc-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_WINDEFEND_STATUS_V1` | Microsoft Defender Antivirus service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/101-service-windefend-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_WINMGMT_STATUS_V1` | WMI service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/096-service-winmgmt-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_WSEARCH_STATUS_V1` | Windows Search service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/087-service-wsearch-status.ps1` |
-| `ENDUSER_NOINPUT_SERVICE_WUAUSERV_STATUS_V1` | Windows Update service status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/089-service-wuauserv-status.ps1` |
-| `ENDUSER_NOINPUT_SHARE_COUNT_LOCAL_V1` | Local share instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/078-share-count-local.ps1` |
-| `ENDUSER_NOINPUT_SMB_SUMMARY_COUNTS_V1` | SMB mapping and connection counts with names redacted | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/109-smb-summary-counts.ps1` |
-| `ENDUSER_NOINPUT_STARTUP_COMMAND_COUNT_V1` | Startup command count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/079-startup-command-count.ps1` |
-| `ENDUSER_NOINPUT_STORAGE_ENV_PRESENCE_V1` | Storage-related environment variable presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/125-storage-env-presence.ps1` |
-| `ENDUSER_NOINPUT_TIMEZONE_PRESENCE_V1` | Timezone property presence | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/073-timezone-presence.ps1` |
-| `ENDUSER_NOINPUT_USER_PROFILE_COUNT_V1` | User profile instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/080-user-profile-count.ps1` |
-| `ENDUSER_NOINPUT_VOLUME_COUNT_V1` | Volume instance count | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/next100-no-input-v3/scripts/checks/077-volume-count.ps1` |
-| `ENDUSER_OPEN_UNC_PARENT_FOLDER_V1` | Enduser Open Unc Parent Folder V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/09-Open-UncParentFolder.ps1` |
-| `ENDUSER_RUN_ALL_NO_INPUT_CHECKS_V2` | Enduser Run All No Input Checks V2 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/60-Run-AllNoInputChecks-V2.ps1` |
-| `ENDUSER_RUN_ALL_SAFE_LOCAL_CHECKS_V1` | Enduser Run All Safe Local Checks V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/21-Run-AllSafeLocalChecks.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_CHROME_CACHE_V1` | Clear Chrome user cache | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/291-clear-chrome-cache.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_CLIPBOARD_V1` | Clear clipboard | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/268-clear-clipboard.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_CRASH_DUMPS_OLDER_14_DAYS_V1` | Clear crash dumps older than 14 days | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/297-clear-crash-dumps-older-14-days.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_EDGE_CACHE_V1` | Clear Edge user cache | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/290-clear-edge-cache.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_EXPLORER_THUMB_CACHE_V1` | Clear Explorer thumbnail cache | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/296-clear-explorer-thumb-cache.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_INTERNET_CACHE_V1` | Clear user internet cache files | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/288-clear-internet-cache.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_OFFICE_FILE_CACHE_V1` | Clear Office file cache | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/294-clear-office-file-cache.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_ONEDRIVE_LOGS_OLDER_14_DAYS_V1` | Clear OneDrive logs older than 14 days | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/295-clear-onedrive-logs-older-14-days.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_RECENT_ITEMS_V1` | Clear Recent Items | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/300-clear-recent-items.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_TEAMS_CLASSIC_CACHE_V1` | Clear Teams classic user cache | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/292-clear-teams-classic-cache.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_TEAMS_NEW_CACHE_V1` | Clear new Teams user cache | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/293-clear-teams-new-cache.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_TEMP_INTERNET_FILES_V1` | Clear INetCache files | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/289-clear-temp-internet-files.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_USER_TEMP_ALL_V1` | Clear user temp files | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/287-clear-user-temp-all.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_USER_TEMP_OLDER_7_DAYS_V1` | Clear user temp files older than 7 days | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/286-clear-user-temp-older-7-days.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_WER_ARCHIVE_OLDER_14_DAYS_V1` | Clear WER archive older than 14 days | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/298-clear-wer-archive-older-14-days.ps1` |
-| `ENDUSER_SELF_FIX_CLEAR_WER_QUEUE_OLDER_14_DAYS_V1` | Clear WER queue older than 14 days | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/299-clear-wer-queue-older-14-days.ps1` |
-| `ENDUSER_SELF_FIX_CREATE_SUPPORT_BUNDLE_AGAIN_V1` | Create support evidence bundle | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/336-create-support-bundle-again.ps1` |
-| `ENDUSER_SELF_FIX_CREATE_SUPPORT_EVIDENCE_ZIP_V1` | Create support evidence ZIP | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/267-create-support-evidence-zip.ps1` |
-| `ENDUSER_SELF_FIX_EMPTY_RECYCLE_BIN_V1` | Empty Recycle Bin | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/301-empty-recycle-bin.ps1` |
-| `ENDUSER_SELF_FIX_ENSURE_EVIDENCE_ROOT_V1` | Ensure self-check evidence root exists | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/335-ensure-evidence-root.ps1` |
-| `ENDUSER_SELF_FIX_FLUSH_DNS_CACHE_V1` | Flush DNS resolver cache | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/269-flush-dns-cache.ps1` |
-| `ENDUSER_SELF_FIX_GPUPDATE_USER_POLICY_V1` | Refresh user Group Policy | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/270-gpupdate-user-policy.ps1` |
-| `ENDUSER_SELF_FIX_GPUPDATE_USER_POLICY_WAIT_ZERO_V1` | Refresh user Group Policy no wait | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/271-gpupdate-user-policy-wait-zero.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_APPS_FEATURES_SETTINGS_V1` | Open Apps and Features Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/313-open-apps-features-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_BLUETOOTH_SETTINGS_V1` | Open Bluetooth Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/310-open-bluetooth-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_CREDENTIAL_MANAGER_V1` | Open Credential Manager UI | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/273-open-credential-manager.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_DEFAULT_APPS_SETTINGS_V1` | Open Default Apps Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/311-open-default-apps-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_DESKTOP_FOLDER_V1` | Open Desktop folder | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/264-open-desktop-folder.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_DEVICES_PRINTERS_CONTROL_V1` | Open Devices and Printers | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/321-open-devices-printers-control.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_DISK_CLEANUP_V1` | Open Disk Cleanup | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/302-open-disk-cleanup.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_DOCUMENTS_FOLDER_V1` | Open Documents folder | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/262-open-documents-folder.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_DOWNLOADS_FOLDER_V1` | Open Downloads folder | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/263-open-downloads-folder.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_DOWNLOADS_FOR_USER_CLEANUP_V1` | Open Downloads for user cleanup | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/319-open-downloads-for-user-cleanup.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_EVENT_VIEWER_V1` | Open Event Viewer | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/338-open-event-viewer.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_EVIDENCE_ROOT_V1` | Open self-check evidence root | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/337-open-evidence-root.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_INTERNET_OPTIONS_V1` | Open Internet Options UI | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/274-open-internet-options.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_NETWORK_CONNECTIONS_V1` | Open Network Connections UI | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/275-open-network-connections.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_NETWORK_STATUS_SETTINGS_V1` | Open Network Status Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/306-open-network-status-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_OFFICE_UPLOAD_CENTER_CACHE_FOLDER_V1` | Open Office file cache folder | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/318-open-office-upload-center-cache-folder.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_ONEDRIVE_FOLDER_V1` | Open OneDrive folder if present | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/317-open-onedrive-folder.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_OPTIONAL_FEATURES_SETTINGS_V1` | Open Optional Features Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/312-open-optional-features-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_PICTURES_FOLDER_V1` | Open Pictures folder | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/265-open-pictures-folder.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_PRINTERS_SETTINGS_V1` | Open Printers settings UI | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/276-open-printers-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_PRINTMANAGEMENT_MSC_V1` | Open Print Management if available | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/320-open-printmanagement-msc.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_PRINTUI_USER_V1` | Open printer UI helper | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/322-open-printui-user.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_PROXY_SETTINGS_V1` | Open Proxy Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/307-open-proxy-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_RELIABILITY_MONITOR_V1` | Open Reliability Monitor | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/339-open-reliability-monitor.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_SELFCHECK_EVIDENCE_FOLDER_V1` | Ensure/open self-check evidence root | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/266-open-selfcheck-evidence-folder.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_SIGNIN_OPTIONS_V1` | Open Sign-in Options | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/315-open-signin-options.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_STORAGE_SETTINGS_V1` | Open Storage Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/303-open-storage-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_SYNC_SETTINGS_V1` | Open Sync Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/314-open-sync-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_SYSTEM_INFO_V1` | Open System Information | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/340-open-system-info.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_TROUBLESHOOT_SETTINGS_V1` | Open Troubleshoot Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/304-open-troubleshoot-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_VPN_SETTINGS_V1` | Open VPN Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/308-open-vpn-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_WIFI_SETTINGS_V1` | Open Wi-Fi Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/309-open-wifi-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_WINDOWS_UPDATE_SETTINGS_V1` | Open Windows Update Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/305-open-windows-update-settings.ps1` |
-| `ENDUSER_SELF_FIX_OPEN_WORK_ACCESS_SETTINGS_V1` | Open Access Work or School Settings | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/316-open-work-access-settings.ps1` |
-| `ENDUSER_SELF_FIX_PURGE_KERBEROS_TICKETS_V1` | Purge current-user Kerberos tickets | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/272-purge-kerberos-tickets.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_ACROBAT_V1` | Restart Adobe Reader/Acrobat | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/332-restart-acrobat.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_CALCULATOR_V1` | Restart Calculator | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/334-restart-calculator.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_CHROME_V1` | Restart Chrome | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/285-restart-chrome.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_EDGE_V1` | Restart Edge | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/284-restart-edge.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_EXCEL_V1` | Restart Excel | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/282-restart-excel.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_EXPLORER_V1` | Restart File Explorer | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/261-restart-explorer.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_NOTEPAD_V1` | Restart Notepad | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/333-restart-notepad.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_ONEDRIVE_V1` | Restart OneDrive | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/277-restart-onedrive.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_OUTLOOK_V1` | Restart Outlook | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/280-restart-outlook.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_PHONE_LINK_V1` | Restart Phone Link | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/329-restart-phone-link.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_PHOTOS_V1` | Restart Photos | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/331-restart-photos.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_POWERPOINT_V1` | Restart PowerPoint | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/283-restart-powerpoint.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_SEARCH_PROCESSES_V1` | Restart Search UI processes | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/324-restart-search-processes.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_SHELL_EXPERIENCE_V1` | Restart Shell Experience Host | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/326-restart-shell-experience.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_SNIPPING_TOOL_V1` | Restart Snipping Tool | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/330-restart-snipping-tool.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_STARTMENU_PROCESS_V1` | Restart Start Menu process | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/325-restart-startmenu-process.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_TEAMS_V1` | Restart Teams processes | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/279-restart-teams.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_TEXT_INPUT_HOST_V1` | Restart Text Input Host | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/327-restart-text-input-host.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_WIDGETS_V1` | Restart Widgets processes | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/328-restart-widgets.ps1` |
-| `ENDUSER_SELF_FIX_RESTART_WORD_V1` | Restart Word | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/281-restart-word.ps1` |
-| `ENDUSER_SELF_FIX_RUN_WSRESET_V1` | Run Microsoft Store cache reset | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/323-run-wsreset.ps1` |
-| `ENDUSER_SELF_FIX_START_ONEDRIVE_V1` | Start OneDrive if installed | `CANDIDATE_LOCAL_TEST` | `LOW_USER_SCOPE_SELF_FIX` | Script | `action-layers/windows/end-user/self-fix-candidates-v5/scripts/fixes/278-start-onedrive.ps1` |
-| `ENDUSER_SHOW_STORAGE_SELF_CHECK_MENU_V1` | Enduser Show Storage Self Check Menu V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/22-Show-StorageSelfCheckMenu.ps1` |
-| `ENDUSER_TEST_CURRENT_USER_CAN_LIST_PATH_V1` | Enduser Test Current User Can List Path V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/18-Test-CurrentUserCanListPath.ps1` |
-| `ENDUSER_TEST_CURRENT_USER_CAN_READ_FILE_METADATA_V1` | Enduser Test Current User Can Read File Metadata V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/25-Test-CurrentUserCanReadFileMetadata.ps1` |
-| `ENDUSER_TEST_DESKTOP_FOLDER_LISTABLE_V1` | Enduser Test Desktop Folder Listable V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/38-Test-DesktopFolderListable.ps1` |
-| `ENDUSER_TEST_DNS_RESOLVE_NAME_V1` | Enduser Test Dns Resolve Name V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/04-Test-DnsResolveName.ps1` |
-| `ENDUSER_TEST_DOCUMENTS_FOLDER_LISTABLE_V1` | Enduser Test Documents Folder Listable V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/37-Test-DocumentsFolderListable.ps1` |
-| `ENDUSER_TEST_DOWNLOADS_FOLDER_LISTABLE_V1` | Enduser Test Downloads Folder Listable V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/39-Test-DownloadsFolderListable.ps1` |
-| `ENDUSER_TEST_HTTPS_PORT_443_V1` | Enduser Test Https Port 443 V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/24-Test-HttpsPort443.ps1` |
-| `ENDUSER_TEST_MAPPED_DRIVES_V1` | Enduser Test Mapped Drives V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/11-Test-MappedDrives.ps1` |
-| `ENDUSER_TEST_PING_TARGET_V1` | Enduser Test Ping Target V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/05-Test-PingTarget.ps1` |
-| `ENDUSER_TEST_SMB_PORT_445_V1` | Enduser Test Smb Port 445 V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/23-Test-SmbPort445.ps1` |
-| `ENDUSER_TEST_STORAGE_NAME_FULL_CHAIN_V1` | Enduser Test Storage Name Full Chain V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/19-Test-StorageNameFullChain.ps1` |
-| `ENDUSER_TEST_TCP_PORT_V1` | Enduser Test Tcp Port V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/06-Test-TcpPort.ps1` |
-| `ENDUSER_TEST_UNC_PATH_ACCESS_V1` | Enduser Test Unc Path Access V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/08-Test-UncPathAccess.ps1` |
-| `ENDUSER_TEST_URL_STATUS_V1` | Enduser Test Url Status V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/diagnostics-v1/scripts/checks/07-Test-UrlStatus.ps1` |
-| `ENDUSER_TEST_USER_PROFILE_FOLDER_LISTABLE_V1` | Enduser Test User Profile Folder Listable V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/40-Test-UserProfileFolderListable.ps1` |
-| `ENDUSER_TEST_USER_TEMP_PATH_EXISTS_V1` | Enduser Test User Temp Path Exists V1 | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Script | `action-layers/windows/end-user/no-input-v2/scripts/checks/56-Test-UserTempPathExists.ps1` |
+- `ENDUSER_CHECK_DNS_CLIENT_SERVICE_STATUS_V1` - Enduser Check Dns Client Service Status V1
+- `ENDUSER_CHECK_LONG_PATHS_POLICY_V1` - Enduser Check Long Paths Policy V1
+- `ENDUSER_CHECK_LOW_LOCAL_DISK_SPACE_V1` - Enduser Check Low Local Disk Space V1
+- `ENDUSER_CHECK_OFFLINE_FILES_SERVICE_STATUS_V1` - Enduser Check Offline Files Service Status V1
+- `ENDUSER_CHECK_PENDING_REBOOT_INDICATORS_V1` - Enduser Check Pending Reboot Indicators V1
+- `ENDUSER_CHECK_TIME_SERVICE_STATUS_V1` - Enduser Check Time Service Status V1
+- `ENDUSER_CHECK_WEBCLIENT_SERVICE_STATUS_V1` - Enduser Check Webclient Service Status V1
+- `ENDUSER_CHECK_WINDOWS_SEARCH_SERVICE_STATUS_V1` - Enduser Check Windows Search Service Status V1
+- `ENDUSER_CHECK_WORKSTATION_SERVICE_STATUS_V1` - Enduser Check Workstation Service Status V1
+- `ENDUSER_GET_CURRENT_USER_GROUP_COUNT_V1` - Enduser Get Current User Group Count V1
+- `ENDUSER_GET_DNS_CACHE_NO_NAME_SUMMARY_V1` - Enduser Get Dns Cache No Name Summary V1
+- `ENDUSER_GET_DNS_CLIENT_SUMMARY_V1` - Enduser Get Dns Client Summary V1
+- `ENDUSER_GET_DOMAIN_JOIN_SUMMARY_V1` - Enduser Get Domain Join Summary V1
+- `ENDUSER_GET_DRIVE_LETTER_SUMMARY_V1` - Enduser Get Drive Letter Summary V1
+- `ENDUSER_GET_FIREWALL_PROFILE_SUMMARY_V1` - Enduser Get Firewall Profile Summary V1
+- `ENDUSER_GET_GPRESULT_USER_SUMMARY_V1` - Enduser Get Gpresult User Summary V1
+- `ENDUSER_GET_KERBEROS_TICKET_COUNT_V1` - Enduser Get Kerberos Ticket Count V1
+- `ENDUSER_GET_KNOWN_FOLDERS_NO_PATH_SUMMARY_V1` - Enduser Get Known Folders No Path Summary V1
+- `ENDUSER_GET_LOCAL_DRIVE_SPACE_V1` - Enduser Get Local Drive Space V1
+- `ENDUSER_GET_MAPPED_DRIVES_V1` - Enduser Get Mapped Drives V1
+- `ENDUSER_GET_NETWORK_ADAPTER_STATUS_V1` - Enduser Get Network Adapter Status V1
+- `ENDUSER_GET_ONEDRIVE_BASIC_STATUS_V1` - Enduser Get Onedrive Basic Status V1
+- `ENDUSER_GET_ONEDRIVE_NO_PATH_SUMMARY_V1` - Enduser Get Onedrive No Path Summary V1
+- `ENDUSER_GET_POWERSHELL_EXECUTION_POLICY_SUMMARY_V1` - Enduser Get Powershell Execution Policy Summary V1
+- `ENDUSER_GET_PROXY_ENABLED_NO_enterpriseLUE_SUMMARY_V1` - Enduser Get Proxy Enabled No Enterpriselue Summary V1
+- `ENDUSER_GET_RECENT_DISK_NTFS_ERROR_COUNT_V1` - Enduser Get Recent Disk Ntfs Error Count V1
+- `ENDUSER_GET_RECENT_EXPLORER_CRASH_COUNT_V1` - Enduser Get Recent Explorer Crash Count V1
+- `ENDUSER_GET_RECENT_GROUP_POLICY_ERROR_COUNT_V1` - Enduser Get Recent Group Policy Error Count V1
+- `ENDUSER_GET_RECENT_NETWORK_ERROR_COUNT_V1` - Enduser Get Recent Network Error Count V1
+- `ENDUSER_GET_RECENT_STORAGE_EVENTS_V1` - Enduser Get Recent Storage Events V1
+- `ENDUSER_GET_RECYCLE_BIN_NO_NAME_SUMMARY_V1` - Enduser Get Recycle Bin No Name Summary V1
+- `ENDUSER_GET_SELFCHECK_EVIDENCE_ROOT_SUMMARY_V1` - Enduser Get Selfcheck Evidence Root Summary V1
+- `ENDUSER_GET_SMB_CLIENT_BASIC_STATUS_V1` - Enduser Get Smb Client Basic Status V1
+- `ENDUSER_GET_SMB_CONNECTIONS_V1` - Enduser Get Smb Connections V1
+- `ENDUSER_GET_SMB_MAPPING_NO_PATH_SUMMARY_V1` - Enduser Get Smb Mapping No Path Summary V1
+- `ENDUSER_GET_STORAGE_ENVIRONMENT_enterpriseRIABLE_SUMMARY_V1` - Enduser Get Storage Environment Enterpriseriable Summary V1
+- `ENDUSER_GET_USER_COMPUTER_CONTEXT_V1` - Enduser Get User Computer Context V1
+- `ENDUSER_GET_WINDOWS_UPTIME_V1` - Enduser Get Windows Uptime V1
+- `ENDUSER_GET_WINHTTP_PROXY_NO_enterpriseLUE_SUMMARY_V1` - Enduser Get Winhttp Proxy No Enterpriselue Summary V1
+- `ENDUSER_NEW_SUPPORT_EVIDENCE_BUNDLE_V1` - Enduser New Support Evidence Bundle V1
+- `ENDUSER_NOADMIN_BLUETOOTH_SERVICE_STATUS_V1` - Bluetooth support service status
+- `ENDUSER_NOADMIN_CERTUTIL_COMMAND_AenterpriseILABLE_V1` - Certutil command availability
+- `ENDUSER_NOADMIN_CIPHER_COMMAND_AenterpriseILABLE_V1` - Cipher command availability
+- `ENDUSER_NOADMIN_COMMAND_IPCONFIG_AenterpriseILABLE_V1` - ipconfig command availability
+- `ENDUSER_NOADMIN_COMMAND_NETSH_AenterpriseILABLE_V1` - netsh command availability
+- `ENDUSER_NOADMIN_COMMAND_PRINTUI_AenterpriseILABLE_V1` - printui.dll command availability
+- `ENDUSER_NOADMIN_COMMAND_WMIC_AenterpriseILABLE_V1` - WMIC command availability
+- `ENDUSER_NOADMIN_CURRENTUSER_CA_CERT_COUNT_V1` - CurrentUser CA certificate count
+- `ENDUSER_NOADMIN_CURRENTUSER_MY_CERT_COUNT_V1` - CurrentUser My certificate count
+- `ENDUSER_NOADMIN_CURRENTUSER_ROOT_CERT_COUNT_V1` - CurrentUser Root certificate count
+- `ENDUSER_NOADMIN_DEFAULT_PRINTER_PRESENT_V1` - Default printer present
+- `ENDUSER_NOADMIN_DESKTOP_EXTENSION_SUMMARY_V1` - Desktop file extension summary
+- `ENDUSER_NOADMIN_DESKTOP_TOP_LEVEL_SUMMARY_V1` - Desktop top-level summary
+- `ENDUSER_NOADMIN_DISKDRIVE_COUNT_USER_VISIBLE_V1` - Disk drive count
+- `ENDUSER_NOADMIN_DOCUMENTS_EXTENSION_SUMMARY_V1` - Documents file extension summary
+- `ENDUSER_NOADMIN_DOCUMENTS_TOP_LEVEL_SUMMARY_V1` - Documents top-level summary
+- `ENDUSER_NOADMIN_DOWNLOADS_EXTENSION_SUMMARY_V1` - Downloads file extension summary
+- `ENDUSER_NOADMIN_DOWNLOADS_TOP_LEVEL_SUMMARY_V1` - Downloads top-level summary
+- `ENDUSER_NOADMIN_EVENTS_BITS_24H_V1` - BITS event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_DEFENDER_OPERATIONAL_24H_V2_V1` - Defender Operational event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_EDGE_24H_V1` - Edge event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_GROUP_POLICY_OPERATIONAL_24H_V1` - GroupPolicy Operational event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_OFFICE_24H_V1` - Office-related event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_ONEDRIVE_24H_V1` - OneDrive event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_PRINT_SERVICE_ADMIN_7D_V1` - PrintService Admin event count last 7 days
+- `ENDUSER_NOADMIN_EVENTS_PRINT_SERVICE_OPERATIONAL_24H_V1` - PrintService Operational warning/error count last 24h
+- `ENDUSER_NOADMIN_EVENTS_SECURITY_24H_V2_V1` - Security log warning/error count last 24h
+- `ENDUSER_NOADMIN_EVENTS_SPOOLER_SYSTEM_24H_V1` - Spooler/System event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_TASK_SCHEDULER_OPERATIONAL_24H_V2_V1` - TaskScheduler Operational event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_TEAMS_24H_V1` - Teams event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_VPNISH_NETWORK_24H_V1` - VPN/network-ish event count last 24h
+- `ENDUSER_NOADMIN_EVENTS_WMI_ACTIVITY_24H_V1` - WMI Activity event count last 24h
+- `ENDUSER_NOADMIN_EXPLORER_ADenterpriseNCED_HIDDEN_PRESENCE_V1` - Explorer Advanced Hidden setting presence
+- `ENDUSER_NOADMIN_EXPLORER_RECENT_DOCS_PRESENCE_V1` - Explorer RecentDocs registry presence
+- `ENDUSER_NOADMIN_FAVORITES_TOP_LEVEL_SUMMARY_V1` - Favorites top-level summary
+- `ENDUSER_NOADMIN_FAX_SERVICE_STATUS_V1` - Fax service status
+- `ENDUSER_NOADMIN_FIXED_DISK_FREE_BELOW_15_V1` - Fixed disk below 15 percent free check
+- `ENDUSER_NOADMIN_FIXED_DISK_FREE_BELOW_20_V1` - Fixed disk below 20 percent free check
+- `ENDUSER_NOADMIN_GPRESULT_COMMAND_AenterpriseILABLE_V2_V1` - GPResult command availability
+- `ENDUSER_NOADMIN_GPUPDATE_COMMAND_AenterpriseILABLE_V1` - GPUpdate command availability
+- `ENDUSER_NOADMIN_IKEEXT_SERVICE_STATUS_V1` - IKE/AuthIP service status
+- `ENDUSER_NOADMIN_IPHLPSVC_SERVICE_STATUS_V1` - IP Helper service status
+- `ENDUSER_NOADMIN_MUSIC_TOP_LEVEL_SUMMARY_V1` - Music top-level summary
+- `ENDUSER_NOADMIN_NCA_SERVICE_STATUS_V1` - Network Connectivity Assistant service status
+- `ENDUSER_NOADMIN_NCB_SERVICE_STATUS_V1` - Network Connection Broker service status
+- `ENDUSER_NOADMIN_NETPROFM_SERVICE_STATUS_V1` - Network List service status
+- `ENDUSER_NOADMIN_NETWORK_ADAPTER_CIM_COUNT_V1` - Network adapter CIM count
+- `ENDUSER_NOADMIN_NETWORK_ADAPTER_CONFIG_CIM_COUNT_V1` - Network adapter configuration CIM count
+- `ENDUSER_NOADMIN_NETWORK_CATEGORY_COUNTS_V2_V1` - Network adapter category counts
+- `ENDUSER_NOADMIN_NETWORK_DRIVE_SUMMARY_V1` - Network drive summary
+- `ENDUSER_NOADMIN_OFFICE_APPX_PACKAGE_COUNT_V1` - Current-user AppX package count
+- `ENDUSER_NOADMIN_OFFICE_CLICKTORUN_SERVICE_STATUS_V1` - Office ClickToRun service status
+- `ENDUSER_NOADMIN_ONEDRIVE_SETUP_COMMAND_AenterpriseILABLE_V1` - OneDrive setup command availability
+- `ENDUSER_NOADMIN_PARTITION_COUNT_USER_VISIBLE_V1` - Partition count
+- `ENDUSER_NOADMIN_PICTURES_TOP_LEVEL_SUMMARY_V1` - Pictures top-level summary
+- `ENDUSER_NOADMIN_PNP_BLUETOOTH_CLASS_SUMMARY_V1` - PnP Bluetooth class summary
+- `ENDUSER_NOADMIN_PNP_NET_CLASS_SUMMARY_V1` - PnP Net class summary
+- `ENDUSER_NOADMIN_PNP_PRINTER_CLASS_SUMMARY_V1` - PnP printer class summary
+- `ENDUSER_NOADMIN_POWERSHELL_MODULE_COUNT_USER_VISIBLE_V1` - PowerShell module count
+- `ENDUSER_NOADMIN_PRINT_JOB_CIM_COUNT_V1` - Print job CIM instance count
+- `ENDUSER_NOADMIN_PRINT_JOB_SUMMARY_V1` - Print job count summary
+- `ENDUSER_NOADMIN_PRINT_SPOOLER_STATUS_V1` - Print Spooler service status
+- `ENDUSER_NOADMIN_PRINTER_CIM_COUNT_V1` - Printer CIM instance count
+- `ENDUSER_NOADMIN_PRINTER_DRIVER_CIM_COUNT_V1` - Printer driver CIM count
+- `ENDUSER_NOADMIN_PRINTER_PORT_CIM_COUNT_V1` - Printer port CIM count
+- `ENDUSER_NOADMIN_PRINTER_PROCESS_SPOOLSV_COUNT_V1` - Spoolsv process count
+- `ENDUSER_NOADMIN_PRINTER_REGISTRY_CONNECTIONS_PRESENT_V1` - Printer connections registry presence
+- `ENDUSER_NOADMIN_PRINTER_REGISTRY_DEFAULTS_PRESENT_V1` - Printer defaults registry presence
+- `ENDUSER_NOADMIN_PRINTER_SUMMARY_V1` - Printer summary
+- `ENDUSER_NOADMIN_PRINTER_USER_SETTINGS_PRESENCE_V1` - Printer user settings presence
+- `ENDUSER_NOADMIN_PROBLEM_REPORTS_REGISTRY_PRESENCE_V1` - Problem Reports registry presence
+- `ENDUSER_NOADMIN_PROCESS_ACROBAT_COUNT_V1` - Adobe Reader/Acrobat process count
+- `ENDUSER_NOADMIN_PROCESS_CHROME_COUNT_V1` - Chrome process count
+- `ENDUSER_NOADMIN_PROCESS_EDGE_COUNT_V2_V1` - Edge process count
+- `ENDUSER_NOADMIN_PROCESS_EXCEL_COUNT_V1` - Excel process count
+- `ENDUSER_NOADMIN_PROCESS_ONEDRIVE_COUNT_V2_V1` - OneDrive process count
+- `ENDUSER_NOADMIN_PROCESS_ONENOTE_COUNT_V1` - OneNote process count
+- `ENDUSER_NOADMIN_PROCESS_OUTLOOK_COUNT_V2_V1` - Outlook process count
+- `ENDUSER_NOADMIN_PROCESS_POWERPOINT_COUNT_V1` - PowerPoint process count
+- `ENDUSER_NOADMIN_PROCESS_TEAMS_COUNT_V2_V1` - Teams process count
+- `ENDUSER_NOADMIN_PROCESS_WINWORD_COUNT_V1` - Word process count
+- `ENDUSER_NOADMIN_REGISTRY_OFFICE_COMMON_PRESENT_V1` - Office common registry presence
+- `ENDUSER_NOADMIN_REGISTRY_ONEDRIVE_ACCOUNT_PRESENT_V1` - OneDrive account registry presence
+- `ENDUSER_NOADMIN_REMOTE_ACCESS_SERVICE_STATUS_V1` - Remote Access service status
+- `ENDUSER_NOADMIN_REMOTE_DESKTOP_USER_SETTING_PRESENCE_V1` - Remote Desktop user setting presence
+- `ENDUSER_NOADMIN_ROUTE_CIM_COUNT_V1` - Route table CIM count
+- `ENDUSER_NOADMIN_SCHEDULED_TASK_STATE_COUNTS_V1` - Scheduled task state counts
+- `ENDUSER_NOADMIN_SHADOWCOPY_COUNT_USER_VISIBLE_V1` - Shadow copy count
+- `ENDUSER_NOADMIN_STARTUP_APPROVED_COUNT_V1` - Startup approved entry count
+- `ENDUSER_NOADMIN_SUPPORT_EVIDENCE_ROOT_SUMMARY_V2_V1` - Support evidence root summary
+- `ENDUSER_NOADMIN_TCP_CONNECTION_STATE_COUNTS_V1` - TCP connection state counts
+- `ENDUSER_NOADMIN_TEMP_FOLDER_SUMMARY_V1` - User temp folder summary
+- `ENDUSER_NOADMIN_UDP_ENDPOINT_COUNT_V1` - UDP endpoint count
+- `ENDUSER_NOADMIN_USER_SHELL_FOLDERS_PERSONAL_PRESENCE_V1` - User Shell Folders Personal presence
+- `ENDUSER_NOADMIN_VIDEOS_TOP_LEVEL_SUMMARY_V1` - Videos top-level summary
+- `ENDUSER_NOADMIN_WHOAMI_COMMAND_AenterpriseILABLE_V1` - Whoami command availability
+- `ENDUSER_NOADMIN_WINDOWS_ERROR_REPORTING_SERVICE_STATUS_V1` - Windows Error Reporting service status
+- `ENDUSER_NOADMIN_WLAN_AUTOCONFIG_STATUS_V1` - WLAN AutoConfig service status
+- `ENDUSER_NOADMIN_WWAN_AUTOCONFIG_STATUS_V1` - WWAN AutoConfig service status
+- `ENDUSER_NOADMIN_XPS_SERVICE_STATUS_V1` - XPS service status check
+- `ENDUSER_NOINPUT_BATTERY_INSTANCE_COUNT_V1` - Battery instance count
+- `ENDUSER_NOINPUT_BIOS_PROPERTY_PRESENCE_V1` - BIOS property presence
+- `ENDUSER_NOINPUT_CIM_DISKDRIVE_COUNT_V1` - Disk drive instance count
+- `ENDUSER_NOINPUT_CIM_PARTITION_COUNT_V1` - Disk partition instance count
+- `ENDUSER_NOINPUT_CIM_SHADOWCOPY_COUNT_V1` - Shadow copy instance count
+- `ENDUSER_NOINPUT_COMMAND_GPRESULT_AenterpriseILABLE_V1` - GPResult command availability
+- `ENDUSER_NOINPUT_COMMAND_KLIST_AenterpriseILABLE_V1` - Klist command availability
+- `ENDUSER_NOINPUT_COMMAND_NET_USE_AenterpriseILABLE_V1` - Net use command availability
+- `ENDUSER_NOINPUT_COMMAND_NSLOOKUP_AenterpriseILABLE_V1` - Nslookup command availability
+- `ENDUSER_NOINPUT_COMMAND_PING_AenterpriseILABLE_V1` - Ping command availability
+- `ENDUSER_NOINPUT_COMMAND_ROBOCOPY_AenterpriseILABLE_V1` - Robocopy command availability
+- `ENDUSER_NOINPUT_COMMAND_TRACERT_AenterpriseILABLE_V1` - Tracert command availability
+- `ENDUSER_NOINPUT_COMMAND_WEVTUTIL_AenterpriseILABLE_V1` - Wevtutil command availability
+- `ENDUSER_NOINPUT_COMPUTER_MANUFACTURER_PRESENCE_V1` - Computer manufacturer/model property presence
+- `ENDUSER_NOINPUT_COMPUTER_MEMORY_PRESENCE_V1` - Computer memory property presence
+- `ENDUSER_NOINPUT_DNS_CONFIG_COUNTS_V1` - DNS config counts with values redacted
+- `ENDUSER_NOINPUT_DRIVE_ALL_SUMMARY_V1` - All logical drive summary
+- `ENDUSER_NOINPUT_DRIVE_FIXED_SUMMARY_V1` - Fixed disk drive summary
+- `ENDUSER_NOINPUT_DRIVE_NETWORK_SUMMARY_V1` - Network drive summary
+- `ENDUSER_NOINPUT_DRIVE_REMOenterpriseBLE_SUMMARY_V1` - Removable drive summary
+- `ENDUSER_NOINPUT_EVENTS_APPLICATION_ERRORS_24H_V1` - Recent application warning/error count
+- `ENDUSER_NOINPUT_EVENTS_DEFENDER_24H_V1` - Recent Defender warning/error count
+- `ENDUSER_NOINPUT_EVENTS_DISK_NTFS_24H_V1` - Recent disk/NTFS warning/error count
+- `ENDUSER_NOINPUT_EVENTS_EXPLORER_7D_V1` - Recent Explorer-related warning/error count
+- `ENDUSER_NOINPUT_EVENTS_GROUP_POLICY_24H_V1` - Recent Group Policy warning/error count
+- `ENDUSER_NOINPUT_EVENTS_NETWORK_24H_V1` - Recent network warning/error count
+- `ENDUSER_NOINPUT_EVENTS_ONEDRIVE_7D_V1` - Recent OneDrive-related warning/error count
+- `ENDUSER_NOINPUT_EVENTS_POWERSHELL_24H_V1` - Recent PowerShell warning/error count
+- `ENDUSER_NOINPUT_EVENTS_SECURITY_AUDIT_COUNT_24H_V1` - Recent Security log warning/error count
+- `ENDUSER_NOINPUT_EVENTS_SERVICE_CONTROL_24H_V1` - Recent Service Control Manager warning/error count
+- `ENDUSER_NOINPUT_EVENTS_SMB_24H_V1` - Recent SMB/client warning/error count
+- `ENDUSER_NOINPUT_EVENTS_TASK_SCHEDULER_24H_V1` - Recent Task Scheduler warning/error count
+- `ENDUSER_NOINPUT_EVENTS_TERMINAL_SERVICES_24H_V1` - Recent Terminal Services warning/error count
+- `ENDUSER_NOINPUT_EVENTS_WINDOWS_UPDATE_24H_V1` - Recent Windows Update warning/error count
+- `ENDUSER_NOINPUT_EVENTS_WMI_24H_V1` - Recent WMI warning/error count
+- `ENDUSER_NOINPUT_EVIDENCE_ROOT_SUMMARY_V1` - Self-check evidence root summary
+- `ENDUSER_NOINPUT_FIREWALL_PROFILE_COUNTS_V1` - Firewall profile enabled counts
+- `ENDUSER_NOINPUT_HOTFIX_COUNT_V1` - Installed hotfix count
+- `ENDUSER_NOINPUT_KNOWN_FOLDER_DESKTOP_V1` - Known folder Desktop summary
+- `ENDUSER_NOINPUT_KNOWN_FOLDER_DOCUMENTS_V1` - Known folder Documents summary
+- `ENDUSER_NOINPUT_KNOWN_FOLDER_DOWNLOADS_V1` - Known folder Downloads summary
+- `ENDUSER_NOINPUT_KNOWN_FOLDER_FAVORITES_V1` - Known folder Favorites summary
+- `ENDUSER_NOINPUT_KNOWN_FOLDER_MUSIC_V1` - Known folder Music summary
+- `ENDUSER_NOINPUT_KNOWN_FOLDER_PICTURES_V1` - Known folder Pictures summary
+- `ENDUSER_NOINPUT_KNOWN_FOLDER_VIDEOS_V1` - Known folder Videos summary
+- `ENDUSER_NOINPUT_LOGGED_ON_USER_PRESENCE_V1` - Logged-on user property presence
+- `ENDUSER_NOINPUT_LOGICAL_DISK_COUNT_V1` - Logical disk instance count
+- `ENDUSER_NOINPUT_NETWORK_ADAPTER_COUNTS_V1` - Network adapter status counts
+- `ENDUSER_NOINPUT_NETWORK_PROFILE_COUNTS_V1` - Network profile category counts
+- `ENDUSER_NOINPUT_OS_ARCHITECTURE_PRESENCE_V1` - OS architecture property presence
+- `ENDUSER_NOINPUT_OS_CAPTION_PRESENCE_V1` - OS caption property presence
+- `ENDUSER_NOINPUT_OS_INSTALL_DATE_PRESENCE_V1` - OS install date property presence
+- `ENDUSER_NOINPUT_OS_VERSION_PRESENCE_V1` - OS version/build property presence
+- `ENDUSER_NOINPUT_PAGEFILE_COUNT_V1` - Pagefile usage instance count
+- `ENDUSER_NOINPUT_PORTABLE_CHASSIS_PRESENCE_V1` - System enclosure property presence
+- `ENDUSER_NOINPUT_POWER_PLAN_PRESENCE_V1` - Active power plan presence
+- `ENDUSER_NOINPUT_PRINT_QUEUE_COUNT_V1` - Printer instance count
+- `ENDUSER_NOINPUT_PROCESS_EDGE_COUNT_V1` - Microsoft Edge process count
+- `ENDUSER_NOINPUT_PROCESS_EXPLORER_COUNT_V1` - Explorer process count
+- `ENDUSER_NOINPUT_PROCESS_ONEDRIVE_COUNT_V1` - OneDrive process count
+- `ENDUSER_NOINPUT_PROCESS_OUTLOOK_COUNT_V1` - Outlook process count
+- `ENDUSER_NOINPUT_PROCESS_TEAMS_COUNT_V1` - Teams process count
+- `ENDUSER_NOINPUT_PROCESSOR_COUNT_V1` - Processor instance count
+- `ENDUSER_NOINPUT_PROXY_ENV_PRESENCE_V1` - Proxy environment variable presence
+- `ENDUSER_NOINPUT_REGISTRY_LONG_PATHS_PRESENT_V1` - Long paths policy presence
+- `ENDUSER_NOINPUT_REGISTRY_MAPPED_DRIVES_KEY_PRESENT_V1` - Network mapped drives key presence
+- `ENDUSER_NOINPUT_REGISTRY_OFFLINE_FILES_POLICY_PRESENT_V1` - Offline files policy presence
+- `ENDUSER_NOINPUT_REGISTRY_USER_SHELL_FOLDERS_PRESENT_V1` - User shell folders key presence
+- `ENDUSER_NOINPUT_SERVICE_BITS_STATUS_V1` - BITS service status
+- `ENDUSER_NOINPUT_SERVICE_CRYPTSVC_STATUS_V1` - Cryptographic Services status
+- `ENDUSER_NOINPUT_SERVICE_CSCSERVICE_STATUS_V1` - Offline Files service status
+- `ENDUSER_NOINPUT_SERVICE_DHCP_STATUS_V1` - DHCP Client service status
+- `ENDUSER_NOINPUT_SERVICE_DNSCACHE_STATUS_V1` - DNS Client service status
+- `ENDUSER_NOINPUT_SERVICE_EVENTLOG_STATUS_V1` - Windows Event Log service status
+- `ENDUSER_NOINPUT_SERVICE_LANMANSERVER_STATUS_V1` - Server service status
+- `ENDUSER_NOINPUT_SERVICE_LANMANWORKSTATION_STATUS_V1` - Workstation service status
+- `ENDUSER_NOINPUT_SERVICE_LMHOSTS_STATUS_V1` - TCP/IP NetBIOS Helper service status
+- `ENDUSER_NOINPUT_SERVICE_MPSSVC_STATUS_V1` - Windows Firewall service status
+- `ENDUSER_NOINPUT_SERVICE_NETLOGON_STATUS_V1` - Netlogon service status
+- `ENDUSER_NOINPUT_SERVICE_NLASVC_STATUS_V1` - Network Location Awareness service status
+- `ENDUSER_NOINPUT_SERVICE_POLICYAGENT_STATUS_V1` - IPsec Policy Agent service status
+- `ENDUSER_NOINPUT_SERVICE_SCHEDULE_STATUS_V1` - Task Scheduler service status
+- `ENDUSER_NOINPUT_SERVICE_SENSE_STATUS_V1` - Defender for Endpoint/Sense service status
+- `ENDUSER_NOINPUT_SERVICE_STORSVC_STATUS_V1` - Storage Service status
+- `ENDUSER_NOINPUT_SERVICE_SWPRV_STATUS_V1` - Software Protection Provider service status
+- `ENDUSER_NOINPUT_SERVICE_VSS_STATUS_V1` - Volume Shadow Copy service status
+- `ENDUSER_NOINPUT_SERVICE_W32TIME_STATUS_V1` - Windows Time service status
+- `ENDUSER_NOINPUT_SERVICE_WEBCLIENT_STATUS_V1` - WebClient service status
+- `ENDUSER_NOINPUT_SERVICE_WERSVC_STATUS_V1` - Windows Error Reporting service status
+- `ENDUSER_NOINPUT_SERVICE_WINDEFEND_STATUS_V1` - Microsoft Defender Antivirus service status
+- `ENDUSER_NOINPUT_SERVICE_WINMGMT_STATUS_V1` - WMI service status
+- `ENDUSER_NOINPUT_SERVICE_WSEARCH_STATUS_V1` - Windows Search service status
+- `ENDUSER_NOINPUT_SERVICE_WUAUSERV_STATUS_V1` - Windows Update service status
+- `ENDUSER_NOINPUT_SHARE_COUNT_LOCAL_V1` - Local share instance count
+- `ENDUSER_NOINPUT_SMB_SUMMARY_COUNTS_V1` - SMB mapping and connection counts with names redacted
+- `ENDUSER_NOINPUT_STARTUP_COMMAND_COUNT_V1` - Startup command count
+- `ENDUSER_NOINPUT_STORAGE_ENV_PRESENCE_V1` - Storage-related environment variable presence
+- `ENDUSER_NOINPUT_TIMEZONE_PRESENCE_V1` - Timezone property presence
+- `ENDUSER_NOINPUT_USER_PROFILE_COUNT_V1` - User profile instance count
+- `ENDUSER_NOINPUT_VOLUME_COUNT_V1` - Volume instance count
+- `ENDUSER_OPEN_UNC_PARENT_FOLDER_V1` - Enduser Open Unc Parent Folder V1
+- `ENDUSER_RUN_ALL_NO_INPUT_CHECKS_V2` - Enduser Run All No Input Checks V2
+- `ENDUSER_RUN_ALL_SAFE_LOCAL_CHECKS_V1` - Enduser Run All Safe Local Checks V1
+- `ENDUSER_SELF_FIX_CLEAR_CHROME_CACHE_V1` - Clear Chrome user cache
+- `ENDUSER_SELF_FIX_CLEAR_CLIPBOARD_V1` - Clear clipboard
+- `ENDUSER_SELF_FIX_CLEAR_CRASH_DUMPS_OLDER_14_DAYS_V1` - Clear crash dumps older than 14 days
+- `ENDUSER_SELF_FIX_CLEAR_EDGE_CACHE_V1` - Clear Edge user cache
+- `ENDUSER_SELF_FIX_CLEAR_EXPLORER_THUMB_CACHE_V1` - Clear Explorer thumbnail cache
+- `ENDUSER_SELF_FIX_CLEAR_INTERNET_CACHE_V1` - Clear user internet cache files
+- `ENDUSER_SELF_FIX_CLEAR_OFFICE_FILE_CACHE_V1` - Clear Office file cache
+- `ENDUSER_SELF_FIX_CLEAR_ONEDRIVE_LOGS_OLDER_14_DAYS_V1` - Clear OneDrive logs older than 14 days
+- `ENDUSER_SELF_FIX_CLEAR_RECENT_ITEMS_V1` - Clear Recent Items
+- `ENDUSER_SELF_FIX_CLEAR_TEAMS_CLASSIC_CACHE_V1` - Clear Teams classic user cache
+- `ENDUSER_SELF_FIX_CLEAR_TEAMS_NEW_CACHE_V1` - Clear new Teams user cache
+- `ENDUSER_SELF_FIX_CLEAR_TEMP_INTERNET_FILES_V1` - Clear INetCache files
+- `ENDUSER_SELF_FIX_CLEAR_USER_TEMP_ALL_V1` - Clear user temp files
+- `ENDUSER_SELF_FIX_CLEAR_USER_TEMP_OLDER_7_DAYS_V1` - Clear user temp files older than 7 days
+- `ENDUSER_SELF_FIX_CLEAR_WER_ARCHIVE_OLDER_14_DAYS_V1` - Clear WER archive older than 14 days
+- `ENDUSER_SELF_FIX_CLEAR_WER_QUEUE_OLDER_14_DAYS_V1` - Clear WER queue older than 14 days
+- `ENDUSER_SELF_FIX_CREATE_SUPPORT_BUNDLE_AGAIN_V1` - Create support evidence bundle
+- `ENDUSER_SELF_FIX_CREATE_SUPPORT_EVIDENCE_ZIP_V1` - Create support evidence ZIP
+- `ENDUSER_SELF_FIX_EMPTY_RECYCLE_BIN_V1` - Empty Recycle Bin
+- `ENDUSER_SELF_FIX_ENSURE_EVIDENCE_ROOT_V1` - Ensure self-check evidence root exists
+- `ENDUSER_SELF_FIX_FLUSH_DNS_CACHE_V1` - Flush DNS resolver cache
+- `ENDUSER_SELF_FIX_GPUPDATE_USER_POLICY_V1` - Refresh user Group Policy
+- `ENDUSER_SELF_FIX_GPUPDATE_USER_POLICY_WAIT_ZERO_V1` - Refresh user Group Policy no wait
+- `ENDUSER_SELF_FIX_OPEN_APPS_FEATURES_SETTINGS_V1` - Open Apps and Features Settings
+- `ENDUSER_SELF_FIX_OPEN_BLUETOOTH_SETTINGS_V1` - Open Bluetooth Settings
+- `ENDUSER_SELF_FIX_OPEN_CREDENTIAL_MANAGER_V1` - Open Credential Manager UI
+- `ENDUSER_SELF_FIX_OPEN_DEFAULT_APPS_SETTINGS_V1` - Open Default Apps Settings
+- `ENDUSER_SELF_FIX_OPEN_DESKTOP_FOLDER_V1` - Open Desktop folder
+- `ENDUSER_SELF_FIX_OPEN_DEVICES_PRINTERS_CONTROL_V1` - Open Devices and Printers
+- `ENDUSER_SELF_FIX_OPEN_DISK_CLEANUP_V1` - Open Disk Cleanup
+- `ENDUSER_SELF_FIX_OPEN_DOCUMENTS_FOLDER_V1` - Open Documents folder
+- `ENDUSER_SELF_FIX_OPEN_DOWNLOADS_FOLDER_V1` - Open Downloads folder
+- `ENDUSER_SELF_FIX_OPEN_DOWNLOADS_FOR_USER_CLEANUP_V1` - Open Downloads for user cleanup
+- `ENDUSER_SELF_FIX_OPEN_EVENT_VIEWER_V1` - Open Event Viewer
+- `ENDUSER_SELF_FIX_OPEN_EVIDENCE_ROOT_V1` - Open self-check evidence root
+- `ENDUSER_SELF_FIX_OPEN_INTERNET_OPTIONS_V1` - Open Internet Options UI
+- `ENDUSER_SELF_FIX_OPEN_NETWORK_CONNECTIONS_V1` - Open Network Connections UI
+- `ENDUSER_SELF_FIX_OPEN_NETWORK_STATUS_SETTINGS_V1` - Open Network Status Settings
+- `ENDUSER_SELF_FIX_OPEN_OFFICE_UPLOAD_CENTER_CACHE_FOLDER_V1` - Open Office file cache folder
+- `ENDUSER_SELF_FIX_OPEN_ONEDRIVE_FOLDER_V1` - Open OneDrive folder if present
+- `ENDUSER_SELF_FIX_OPEN_OPTIONAL_FEATURES_SETTINGS_V1` - Open Optional Features Settings
+- `ENDUSER_SELF_FIX_OPEN_PICTURES_FOLDER_V1` - Open Pictures folder
+- `ENDUSER_SELF_FIX_OPEN_PRINTERS_SETTINGS_V1` - Open Printers settings UI
+- `ENDUSER_SELF_FIX_OPEN_PRINTMANAGEMENT_MSC_V1` - Open Print Management if available
+- `ENDUSER_SELF_FIX_OPEN_PRINTUI_USER_V1` - Open printer UI helper
+- `ENDUSER_SELF_FIX_OPEN_PROXY_SETTINGS_V1` - Open Proxy Settings
+- `ENDUSER_SELF_FIX_OPEN_RELIABILITY_MONITOR_V1` - Open Reliability Monitor
+- `ENDUSER_SELF_FIX_OPEN_SELFCHECK_EVIDENCE_FOLDER_V1` - Ensure/open self-check evidence root
+- `ENDUSER_SELF_FIX_OPEN_SIGNIN_OPTIONS_V1` - Open Sign-in Options
+- `ENDUSER_SELF_FIX_OPEN_STORAGE_SETTINGS_V1` - Open Storage Settings
+- `ENDUSER_SELF_FIX_OPEN_SYNC_SETTINGS_V1` - Open Sync Settings
+- `ENDUSER_SELF_FIX_OPEN_SYSTEM_INFO_V1` - Open System Information
+- `ENDUSER_SELF_FIX_OPEN_TROUBLESHOOT_SETTINGS_V1` - Open Troubleshoot Settings
+- `ENDUSER_SELF_FIX_OPEN_VPN_SETTINGS_V1` - Open VPN Settings
+- `ENDUSER_SELF_FIX_OPEN_WIFI_SETTINGS_V1` - Open Wi-Fi Settings
+- `ENDUSER_SELF_FIX_OPEN_WINDOWS_UPDATE_SETTINGS_V1` - Open Windows Update Settings
+- `ENDUSER_SELF_FIX_OPEN_WORK_ACCESS_SETTINGS_V1` - Open Access Work or School Settings
+- `ENDUSER_SELF_FIX_PURGE_KERBEROS_TICKETS_V1` - Purge current-user Kerberos tickets
+- `ENDUSER_SELF_FIX_RESTART_ACROBAT_V1` - Restart Adobe Reader/Acrobat
+- `ENDUSER_SELF_FIX_RESTART_CALCULATOR_V1` - Restart Calculator
+- `ENDUSER_SELF_FIX_RESTART_CHROME_V1` - Restart Chrome
+- `ENDUSER_SELF_FIX_RESTART_EDGE_V1` - Restart Edge
+- `ENDUSER_SELF_FIX_RESTART_EXCEL_V1` - Restart Excel
+- `ENDUSER_SELF_FIX_RESTART_EXPLORER_V1` - Restart File Explorer
+- `ENDUSER_SELF_FIX_RESTART_NOTEPAD_V1` - Restart Notepad
+- `ENDUSER_SELF_FIX_RESTART_ONEDRIVE_V1` - Restart OneDrive
+- `ENDUSER_SELF_FIX_RESTART_OUTLOOK_V1` - Restart Outlook
+- `ENDUSER_SELF_FIX_RESTART_PHONE_LINK_V1` - Restart Phone Link
+- `ENDUSER_SELF_FIX_RESTART_PHOTOS_V1` - Restart Photos
+- `ENDUSER_SELF_FIX_RESTART_POWERPOINT_V1` - Restart PowerPoint
+- `ENDUSER_SELF_FIX_RESTART_SEARCH_PROCESSES_V1` - Restart Search UI processes
+- `ENDUSER_SELF_FIX_RESTART_SHELL_EXPERIENCE_V1` - Restart Shell Experience Host
+- `ENDUSER_SELF_FIX_RESTART_SNIPPING_TOOL_V1` - Restart Snipping Tool
+- `ENDUSER_SELF_FIX_RESTART_STARTMENU_PROCESS_V1` - Restart Start Menu process
+- `ENDUSER_SELF_FIX_RESTART_TEAMS_V1` - Restart Teams processes
+- `ENDUSER_SELF_FIX_RESTART_TEXT_INPUT_HOST_V1` - Restart Text Input Host
+- `ENDUSER_SELF_FIX_RESTART_WIDGETS_V1` - Restart Widgets processes
+- `ENDUSER_SELF_FIX_RESTART_WORD_V1` - Restart Word
+- `ENDUSER_SELF_FIX_RUN_WSRESET_V1` - Run Microsoft Store cache reset
+- `ENDUSER_SELF_FIX_START_ONEDRIVE_V1` - Start OneDrive if installed
+- `ENDUSER_SHOW_STORAGE_SELF_CHECK_MENU_V1` - Enduser Show Storage Self Check Menu V1
+- `ENDUSER_TEST_CURRENT_USER_CAN_LIST_PATH_V1` - Enduser Test Current User Can List Path V1
+- `ENDUSER_TEST_CURRENT_USER_CAN_READ_FILE_METADATA_V1` - Enduser Test Current User Can Read File Metadata V1
+- `ENDUSER_TEST_DESKTOP_FOLDER_LISTABLE_V1` - Enduser Test Desktop Folder Listable V1
+- `ENDUSER_TEST_DNS_RESOLVE_NAME_V1` - Enduser Test Dns Resolve Name V1
+- `ENDUSER_TEST_DOCUMENTS_FOLDER_LISTABLE_V1` - Enduser Test Documents Folder Listable V1
+- `ENDUSER_TEST_DOWNLOADS_FOLDER_LISTABLE_V1` - Enduser Test Downloads Folder Listable V1
+- `ENDUSER_TEST_HTTPS_PORT_443_V1` - Enduser Test Https Port 443 V1
+- `ENDUSER_TEST_MAPPED_DRIVES_V1` - Enduser Test Mapped Drives V1
+- `ENDUSER_TEST_PING_TARGET_V1` - Enduser Test Ping Target V1
+- `ENDUSER_TEST_SMB_PORT_445_V1` - Enduser Test Smb Port 445 V1
+- `ENDUSER_TEST_STORAGE_NAME_FULL_CHAIN_V1` - Enduser Test Storage Name Full Chain V1
+- `ENDUSER_TEST_TCP_PORT_V1` - Enduser Test Tcp Port V1
+- `ENDUSER_TEST_UNC_PATH_ACCESS_V1` - Enduser Test Unc Path Access V1
+- `ENDUSER_TEST_URL_STATUS_V1` - Enduser Test Url Status V1
+- `ENDUSER_TEST_USER_PROFILE_FOLDER_LISTABLE_V1` - Enduser Test User Profile Folder Listable V1
+- `ENDUSER_TEST_USER_TEMP_PATH_EXISTS_V1` - Enduser Test User Temp Path Exists V1
 
-## Service group status
+## Service group status (8)
 
-Count: 8
+- `ENDUSER_EVERYDAY_BLUETOOTH_WIFI_SERVICES_V1` - Bluetooth and Wi-Fi service group status
+- `ENDUSER_EVERYDAY_CORE_NETWORK_SERVICES_V1` - Core network service group status
+- `ENDUSER_EVERYDAY_CORE_WINDOWS_SERVICES_V1` - Core Windows service group status
+- `ENDUSER_EVERYDAY_FILE_SHARING_SERVICES_V1` - File sharing related service group status
+- `ENDUSER_EVERYDAY_PRINTER_SERVICES_V1` - Printer related service group status
+- `ENDUSER_EVERYDAY_PROFILE_SERVICES_V1` - Profile related service group status
+- `ENDUSER_EVERYDAY_REMOTE_ACCESS_SERVICES_V1` - Remote access service group status
+- `ENDUSER_EVERYDAY_SECURITY_SERVICES_V1` - Security related service group status
 
-| Action ID | Title | Status | Risk | Type | Script |
-|---|---|---|---|---|---|
-| `ENDUSER_EVERYDAY_BLUETOOTH_WIFI_SERVICES_V1` | Bluetooth and Wi-Fi service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/394-bluetooth-wifi-services.ps1` |
-| `ENDUSER_EVERYDAY_CORE_NETWORK_SERVICES_V1` | Core network service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/389-core-network-services.ps1` |
-| `ENDUSER_EVERYDAY_CORE_WINDOWS_SERVICES_V1` | Core Windows service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/390-core-windows-services.ps1` |
-| `ENDUSER_EVERYDAY_FILE_SHARING_SERVICES_V1` | File sharing related service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/391-file-sharing-services.ps1` |
-| `ENDUSER_EVERYDAY_PRINTER_SERVICES_V1` | Printer related service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/393-printer-services.ps1` |
-| `ENDUSER_EVERYDAY_PROFILE_SERVICES_V1` | Profile related service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/396-profile-services.ps1` |
-| `ENDUSER_EVERYDAY_REMOTE_ACCESS_SERVICES_V1` | Remote access service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/395-remote-access-services.ps1` |
-| `ENDUSER_EVERYDAY_SECURITY_SERVICES_V1` | Security related service group status | `CANDIDATE_LOCAL_TEST` | `LOW_READONLY` | Service group status | `action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/392-security-services.ps1` |

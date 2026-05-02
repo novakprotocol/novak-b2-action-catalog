@@ -1,66 +1,221 @@
 {
-    "schema_version":  "novak.b2.catalog_summary.v1",
-    "generated_at":  "2026-05-02T21:12:40Z",
-    "action_count":  440,
-    "by_layer":  {
-                     "action-layers/windows/end-user/next100-no-admin-v4":  100,
-                     "action-layers/windows/end-user/self-fix-candidates-v5":  80,
-                     "action-layers/windows/end-user/no-input-v2":  35,
-                     "action-layers/windows/end-user/diagnostics-v1":  25,
-                     "action-layers/windows/end-user/next100-no-input-v3":  100,
-                     "action-layers/windows/end-user/everyday-no-admin-v6":  100
-                 },
-    "by_issue_area":  {
-                          "Network":  3,
-                          "Network / proxy":  1,
-                          "Folders / cleanup":  6,
-                          "Tool availability":  33,
-                          "Office":  1,
-                          "Task Scheduler":  2,
-                          "OneDrive":  1,
-                          "Profile":  2,
-                          "Disk / storage":  1,
-                          "Documents / Office":  3,
-                          "Windows runtime":  1,
-                          "Service groups":  8,
-                          "Power / stability":  1,
-                          "Explorer / shell":  3,
-                          "File access / SMB":  1,
-                          "Network / DNS":  1,
-                          "File access / Offline Files":  1,
-                          "Remote access":  1,
-                          "Certificates":  3,
-                          "PowerShell":  1,
-                          "Unclassified":  340,
-                          "Security":  1,
-                          "Startup":  1,
-                          "Folders / profile":  7,
-                          "Printers":  1,
-                          "Process / apps":  8,
-                          "Application health":  3,
-                          "Devices":  5
-                      },
-    "by_action_type":  {
-                           "Event count":  15,
-                           "Service group status":  8,
-                           "Extension summary":  3,
-                           "Certificate count":  3,
-                           "Command availability":  33,
-                           "CIM count":  5,
-                           "Scheduled task summary":  1,
-                           "Registry presence":  6,
-                           "Old file summary":  6,
-                           "Environment presence":  4,
-                           "Script":  340,
-                           "Process group count":  8,
-                           "Path health":  7,
-                           "Network state count":  1
-                       },
-    "by_risk_tier":  {
-                         "LOW_READONLY":  360,
-                         "LOW_USER_SCOPE_SELF_FIX":  80
+    "schema_version":  "1.0",
+    "action_count":  540,
+    "generated_utc":  "2026-05-02T22:01:54.5637606Z",
+    "by_layer":  [
+                     {
+                         "name":  "action-layers/windows/end-user/no-input-v2",
+                         "count":  35
                      },
-    "by_status":  {
-                      "CANDIDATE_LOCAL_TEST":  440
-                  }
+                     {
+                         "name":  "action-layers/windows/end-user/everyday-no-admin-v6",
+                         "count":  100
+                     },
+                     {
+                         "name":  "action-layers/windows/end-user/diagnostics-v1",
+                         "count":  25
+                     },
+                     {
+                         "name":  "action-layers/windows/end-user/next100-no-admin-v4",
+                         "count":  100
+                     },
+                     {
+                         "name":  "action-layers/windows/end-user/next100-no-input-v3",
+                         "count":  100
+                     },
+                     {
+                         "name":  "action-layers/windows/end-user/self-fix-candidates-v5",
+                         "count":  80
+                     },
+                     {
+                         "name":  "action-layers/windows/end-user/app-self-help-v1",
+                         "count":  100
+                     }
+                 ],
+    "by_issue_area":  [
+                          {
+                              "name":  "Unclassified",
+                              "count":  340
+                          },
+                          {
+                              "name":  "Service groups",
+                              "count":  8
+                          },
+                          {
+                              "name":  "Process / apps",
+                              "count":  8
+                          },
+                          {
+                              "name":  "Certificates",
+                              "count":  3
+                          },
+                          {
+                              "name":  "Devices",
+                              "count":  6
+                          },
+                          {
+                              "name":  "Tool availability",
+                              "count":  33
+                          },
+                          {
+                              "name":  "Office",
+                              "count":  16
+                          },
+                          {
+                              "name":  "Windows runtime",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Network / proxy",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Profile",
+                              "count":  2
+                          },
+                          {
+                              "name":  "Application health",
+                              "count":  3
+                          },
+                          {
+                              "name":  "Security",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Network",
+                              "count":  7
+                          },
+                          {
+                              "name":  "Disk / storage",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Network / DNS",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Power / stability",
+                              "count":  1
+                          },
+                          {
+                              "name":  "File access / Offline Files",
+                              "count":  1
+                          },
+                          {
+                              "name":  "PowerShell",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Printers",
+                              "count":  4
+                          },
+                          {
+                              "name":  "File access / SMB",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Task Scheduler",
+                              "count":  2
+                          },
+                          {
+                              "name":  "Documents / Office",
+                              "count":  3
+                          },
+                          {
+                              "name":  "Folders / cleanup",
+                              "count":  6
+                          },
+                          {
+                              "name":  "Folders / profile",
+                              "count":  7
+                          },
+                          {
+                              "name":  "Explorer / shell",
+                              "count":  3
+                          },
+                          {
+                              "name":  "OneDrive",
+                              "count":  9
+                          },
+                          {
+                              "name":  "Startup",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Remote access",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Outlook",
+                              "count":  7
+                          },
+                          {
+                              "name":  "Word",
+                              "count":  4
+                          },
+                          {
+                              "name":  "Excel",
+                              "count":  4
+                          },
+                          {
+                              "name":  "PowerPoint",
+                              "count":  4
+                          },
+                          {
+                              "name":  "Teams",
+                              "count":  8
+                          },
+                          {
+                              "name":  "Adobe Acrobat",
+                              "count":  6
+                          },
+                          {
+                              "name":  "PDF / Default apps",
+                              "count":  2
+                          },
+                          {
+                              "name":  "Edge",
+                              "count":  8
+                          },
+                          {
+                              "name":  "Chrome",
+                              "count":  5
+                          },
+                          {
+                              "name":  "Default apps",
+                              "count":  9
+                          },
+                          {
+                              "name":  "Display",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Audio",
+                              "count":  2
+                          },
+                          {
+                              "name":  "Camera",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Input",
+                              "count":  2
+                          },
+                          {
+                              "name":  "Apps",
+                              "count":  2
+                          },
+                          {
+                              "name":  "Support evidence",
+                              "count":  2
+                          },
+                          {
+                              "name":  "Help desk evidence",
+                              "count":  1
+                          },
+                          {
+                              "name":  "Governance",
+                              "count":  1
+                          }
+                      ]
 }
