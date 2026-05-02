@@ -18,3 +18,7 @@ secrets/
 *.pfx
 *.p12
 *.kdbx
+# Local operator repair/update scripts
+Add-NOVAK-B2-ActionLayer-V6-And-CatalogViews*.ps1
+Repair-NOVAK-B2-ActionCatalog-*.ps1
+Fix-NOVAK-B2-*.ps1

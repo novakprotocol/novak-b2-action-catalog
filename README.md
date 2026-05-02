@@ -1,6 +1,6 @@
 # NOVAK B2 Action Catalog
 
-Safe-by-default action catalog and Windows action packs for NOVAK B2.
+Safe-by-default action catalog and Windows action layers for NOVAK B2.
 
 ## What this is
 
@@ -53,14 +53,14 @@ Each action should declare:
 - whether mutation is possible
 - whether `-Apply` is required for a change
 
-## Current packs
+## Current action layers
 
 ```text
-packs/windows/end-user/diagnostics-v1
-packs/windows/end-user/no-input-v2
-packs/windows/end-user/next100-no-input-v3
-packs/windows/end-user/next100-no-admin-v4
-packs/windows/end-user/self-fix-candidates-v5
+action-layers/windows/end-user/diagnostics-v1
+action-layers/windows/end-user/no-input-v2
+action-layers/windows/end-user/next100-no-input-v3
+action-layers/windows/end-user/next100-no-admin-v4
+action-layers/windows/end-user/self-fix-candidates-v5
 ```
 
 ## Validate
@@ -82,3 +82,18 @@ Public GitHub should be treated as a generic upstream source.
 Internal enterprise repositories should import releases through pull request review, code scanning, no-secrets validation, and local acceptance testing.
 
 Do not blindly auto-run public Git content.
+
+## Catalog views
+
+View the generated catalog by:
+
+catalog/views/action-catalog.html
+catalog/views/catalog-by-layer.md
+catalog/views/catalog-by-issue-area.md
+catalog/views/catalog-by-action-type.md
+catalog/views/catalog-by-risk.md
+catalog/views/catalog-by-status.md
+
+Primary machine-readable index:
+
+catalog/generated/action-index.json

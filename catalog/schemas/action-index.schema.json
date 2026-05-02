@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/novakprotocol/novak-b2-action-catalog/catalog/schemas/action-index.schema.json",
   "title": "NOVAK B2 Action Catalog Index",
@@ -46,7 +46,7 @@
           "title": {
             "type": "string"
           },
-          "pack": {
+          "action layer": {
             "type": "string"
           },
           "script_path": {
