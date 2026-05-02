@@ -221,7 +221,7 @@
     "title": "Enduser Check Dns Client Service Status V1",
     "action layer": "action-layers/windows/end-user/no-input-v2",
     "script_path": "action-layers/windows/end-user/help-desk-evidence-v1/scripts/checks/549-helpdesk-printer-summary.ps1",
-    "script_sha256": "6430b2dff61f3e060290c7cf152860d8d74b04a1eef4c9049b4e774551fa3c42",
+    "script_sha256": "8953f0f1cadac0384fa4323446ae3bb438718e397f0416bef4276f69bd2056af",
     "tier": "End User Self-Service",
     "status": "candidate",
     "risk_tier": "low",
