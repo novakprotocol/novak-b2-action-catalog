@@ -1,6 +1,6 @@
-# NOVΛK™ B2 Action Catalog
+# NOVÎ›Kâ„¢ B2 Action Catalog
 
-Safe-by-default action catalog and Windows action layers for NOVΛK™ B2.
+Safe-by-default action catalog and Windows action layers for NOVÎ›Kâ„¢ B2.
 
 ## What this is
 
@@ -15,10 +15,10 @@ This repository is a public, generic action source for:
 The intended consumer is a tool such as:
 
 ```text
-NOVΛK™ B2 Windows Workbench
+NOVÎ›Kâ„¢ B2 Windows Workbench
 ```
 
-The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOVΛK™ B2 Object Store.
+The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOVÎ›Kâ„¢ B2 Object Store.
 
 ## Safety boundary
 
@@ -97,3 +97,23 @@ catalog/views/catalog-by-status.md
 Primary machine-readable index:
 
 catalog/generated/action-index.json
+---
+
+## Use, attribution, and contributions
+
+TEXT-BEGIN
+USE_ALLOWED_WITH_ATTRIBUTION=true
+ATTRIBUTION_REQUIRED=true
+CONTRIBUTIONS_ACCEPTED=false
+PULL_REQUESTS_ACCEPTED=false
+ISSUES_ACCEPTED=false
+DISCUSSIONS_ACCEPTED=false
+TEXT-END
+
+Public use, reference, adaptation, or redistribution must link back to the original project:
+
+TEXT-BEGIN
+Based on NOVΛK™ B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
+TEXT-END
+
+See LICENSE.md, ATTRIBUTION.md, NOTICE.md, and CONTRIBUTING.md.
