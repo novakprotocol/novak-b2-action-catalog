@@ -1,4 +1,4 @@
-# NOVΛK™ B2 App Self-Help V1 - Local Baseline Acceptance
+# NOV&#923;K&trade; B2 App Self-Help V1 - Local Baseline Acceptance
 
 ## Status
 

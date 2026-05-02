@@ -13,7 +13,7 @@ Permission is granted to use, copy, run, study, reference, adapt, and redistribu
 Required attribution:
 
 TEXT-BEGIN
-Based on NOVΛK™ B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
+Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
 TEXT-END
 
 ## Conditions
@@ -42,7 +42,7 @@ External contributions are not accepted unless the project owner explicitly reop
 
 ## Trademark and naming
 
-NOVΛK, NOVΛK B2, NOVAK Protocol, and related names may be referenced for attribution, but this license does not grant trademark rights, branding rights, endorsement rights, or certification rights.
+NOV&#923;K&trade; B2, NOVAK Protocol, and related names may be referenced for attribution, but this license does not grant trademark rights, branding rights, endorsement rights, or certification rights.
 
 ## Safety boundary
 

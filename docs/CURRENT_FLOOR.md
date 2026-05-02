@@ -1,4 +1,4 @@
-# NOVΛK™ B2 Action Catalog - Current Floor
+# NOV&#923;K&trade; B2 Action Catalog - Current Floor
 
 ## Status
 
@@ -15,7 +15,7 @@ TEXT-END
 
 ## What is real now
 
-The public NOVΛK™ B2 Action Catalog is initialized, branded, validated, and has two accepted no-admin baseline layers.
+The public NOV&#923;K&trade; B2 Action Catalog is initialized, branded, validated, and has two accepted no-admin baseline layers.
 
 The catalog currently contains:
 

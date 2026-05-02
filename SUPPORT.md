@@ -11,7 +11,7 @@ TEXT-END
 
 ## Policy
 
-NOVΛK™ B2 Action Catalog is currently published as a use-and-reference source.
+NOV&#923;K&trade; B2 Action Catalog is currently published as a use-and-reference source.
 
 No public support channel is open at this time.
 

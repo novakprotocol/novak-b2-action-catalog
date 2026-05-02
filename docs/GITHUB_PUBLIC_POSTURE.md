@@ -1,4 +1,4 @@
-# NOVΛK™ B2 Action Catalog - GitHub Public Posture
+# NOV&#923;K&trade; B2 Action Catalog - GitHub Public Posture
 
 ## Status
 

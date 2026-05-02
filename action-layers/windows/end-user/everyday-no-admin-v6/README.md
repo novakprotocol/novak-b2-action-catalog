@@ -1,4 +1,4 @@
-# NOVΛK™ B2 Windows Everyday No-Admin Actions v6
+# NOV&#923;K&trade; B2 Windows Everyday No-Admin Actions v6
 
 This action layer adds 100 more end-user-safe, no-admin, no-input, read-only actions.
 

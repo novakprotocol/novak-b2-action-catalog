@@ -1,6 +1,6 @@
-# NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2 Action Catalog
+# NOV&#923;K&trade; B2 Action Catalog
 
-Safe-by-default action catalog and Windows action layers for NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2.
+Safe-by-default action catalog and Windows action layers for NOV&#923;K&trade; B2.
 
 ## What this is
 
@@ -15,10 +15,10 @@ This repository is a public, generic action source for:
 The intended consumer is a tool such as:
 
 ```text
-NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2 Windows Workbench
+NOV&#923;K&trade; B2 Windows Workbench
 ```
 
-The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2 Object Store.
+The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOV&#923;K&trade; B2 Object Store.
 
 ## Safety boundary
 
@@ -113,7 +113,7 @@ TEXT-END
 Public use, reference, adaptation, or redistribution must link back to the original project:
 
 TEXT-BEGIN
-Based on NOVΛK™ B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
+Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
 TEXT-END
 
 See LICENSE.md, ATTRIBUTION.md, NOTICE.md, and CONTRIBUTING.md.

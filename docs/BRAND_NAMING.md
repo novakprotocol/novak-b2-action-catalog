@@ -18,12 +18,15 @@ Human-facing Markdown and HTML should store the stylized brand as ASCII-safe HTM
 
 TEXT-BEGIN
 NOV&#923;K&trade; B2
+NOV&#923;K&trade; B2 Action Catalog
 TEXT-END
 
 Machine-readable files, scripts, JSON, CSV, schema IDs, repo slugs, paths, action IDs, generated evidence paths, and automation contracts should use ASCII-safe names:
 
 TEXT-BEGIN
+NOVAK
 NOVAK B2
+NOVAK B2 Action Catalog
 novak-b2
 novak-b2-action-catalog
 novak.b2.action.v1

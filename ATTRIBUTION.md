@@ -7,7 +7,7 @@ Any public use, fork, derivative, adapted catalog, documentation copy, presentat
 Use this attribution:
 
 TEXT-BEGIN
-Based on NOVΛK™ B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
+Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
 TEXT-END
 
 ## Minimum visible placement
@@ -25,7 +25,7 @@ TEXT-END
 
 ## Do not imply endorsement
 
-Attribution does not mean Matthew Novak, NOVAK Protocol, or NOVΛK B2 endorses, certifies, supports, or validates a derivative project.
+Attribution does not mean Matthew Novak, NOVAK Protocol, or NOV&#923;K&trade; B2 endorses, certifies, supports, or validates a derivative project.
 
 ## Machine-safe reference
 

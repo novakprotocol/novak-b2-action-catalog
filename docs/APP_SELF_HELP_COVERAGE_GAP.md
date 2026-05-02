@@ -1,4 +1,4 @@
-# NOVΛK™ B2 Action Catalog - App Self-Help Coverage Gap
+# NOV&#923;K&trade; B2 Action Catalog - App Self-Help Coverage Gap
 
 ## Status
 

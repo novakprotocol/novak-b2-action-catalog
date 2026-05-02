@@ -1,4 +1,4 @@
-# NOVΛK™ B2 Action Catalog - Sync Source
+# NOV&#923;K&trade; B2 Action Catalog - Sync Source
 
 ## Current accepted baseline
 

@@ -7,5 +7,5 @@ See CONTRIBUTING.md, LICENSE.md, and ATTRIBUTION.md.
 Required attribution for public use:
 
 TEXT-BEGIN
-Based on NOVΛK™ B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
+Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
 TEXT-END

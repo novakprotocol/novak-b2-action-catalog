@@ -22,8 +22,10 @@ SKIP_PARTS = {
 
 RAW_BRAND = "NOV\u039BK\u2122"
 
+
 def mojibake_round(value: str) -> str:
     return value.encode("utf-8").decode("cp1252", errors="replace")
+
 
 patterns = {
     "raw_unicode_brand": RAW_BRAND,
@@ -32,11 +34,13 @@ patterns = {
 }
 
 value = RAW_BRAND
-for index in range(1, 6):
+for index in range(1, 10):
     value = mojibake_round(value)
     patterns[f"mojibake_round_{index}_brand"] = value
     patterns[f"mojibake_round_{index}_brand_b2"] = f"{value} B2"
     patterns[f"mojibake_round_{index}_product"] = f"{value} B2 Action Catalog"
+
+patterns["blocked_placeholder"] = "[blocked-brand-mojibake]"
 
 failures = []
 

@@ -1,4 +1,4 @@
-﻿# NOVΛK™ B2 Action Catalog - GitHub Pages Deployment
+﻿# NOV&#923;K&trade; B2 Action Catalog - GitHub Pages Deployment
 
 ## Decision
 

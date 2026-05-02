@@ -3,7 +3,7 @@
 ## Accepted for baseline
 
 TEXT-BEGIN
-display_name: NOVΛK™ B2 Action Catalog
+display_name: NOV&#923;K&trade; B2 Action Catalog
 source_commit: 0bb5e0a
 accepted_for_baseline: true
 accepted_for_mutation: false

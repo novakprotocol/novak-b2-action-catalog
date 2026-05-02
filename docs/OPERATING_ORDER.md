@@ -1,4 +1,4 @@
-# NOVΛK™ B2 Action Catalog - Operating Order
+# NOV&#923;K&trade; B2 Action Catalog - Operating Order
 
 ## Decision
 
