@@ -1,6 +1,6 @@
 # NOV&#923;K&trade; B2 Action Catalog
 
-Safe-by-default action catalog and Windows action layers for NOV&#923;K&trade; B2.
+Safe-by-default Windows action catalog for end-user self-checks, no-admin diagnostics, and support evidence workflows.
 
 ## What this is
 
@@ -9,16 +9,27 @@ This repository is a public, generic action source for:
 - Windows end-user self-checks
 - no-input diagnostics
 - no-admin diagnostics
-- self-fix candidates that are dry-run by default
-- manifests and hashes that a GUI/workbench can verify before running actions
+- safe self-help actions
+- dry-run-first self-fix candidates
+- manifests and hashes that a GUI or workbench can verify before running actions
 
-The intended consumer is a tool such as:
+The intended downstream consumer is a tool such as **NOV&#923;K&trade; B2 Windows Workbench**.
 
-```text
-NOV&#923;K&trade; B2 Windows Workbench
-```
+A workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts or evidence into **NOV&#923;K&trade; B2 Object Store**.
 
-The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOV&#923;K&trade; B2 Object Store.
+## Current accepted baseline
+
+The current accepted public baseline contains:
+
+| Layer | Status | Mutation approved |
+|---|---:|---:|
+| `everyday-no-admin-v6` | PASS | false |
+| `app-self-help-v1` | PASS | false |
+
+The accepted baseline pointer is here:
+
+- [`catalog/releases/current-accepted-baseline.json`](catalog/releases/current-accepted-baseline.json)
+- [`catalog/views/current-accepted-baseline.md`](catalog/views/current-accepted-baseline.md)
 
 ## Safety boundary
 
@@ -33,8 +44,10 @@ This public repository must not contain:
 - employer or agency-specific evidence
 - raw logs from real machines
 - internal URLs
-- internal repo links
+- internal repository links
 - target inventories
+
+This repository does **not** approve production deployment, admin repair, workplace targeting, or automatic remediation.
 
 ## Action model
 
@@ -53,29 +66,35 @@ Each action should declare:
 - whether mutation is possible
 - whether `-Apply` is required for a change
 
-## Current action layers
+## Catalog views
 
-```text
-action-layers/windows/end-user/diagnostics-v1
-action-layers/windows/end-user/no-input-v2
-action-layers/windows/end-user/next100-no-input-v3
-action-layers/windows/end-user/next100-no-admin-v4
-action-layers/windows/end-user/self-fix-candidates-v5
-```
+Browse the catalog:
 
-## Validate
+- [`catalog/views/action-catalog.html`](catalog/views/action-catalog.html)
+- [`catalog/views/catalog-by-layer.md`](catalog/views/catalog-by-layer.md)
+- [`catalog/views/catalog-by-issue-area.md`](catalog/views/catalog-by-issue-area.md)
+- [`catalog/views/catalog-by-action-type.md`](catalog/views/catalog-by-action-type.md)
+- [`catalog/views/catalog-by-risk.md`](catalog/views/catalog-by-risk.md)
+- [`catalog/views/catalog-by-status.md`](catalog/views/catalog-by-status.md)
 
-```bash
-tools/run_validators.sh
-```
+Primary machine-readable index:
 
-PowerShell syntax check:
+- [`catalog/generated/action-index.json`](catalog/generated/action-index.json)
+- [`catalog/generated/action-index.csv`](catalog/generated/action-index.csv)
+
+## Validation
+
+Run the validators before accepting or publishing changes:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\powershell\Test-AllPowerShellSyntax.ps1
+python .\tools\python\validate_action_index.py
+python .\tools\python\validate_no_secrets_or_targets.py
+python .\tools\python\validate_current_release_pointer.py
+python .\tools\python\validate_no_brand_mojibake.py
 ```
 
-## Work/internal downstream use
+## Work and internal downstream use
 
 Public GitHub should be treated as a generic upstream source.
 
@@ -83,37 +102,40 @@ Internal enterprise repositories should import releases through pull request rev
 
 Do not blindly auto-run public Git content.
 
-## Catalog views
+## GitHub Pages
 
-View the generated catalog by:
+This repository is intended to publish as a static GitHub Pages site from `main:/`.
 
-catalog/views/action-catalog.html
-catalog/views/catalog-by-layer.md
-catalog/views/catalog-by-issue-area.md
-catalog/views/catalog-by-action-type.md
-catalog/views/catalog-by-risk.md
-catalog/views/catalog-by-status.md
+No Makefile or build system is required right now.
 
-Primary machine-readable index:
+See:
 
-catalog/generated/action-index.json
----
+- [`docs/PAGES_DEPLOYMENT.md`](docs/PAGES_DEPLOYMENT.md)
+- [`index.html`](index.html)
 
 ## Use, attribution, and contributions
 
-TEXT-BEGIN
-USE_ALLOWED_WITH_ATTRIBUTION=true
-ATTRIBUTION_REQUIRED=true
-CONTRIBUTIONS_ACCEPTED=false
-PULL_REQUESTS_ACCEPTED=false
-ISSUES_ACCEPTED=false
-DISCUSSIONS_ACCEPTED=false
-TEXT-END
+Public use, reference, adaptation, or redistribution is allowed only with visible attribution and link-back.
 
-Public use, reference, adaptation, or redistribution must link back to the original project:
+Required attribution:
 
-TEXT-BEGIN
-Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak - https://github.com/novakprotocol/novak-b2-action-catalog
-TEXT-END
+> Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak — https://github.com/novakprotocol/novak-b2-action-catalog
 
-See LICENSE.md, ATTRIBUTION.md, NOTICE.md, and CONTRIBUTING.md.
+Current contribution posture:
+
+| Channel | Status |
+|---|---:|
+| External contributions | closed |
+| Pull requests | closed |
+| Issues | closed |
+| Discussions | closed |
+| Public support channel | closed |
+
+See:
+
+- [`LICENSE.md`](LICENSE.md)
+- [`ATTRIBUTION.md`](ATTRIBUTION.md)
+- [`NOTICE.md`](NOTICE.md)
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- [`SECURITY.md`](SECURITY.md)
+- [`SUPPORT.md`](SUPPORT.md)
