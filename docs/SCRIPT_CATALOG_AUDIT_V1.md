@@ -4,10 +4,10 @@
 
 ```text
 RESULT=PASS_WITH_REVIEW_ITEMS
-RECORDED_UTC=2026-05-02T23:46:52Z
+RECORDED_UTC=2026-05-02T23:51:43Z
 ACTION_INDEX_SOURCE=$.actions
-ACTION_COUNT=540
-POWERSHELL_SCRIPT_COUNT=561
+ACTION_COUNT=560
+POWERSHELL_SCRIPT_COUNT=583
 MISSING_SCRIPT_REF_COUNT=0
 EMPTY_SCRIPT_REF_COUNT=0
 DUPLICATE_ACTION_ID_COUNT=0
@@ -21,6 +21,7 @@ RISK_PATTERN_HIT_COUNT=21
 | action-layers/windows/end-user/app-self-help-v1 | 100 |
 | action-layers/windows/end-user/diagnostics-v1 | 25 |
 | action-layers/windows/end-user/everyday-no-admin-v6 | 100 |
+| action-layers/windows/end-user/help-desk-evidence-v1 | 20 |
 | action-layers/windows/end-user/next100-no-admin-v4 | 100 |
 | action-layers/windows/end-user/next100-no-input-v3 | 100 |
 | action-layers/windows/end-user/no-input-v2 | 35 |
@@ -32,23 +33,23 @@ RISK_PATTERN_HIT_COUNT=21
 |---|---|
 | LOW_READONLY | 360 |
 | LOW_USER_SCOPE_SELF_FIX | 80 |
-| low | 100 |
+| low | 120 |
 
 ## Action counts by status
 
 | Status | Count |
 |---|---|
 | CANDIDATE_LOCAL_TEST | 440 |
-| candidate | 100 |
+| candidate | 120 |
 
 ## PowerShell script classification
 
 | Class | Count |
 |---|---|
-| cataloged | 540 |
-| library | 7 |
+| cataloged | 560 |
+| library | 8 |
 | root_operator | 3 |
-| runner | 5 |
+| runner | 6 |
 | tool | 1 |
 | unindexed | 5 |
 
