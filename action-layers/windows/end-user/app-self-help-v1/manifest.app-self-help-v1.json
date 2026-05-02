@@ -1442,7 +1442,7 @@
     {
         "action_id":  "ENDUSER_APPSELFHELP_SUPPORT_EVIDENCE_ROOT_SUMMARY_V1",
         "name":  "Support evidence root summary",
-        "description":  "Counts existing NOVAK B2 local evidence directories without listing names.",
+        "description":  "Counts existing NOVΛK™ B2 local evidence directories without listing names.",
         "action_type":  "Evidence summary",
         "issue_area":  "Support evidence",
         "risk":  "low",
