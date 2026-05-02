@@ -1,0 +1,39 @@
+# NOVΛK™ B2 - Brand Naming
+
+## Canonical public display name
+
+TEXT-BEGIN
+NOVΛK™ B2
+TEXT-END
+
+## Product line
+
+TEXT-BEGIN
+NOVΛK™ B2 Action Catalog
+TEXT-END
+
+## Machine-safe names that stay unchanged
+
+TEXT-BEGIN
+novak-b2
+novak-b2-action-catalog
+novak.b2.action.v1
+NOVAK-B2-Windows-SelfCheck
+action-layers/windows/end-user
+TEXT-END
+
+## Rule
+
+Use NOVΛK™ B2 for human-facing documentation, site titles, headings, GitHub descriptions, and presentation material.
+
+Use ASCII machine-safe names for repository slugs, paths, schema identifiers, action IDs, script names, generated evidence paths, and automation contracts.
+
+## Current boundary
+
+TEXT-BEGIN
+Do not rename repository slug yet.
+Do not rename action IDs.
+Do not rename schema IDs.
+Do not rename script paths.
+Do not rename evidence folder paths.
+TEXT-END

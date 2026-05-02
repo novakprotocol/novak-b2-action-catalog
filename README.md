@@ -1,6 +1,6 @@
-# NOVAK B2 Action Catalog
+# NOVΛK™ B2 Action Catalog
 
-Safe-by-default action catalog and Windows action layers for NOVAK B2.
+Safe-by-default action catalog and Windows action layers for NOVΛK™ B2.
 
 ## What this is
 
@@ -15,10 +15,10 @@ This repository is a public, generic action source for:
 The intended consumer is a tool such as:
 
 ```text
-NOVAK B2 Windows Workbench
+NOVΛK™ B2 Windows Workbench
 ```
 
-The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOVAK B2 Object Store.
+The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOVΛK™ B2 Object Store.
 
 ## Safety boundary
 

@@ -1,4 +1,4 @@
-# NOVAK B2 Action Catalog - Operating Order
+# NOVΛK™ B2 Action Catalog - Operating Order
 
 ## Decision
 

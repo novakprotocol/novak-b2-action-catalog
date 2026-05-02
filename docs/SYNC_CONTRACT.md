@@ -1,4 +1,4 @@
-# NOVAK B2 Action Catalog - Sync Contract
+# NOVΛK™ B2 Action Catalog - Sync Contract
 
 ## Purpose
 

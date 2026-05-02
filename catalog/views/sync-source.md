@@ -1,4 +1,4 @@
-# NOVAK B2 Action Catalog - Sync Source
+# NOVΛK™ B2 Action Catalog - Sync Source
 
 ## Current accepted baseline
 

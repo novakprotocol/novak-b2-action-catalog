@@ -1,4 +1,4 @@
-# NOVAK B2 Action Catalog - App Self-Help Coverage Gap
+# NOVΛK™ B2 Action Catalog - App Self-Help Coverage Gap
 
 ## Status
 

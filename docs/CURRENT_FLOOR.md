@@ -1,4 +1,4 @@
-# NOVAK B2 Action Catalog - Current Floor
+# NOVΛK™ B2 Action Catalog - Current Floor
 
 ## Status
 
@@ -15,7 +15,7 @@ TEXT-END
 
 ## What is real now
 
-The public NOVAK B2 Action Catalog is initialized and pushed.
+The public NOVΛK™ B2 Action Catalog is initialized and pushed.
 
 The catalog currently contains:
 

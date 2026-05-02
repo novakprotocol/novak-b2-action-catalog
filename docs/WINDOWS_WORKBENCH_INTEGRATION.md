@@ -9,7 +9,7 @@ Git Action Source
   -> display accepted actions
   -> run selected action
   -> capture stdout/stderr/result.json/result.txt
-  -> write receipt to NOVAK B2 Object Store
+  -> write receipt to NOVΛK™ B2 Object Store
 ```
 
 The GUI should not scan random script folders and execute arbitrary files.
