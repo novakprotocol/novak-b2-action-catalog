@@ -3,7 +3,7 @@
   "catalog_name": "NOVAK B2 Action Catalog",
   "catalog_version": "0.2.0",
   "generated_at": "2026-05-02T21:12:40Z",
-  "action_count": 540,
+  "action_count": 560,
   "actions": [
     {
       "schema_version": "novak.b2.action.v1",
@@ -13405,5 +13405,6 @@
       "description": "Records plan-only ticket package guidance without changing the system.",
       "risk": "low"
     }
-  ]
+  ],
+  "updated_utc": "2026-05-02T23:52:47Z"
 }
