@@ -3,30 +3,36 @@
 ## Accepted for baseline
 
 TEXT-BEGIN
-action-layer: everyday-no-admin-v6
-result: PASS
+display_name: NOVΛK™ B2 Action Catalog
+source_commit: 0bb5e0a
 accepted_for_baseline: true
 accepted_for_mutation: false
-source_commit: fee1458
+layers: everyday-no-admin-v6, app-self-help-v1
+TEXT-END
+
+## Accepted layers
+
+TEXT-BEGIN
+everyday-no-admin-v6: PASS baseline accepted, mutation false
+app-self-help-v1: PASS baseline accepted, mutation false
 TEXT-END
 
 ## Meaning
 
-This means the action layer successfully executed on the baseline Windows workstation without admin rights.
+This means the accepted action layers successfully executed on the baseline Windows workstation without admin rights.
 
-It does not mean the actions are approved for mutation, enterprise deployment, remediation, or admin execution.
+It does not mean the actions are approved for enterprise deployment, admin repair, automatic remediation, or mutation.
 
 ## Validation evidence
 
 TEXT-BEGIN
-PowerShell syntax scripts=459 PASS
-catalog actions=440 PASS
-no secrets or targets files_checked=508 PASS
+PowerShell syntax scripts=561 PASS
+catalog actions=540 PASS
+no secrets or targets files_checked=623 PASS
+current release pointer PASS
 TEXT-END
 
 ## Browse all actions
-
-Open:
 
 TEXT-BEGIN
 catalog/views/action-catalog.html

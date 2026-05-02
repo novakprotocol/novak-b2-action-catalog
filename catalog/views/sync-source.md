@@ -5,12 +5,20 @@
 TEXT-BEGIN
 REPO=novakprotocol/novak-b2-action-catalog
 BRANCH=main
-HEAD=8565cb7
-FULL_HEAD=8565cb7a29fc522c03b6a97c915434cec13c5ed9
+HEAD=0bb5e0a
+FULL_HEAD=0bb5e0a0c368c7ec1f5acdd8cc422c2894850d21
 CURRENT_ACCEPTED_BASELINE=catalog/releases/current-accepted-baseline.json
 CATALOG_BROWSER=catalog/views/action-catalog.html
+SITE_FRONT_DOOR=index.html
 ACCEPTED_FOR_BASELINE=true
 ACCEPTED_FOR_MUTATION=false
+TEXT-END
+
+## Accepted layers
+
+TEXT-BEGIN
+everyday-no-admin-v6
+app-self-help-v1
 TEXT-END
 
 ## How a Windows GUI should consume this
@@ -18,11 +26,11 @@ TEXT-END
 1. Pull or fetch the repository.
 2. Read catalog/releases/current-accepted-baseline.json.
 3. Only display layers where accepted_for_baseline is true.
-4. Do not run mutation actions unless a future release explicitly sets accepted_for_mutation true.
+4. Do not run mutation actions unless accepted_for_mutation is true.
 5. Do not assume workplace approval from this public baseline.
 
 ## Safety boundary
 
-This public baseline is generic, no-admin, no-target-list, no-credential, and local-user-safe.
+This public baseline is generic, no-admin, no-target-list, no-credential, local-user-safe, and read-only by default.
 
 It does not contain workplace IPs, hostnames, usernames, tokens, credentials, or raw evidence.
