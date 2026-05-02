@@ -1,0 +1,81 @@
+Number,Action ID,Title,Area,Script,Status,Risk,Mutating Capable,Dry Run Default,Requires Apply,Requires Admin
+261,ENDUSER_SELF_FIX_RESTART_EXPLORER_V1,Restart File Explorer,Explorer / shell,scripts/fixes/261-restart-explorer.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+262,ENDUSER_SELF_FIX_OPEN_DOCUMENTS_FOLDER_V1,Open Documents folder,Explorer / shell,scripts/fixes/262-open-documents-folder.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+263,ENDUSER_SELF_FIX_OPEN_DOWNLOADS_FOLDER_V1,Open Downloads folder,Explorer / shell,scripts/fixes/263-open-downloads-folder.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+264,ENDUSER_SELF_FIX_OPEN_DESKTOP_FOLDER_V1,Open Desktop folder,Explorer / shell,scripts/fixes/264-open-desktop-folder.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+265,ENDUSER_SELF_FIX_OPEN_PICTURES_FOLDER_V1,Open Pictures folder,Explorer / shell,scripts/fixes/265-open-pictures-folder.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+266,ENDUSER_SELF_FIX_OPEN_SELFCHECK_EVIDENCE_FOLDER_V1,Ensure/open self-check evidence root,Evidence / support,scripts/fixes/266-open-selfcheck-evidence-folder.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+267,ENDUSER_SELF_FIX_CREATE_SUPPORT_EVIDENCE_ZIP_V1,Create support evidence ZIP,Evidence / support,scripts/fixes/267-create-support-evidence-zip.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+268,ENDUSER_SELF_FIX_CLEAR_CLIPBOARD_V1,Clear clipboard,Explorer / shell,scripts/fixes/268-clear-clipboard.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+269,ENDUSER_SELF_FIX_FLUSH_DNS_CACHE_V1,Flush DNS resolver cache,Network / DNS,scripts/fixes/269-flush-dns-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+270,ENDUSER_SELF_FIX_GPUPDATE_USER_POLICY_V1,Refresh user Group Policy,Group Policy,scripts/fixes/270-gpupdate-user-policy.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+271,ENDUSER_SELF_FIX_GPUPDATE_USER_POLICY_WAIT_ZERO_V1,Refresh user Group Policy no wait,Group Policy,scripts/fixes/271-gpupdate-user-policy-wait-zero.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+272,ENDUSER_SELF_FIX_PURGE_KERBEROS_TICKETS_V1,Purge current-user Kerberos tickets,Authentication,scripts/fixes/272-purge-kerberos-tickets.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+273,ENDUSER_SELF_FIX_OPEN_CREDENTIAL_MANAGER_V1,Open Credential Manager UI,Authentication,scripts/fixes/273-open-credential-manager.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+274,ENDUSER_SELF_FIX_OPEN_INTERNET_OPTIONS_V1,Open Internet Options UI,Browser / proxy,scripts/fixes/274-open-internet-options.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+275,ENDUSER_SELF_FIX_OPEN_NETWORK_CONNECTIONS_V1,Open Network Connections UI,Network,scripts/fixes/275-open-network-connections.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+276,ENDUSER_SELF_FIX_OPEN_PRINTERS_SETTINGS_V1,Open Printers settings UI,Printers,scripts/fixes/276-open-printers-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+277,ENDUSER_SELF_FIX_RESTART_ONEDRIVE_V1,Restart OneDrive,OneDrive / sync,scripts/fixes/277-restart-onedrive.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+278,ENDUSER_SELF_FIX_START_ONEDRIVE_V1,Start OneDrive if installed,OneDrive / sync,scripts/fixes/278-start-onedrive.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+279,ENDUSER_SELF_FIX_RESTART_TEAMS_V1,Restart Teams processes,Teams / collaboration,scripts/fixes/279-restart-teams.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+280,ENDUSER_SELF_FIX_RESTART_OUTLOOK_V1,Restart Outlook,Office,scripts/fixes/280-restart-outlook.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+281,ENDUSER_SELF_FIX_RESTART_WORD_V1,Restart Word,Office,scripts/fixes/281-restart-word.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+282,ENDUSER_SELF_FIX_RESTART_EXCEL_V1,Restart Excel,Office,scripts/fixes/282-restart-excel.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+283,ENDUSER_SELF_FIX_RESTART_POWERPOINT_V1,Restart PowerPoint,Office,scripts/fixes/283-restart-powerpoint.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+284,ENDUSER_SELF_FIX_RESTART_EDGE_V1,Restart Edge,Browser,scripts/fixes/284-restart-edge.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+285,ENDUSER_SELF_FIX_RESTART_CHROME_V1,Restart Chrome,Browser,scripts/fixes/285-restart-chrome.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+286,ENDUSER_SELF_FIX_CLEAR_USER_TEMP_OLDER_7_DAYS_V1,Clear user temp files older than 7 days,Temp/cache,scripts/fixes/286-clear-user-temp-older-7-days.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+287,ENDUSER_SELF_FIX_CLEAR_USER_TEMP_ALL_V1,Clear user temp files,Temp/cache,scripts/fixes/287-clear-user-temp-all.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+288,ENDUSER_SELF_FIX_CLEAR_INTERNET_CACHE_V1,Clear user internet cache files,Browser / proxy,scripts/fixes/288-clear-internet-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+289,ENDUSER_SELF_FIX_CLEAR_TEMP_INTERNET_FILES_V1,Clear INetCache files,Browser / proxy,scripts/fixes/289-clear-temp-internet-files.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+290,ENDUSER_SELF_FIX_CLEAR_EDGE_CACHE_V1,Clear Edge user cache,Browser,scripts/fixes/290-clear-edge-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+291,ENDUSER_SELF_FIX_CLEAR_CHROME_CACHE_V1,Clear Chrome user cache,Browser,scripts/fixes/291-clear-chrome-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+292,ENDUSER_SELF_FIX_CLEAR_TEAMS_CLASSIC_CACHE_V1,Clear Teams classic user cache,Teams / collaboration,scripts/fixes/292-clear-teams-classic-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+293,ENDUSER_SELF_FIX_CLEAR_TEAMS_NEW_CACHE_V1,Clear new Teams user cache,Teams / collaboration,scripts/fixes/293-clear-teams-new-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+294,ENDUSER_SELF_FIX_CLEAR_OFFICE_FILE_CACHE_V1,Clear Office file cache,Office,scripts/fixes/294-clear-office-file-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+295,ENDUSER_SELF_FIX_CLEAR_ONEDRIVE_LOGS_OLDER_14_DAYS_V1,Clear OneDrive logs older than 14 days,OneDrive / sync,scripts/fixes/295-clear-onedrive-logs-older-14-days.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+296,ENDUSER_SELF_FIX_CLEAR_EXPLORER_THUMB_CACHE_V1,Clear Explorer thumbnail cache,Explorer / shell,scripts/fixes/296-clear-explorer-thumb-cache.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+297,ENDUSER_SELF_FIX_CLEAR_CRASH_DUMPS_OLDER_14_DAYS_V1,Clear crash dumps older than 14 days,Temp/cache,scripts/fixes/297-clear-crash-dumps-older-14-days.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+298,ENDUSER_SELF_FIX_CLEAR_WER_ARCHIVE_OLDER_14_DAYS_V1,Clear WER archive older than 14 days,Temp/cache,scripts/fixes/298-clear-wer-archive-older-14-days.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+299,ENDUSER_SELF_FIX_CLEAR_WER_QUEUE_OLDER_14_DAYS_V1,Clear WER queue older than 14 days,Temp/cache,scripts/fixes/299-clear-wer-queue-older-14-days.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+300,ENDUSER_SELF_FIX_CLEAR_RECENT_ITEMS_V1,Clear Recent Items,Explorer / shell,scripts/fixes/300-clear-recent-items.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+301,ENDUSER_SELF_FIX_EMPTY_RECYCLE_BIN_V1,Empty Recycle Bin,Disk cleanup,scripts/fixes/301-empty-recycle-bin.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+302,ENDUSER_SELF_FIX_OPEN_DISK_CLEANUP_V1,Open Disk Cleanup,Disk cleanup,scripts/fixes/302-open-disk-cleanup.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+303,ENDUSER_SELF_FIX_OPEN_STORAGE_SETTINGS_V1,Open Storage Settings,Disk cleanup,scripts/fixes/303-open-storage-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+304,ENDUSER_SELF_FIX_OPEN_TROUBLESHOOT_SETTINGS_V1,Open Troubleshoot Settings,Support UI,scripts/fixes/304-open-troubleshoot-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+305,ENDUSER_SELF_FIX_OPEN_WINDOWS_UPDATE_SETTINGS_V1,Open Windows Update Settings,Windows Update,scripts/fixes/305-open-windows-update-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+306,ENDUSER_SELF_FIX_OPEN_NETWORK_STATUS_SETTINGS_V1,Open Network Status Settings,Network,scripts/fixes/306-open-network-status-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+307,ENDUSER_SELF_FIX_OPEN_PROXY_SETTINGS_V1,Open Proxy Settings,Browser / proxy,scripts/fixes/307-open-proxy-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+308,ENDUSER_SELF_FIX_OPEN_VPN_SETTINGS_V1,Open VPN Settings,Network,scripts/fixes/308-open-vpn-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+309,ENDUSER_SELF_FIX_OPEN_WIFI_SETTINGS_V1,Open Wi-Fi Settings,Network,scripts/fixes/309-open-wifi-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+310,ENDUSER_SELF_FIX_OPEN_BLUETOOTH_SETTINGS_V1,Open Bluetooth Settings,Bluetooth,scripts/fixes/310-open-bluetooth-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+311,ENDUSER_SELF_FIX_OPEN_DEFAULT_APPS_SETTINGS_V1,Open Default Apps Settings,Windows settings,scripts/fixes/311-open-default-apps-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+312,ENDUSER_SELF_FIX_OPEN_OPTIONAL_FEATURES_SETTINGS_V1,Open Optional Features Settings,Windows settings,scripts/fixes/312-open-optional-features-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+313,ENDUSER_SELF_FIX_OPEN_APPS_FEATURES_SETTINGS_V1,Open Apps and Features Settings,Windows settings,scripts/fixes/313-open-apps-features-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+314,ENDUSER_SELF_FIX_OPEN_SYNC_SETTINGS_V1,Open Sync Settings,Windows settings,scripts/fixes/314-open-sync-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+315,ENDUSER_SELF_FIX_OPEN_SIGNIN_OPTIONS_V1,Open Sign-in Options,Authentication,scripts/fixes/315-open-signin-options.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+316,ENDUSER_SELF_FIX_OPEN_WORK_ACCESS_SETTINGS_V1,Open Access Work or School Settings,Authentication,scripts/fixes/316-open-work-access-settings.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+317,ENDUSER_SELF_FIX_OPEN_ONEDRIVE_FOLDER_V1,Open OneDrive folder if present,OneDrive / sync,scripts/fixes/317-open-onedrive-folder.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+318,ENDUSER_SELF_FIX_OPEN_OFFICE_UPLOAD_CENTER_CACHE_FOLDER_V1,Open Office file cache folder,Office,scripts/fixes/318-open-office-upload-center-cache-folder.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+319,ENDUSER_SELF_FIX_OPEN_DOWNLOADS_FOR_USER_CLEANUP_V1,Open Downloads for user cleanup,Disk cleanup,scripts/fixes/319-open-downloads-for-user-cleanup.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+320,ENDUSER_SELF_FIX_OPEN_PRINTMANAGEMENT_MSC_V1,Open Print Management if available,Printers,scripts/fixes/320-open-printmanagement-msc.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+321,ENDUSER_SELF_FIX_OPEN_DEVICES_PRINTERS_CONTROL_V1,Open Devices and Printers,Printers,scripts/fixes/321-open-devices-printers-control.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+322,ENDUSER_SELF_FIX_OPEN_PRINTUI_USER_V1,Open printer UI helper,Printers,scripts/fixes/322-open-printui-user.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+323,ENDUSER_SELF_FIX_RUN_WSRESET_V1,Run Microsoft Store cache reset,Windows Store,scripts/fixes/323-run-wsreset.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+324,ENDUSER_SELF_FIX_RESTART_SEARCH_PROCESSES_V1,Restart Search UI processes,Windows Search,scripts/fixes/324-restart-search-processes.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+325,ENDUSER_SELF_FIX_RESTART_STARTMENU_PROCESS_V1,Restart Start Menu process,Windows shell,scripts/fixes/325-restart-startmenu-process.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+326,ENDUSER_SELF_FIX_RESTART_SHELL_EXPERIENCE_V1,Restart Shell Experience Host,Windows shell,scripts/fixes/326-restart-shell-experience.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+327,ENDUSER_SELF_FIX_RESTART_TEXT_INPUT_HOST_V1,Restart Text Input Host,Windows shell,scripts/fixes/327-restart-text-input-host.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+328,ENDUSER_SELF_FIX_RESTART_WIDGETS_V1,Restart Widgets processes,Windows shell,scripts/fixes/328-restart-widgets.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+329,ENDUSER_SELF_FIX_RESTART_PHONE_LINK_V1,Restart Phone Link,Windows apps,scripts/fixes/329-restart-phone-link.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+330,ENDUSER_SELF_FIX_RESTART_SNIPPING_TOOL_V1,Restart Snipping Tool,Windows apps,scripts/fixes/330-restart-snipping-tool.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+331,ENDUSER_SELF_FIX_RESTART_PHOTOS_V1,Restart Photos,Windows apps,scripts/fixes/331-restart-photos.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+332,ENDUSER_SELF_FIX_RESTART_ACROBAT_V1,Restart Adobe Reader/Acrobat,PDF / documents,scripts/fixes/332-restart-acrobat.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+333,ENDUSER_SELF_FIX_RESTART_NOTEPAD_V1,Restart Notepad,Windows apps,scripts/fixes/333-restart-notepad.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+334,ENDUSER_SELF_FIX_RESTART_CALCULATOR_V1,Restart Calculator,Windows apps,scripts/fixes/334-restart-calculator.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+335,ENDUSER_SELF_FIX_ENSURE_EVIDENCE_ROOT_V1,Ensure self-check evidence root exists,Evidence / support,scripts/fixes/335-ensure-evidence-root.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+336,ENDUSER_SELF_FIX_CREATE_SUPPORT_BUNDLE_AGAIN_V1,Create support evidence bundle,Evidence / support,scripts/fixes/336-create-support-bundle-again.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,True,True,True,False
+337,ENDUSER_SELF_FIX_OPEN_EVIDENCE_ROOT_V1,Open self-check evidence root,Evidence / support,scripts/fixes/337-open-evidence-root.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+338,ENDUSER_SELF_FIX_OPEN_EVENT_VIEWER_V1,Open Event Viewer,Support UI,scripts/fixes/338-open-event-viewer.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+339,ENDUSER_SELF_FIX_OPEN_RELIABILITY_MONITOR_V1,Open Reliability Monitor,Support UI,scripts/fixes/339-open-reliability-monitor.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False
+340,ENDUSER_SELF_FIX_OPEN_SYSTEM_INFO_V1,Open System Information,Support UI,scripts/fixes/340-open-system-info.ps1,CANDIDATE_LOCAL_TEST,LOW_USER_SCOPE_SELF_FIX,False,True,True,False

@@ -1,0 +1,14 @@
+name: validate
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate action index
+        run: python3 tools/python/validate_action_index.py
+      - name: Validate no obvious secrets or private targets
+        run: python3 tools/python/validate_no_secrets_or_targets.py

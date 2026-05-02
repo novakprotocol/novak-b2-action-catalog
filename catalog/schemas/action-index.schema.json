@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/novakprotocol/novak-b2-action-catalog/catalog/schemas/action-index.schema.json",
+  "title": "NOVAK B2 Action Catalog Index",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "catalog_name",
+    "catalog_version",
+    "action_count",
+    "actions"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "catalog_name": {
+      "type": "string"
+    },
+    "catalog_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "action_count": {
+      "type": "integer"
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "action_id",
+          "script_path",
+          "status",
+          "risk_tier",
+          "requires_admin",
+          "requires_runtime_input",
+          "mutation_capable"
+        ],
+        "properties": {
+          "action_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "pack": {
+            "type": "string"
+          },
+          "script_path": {
+            "type": "string"
+          },
+          "script_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tier": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "risk_tier": {
+            "type": "string"
+          },
+          "requires_admin": {
+            "type": "boolean"
+          },
+          "requires_runtime_input": {
+            "type": "boolean"
+          },
+          "mutation_capable": {
+            "type": "boolean"
+          },
+          "dry_run_default": {
+            "type": "boolean"
+          },
+          "requires_apply_for_change": {
+            "type": "boolean"
+          },
+          "stores_credentials": {
+            "type": "boolean"
+          },
+          "stores_target_inventory": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
