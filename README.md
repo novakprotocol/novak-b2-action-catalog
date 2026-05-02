@@ -1,6 +1,6 @@
-# NOVÎ›Kâ„¢ B2 Action Catalog
+# NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2 Action Catalog
 
-Safe-by-default action catalog and Windows action layers for NOVÎ›Kâ„¢ B2.
+Safe-by-default action catalog and Windows action layers for NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2.
 
 ## What this is
 
@@ -15,10 +15,10 @@ This repository is a public, generic action source for:
 The intended consumer is a tool such as:
 
 ```text
-NOVÎ›Kâ„¢ B2 Windows Workbench
+NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2 Windows Workbench
 ```
 
-The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOVÎ›Kâ„¢ B2 Object Store.
+The Workbench can pull this repository as a configured Git Action Source, verify the catalog and script hashes, run accepted actions, and write receipts/evidence into NOVÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºKÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ B2 Object Store.
 
 ## Safety boundary
 

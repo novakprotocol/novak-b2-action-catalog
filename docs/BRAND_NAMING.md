@@ -1,15 +1,15 @@
-# NOVΛK™ B2 - Brand Naming
+# NOVÎ›Kâ„¢ B2 - Brand Naming
 
 ## Canonical public display name
 
 TEXT-BEGIN
-NOVΛK™ B2
+NOVÎ›Kâ„¢ B2
 TEXT-END
 
 ## Product line
 
 TEXT-BEGIN
-NOVΛK™ B2 Action Catalog
+NOVÎ›Kâ„¢ B2 Action Catalog
 TEXT-END
 
 ## Machine-safe names that stay unchanged
@@ -24,7 +24,7 @@ TEXT-END
 
 ## Rule
 
-Use NOVΛK™ B2 for human-facing documentation, site titles, headings, GitHub descriptions, and presentation material.
+Use NOVÎ›Kâ„¢ B2 for human-facing documentation, site titles, headings, GitHub descriptions, and presentation material.
 
 Use ASCII machine-safe names for repository slugs, paths, schema identifiers, action IDs, script names, generated evidence paths, and automation contracts.
 
@@ -36,4 +36,13 @@ Do not rename action IDs.
 Do not rename schema IDs.
 Do not rename script paths.
 Do not rename evidence folder paths.
+TEXT-END
+## Encoding guard
+
+TEXT-BEGIN
+Correct display name: NOVΛK™ B2
+Known bad mojibake is blocked by tools/python/validate_no_brand_mojibake.py.
+Do not place the raw bad mojibake string in documentation.
+Machine-safe identifiers remain ASCII.
+Run: python tools/python/validate_no_brand_mojibake.py
 TEXT-END
