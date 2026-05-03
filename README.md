@@ -25,6 +25,7 @@ The current accepted public baseline contains:
 |---|---:|---:|
 | `everyday-no-admin-v6` | PASS | false |
 | `app-self-help-v1` | PASS | false |
+| `help-desk-evidence-v1` | PASS | false |
 
 The accepted baseline pointer is here:
 

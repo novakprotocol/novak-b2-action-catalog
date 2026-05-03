@@ -3,11 +3,13 @@
 ## Accepted for baseline
 
 TEXT-BEGIN
-display_name: NOV&#923;K&trade; B2 Action Catalog
-source_commit: 0bb5e0a
+display_name: NOVAK B2 Action Catalog
+tested_source_commit: cecbf0e
 accepted_for_baseline: true
 accepted_for_mutation: false
-layers: everyday-no-admin-v6, app-self-help-v1
+layers: everyday-no-admin-v6, app-self-help-v1, help-desk-evidence-v1
+catalog_action_count: 560
+powershell_script_count: 583
 TEXT-END
 
 ## Accepted layers
@@ -15,6 +17,7 @@ TEXT-END
 TEXT-BEGIN
 everyday-no-admin-v6: PASS baseline accepted, mutation false
 app-self-help-v1: PASS baseline accepted, mutation false
+help-desk-evidence-v1: PASS baseline accepted, mutation false
 TEXT-END
 
 ## Meaning
@@ -26,10 +29,11 @@ It does not mean the actions are approved for enterprise deployment, admin repai
 ## Validation evidence
 
 TEXT-BEGIN
-PowerShell syntax scripts=561 PASS
-catalog actions=540 PASS
-no secrets or targets files_checked=623 PASS
+PowerShell syntax PASS
+catalog actions=560 PASS
+no secrets or targets PASS
 current release pointer PASS
+no brand mojibake PASS
 TEXT-END
 
 ## Browse all actions

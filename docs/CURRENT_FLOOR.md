@@ -2,27 +2,22 @@
 
 ## Status
 
-RESULT=PASS
-
-## Current Git floor
-
 TEXT-BEGIN
-HEAD=0bb5e0a
-FULL_HEAD=0bb5e0a0c368c7ec1f5acdd8cc422c2894850d21
-REMOTE=origin/main
-RECORDED_UTC=2026-05-02T22:14:20Z
+RESULT=PASS
+TESTED_SOURCE_HEAD=cecbf0e
+TESTED_SOURCE_FULL_HEAD=cecbf0e1ae57129afd2f0c2b7ba5f6d5f06fd1eb
+RECORDED_UTC=2026-05-03T00:00:19Z
 TEXT-END
 
 ## What is real now
 
-The public NOV&#923;K&trade; B2 Action Catalog is initialized, branded, validated, and has two accepted no-admin baseline layers.
+The public NOV&#923;K&trade; B2 Action Catalog is initialized, published, validated, and has three accepted no-admin baseline layers.
 
 The catalog currently contains:
 
 TEXT-BEGIN
-CATALOG_ACTION_COUNT=540
-POWERSHELL_SCRIPT_COUNT=561
-NO_SECRETS_OR_TARGETS_FILES_CHECKED=623
+CATALOG_ACTION_COUNT=560
+POWERSHELL_SCRIPT_COUNT=583
 TEXT-END
 
 ## Accepted local baselines
@@ -30,6 +25,7 @@ TEXT-END
 TEXT-BEGIN
 everyday-no-admin-v6=PASS
 app-self-help-v1=PASS
+help-desk-evidence-v1=PASS
 ACCEPTED_FOR_BASELINE=true
 ACCEPTED_FOR_MUTATION=false
 TEXT-END
@@ -41,6 +37,7 @@ PowerShell syntax: PASS
 Action index: PASS
 No secrets or targets: PASS
 Current release pointer: PASS
+No brand mojibake: PASS
 TEXT-END
 
 ## Safety boundary
@@ -56,10 +53,11 @@ This floor does not contain approved workplace targets, IPs, hostnames, credenti
 TEXT-BEGIN
 index.html
 catalog/views/action-catalog.html
+catalog/releases/current-accepted-baseline.json
 TEXT-END
 
 ## Next recommended work
 
 1. Keep this floor stable.
-2. Add help desk evidence packaging as the next layer.
-3. Do not mark any action as mutation-approved until there is a separate approval model.
+2. Add a public evidence-package explanation page.
+3. Add the next small support scenario pack only after preserving this accepted baseline.

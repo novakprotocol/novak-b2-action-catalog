@@ -5,8 +5,8 @@
 TEXT-BEGIN
 REPO=novakprotocol/novak-b2-action-catalog
 BRANCH=main
-HEAD=0bb5e0a
-FULL_HEAD=0bb5e0a0c368c7ec1f5acdd8cc422c2894850d21
+TESTED_SOURCE_HEAD=cecbf0e
+TESTED_SOURCE_FULL_HEAD=cecbf0e1ae57129afd2f0c2b7ba5f6d5f06fd1eb
 CURRENT_ACCEPTED_BASELINE=catalog/releases/current-accepted-baseline.json
 CATALOG_BROWSER=catalog/views/action-catalog.html
 SITE_FRONT_DOOR=index.html
@@ -19,6 +19,7 @@ TEXT-END
 TEXT-BEGIN
 everyday-no-admin-v6
 app-self-help-v1
+help-desk-evidence-v1
 TEXT-END
 
 ## How a Windows GUI should consume this

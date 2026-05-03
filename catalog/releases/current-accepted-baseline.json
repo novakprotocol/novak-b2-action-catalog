@@ -1,56 +1,69 @@
 {
-    "schema_version":  "1.0",
-    "release_type":  "current_accepted_baseline",
-    "repo_name":  "novak-b2-action-catalog",
-    "display_name":  "NOVAK B2 Action Catalog",
-    "source_branch":  "main",
-    "source_commit":  "0bb5e0a0c368c7ec1f5acdd8cc422c2894850d21",
-    "source_commit_short":  "0bb5e0a",
-    "recorded_utc":  "2026-05-02T22:14:20Z",
-    "accepted_for_baseline":  true,
-    "accepted_for_mutation":  false,
-    "privilege_level":  "no-admin",
-    "credential_required":  false,
-    "target_list_required":  false,
-    "raw_evidence_in_git":  false,
-    "approved_action_layers":  [
-                                   {
-                                       "action_layer_id":  "everyday-no-admin-v6",
-                                       "action_layer_path":  "action-layers/windows/end-user/everyday-no-admin-v6",
-                                       "local_baseline_result":  "PASS",
-                                       "accepted_for_baseline":  true,
-                                       "accepted_for_mutation":  false,
-                                       "script_count":  101,
-                                       "launcher":  "action-layers/windows/end-user/everyday-no-admin-v6/launchers/CLICK_ME_Run_Everyday_No_Admin_Actions_V6.cmd",
-                                       "runner":  "action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/000-Run-Everyday-NoAdmin-Actions-V6.ps1",
-                                       "acceptance_record":  "action-layers/windows/end-user/everyday-no-admin-v6/acceptance/LOCAL_BASELINE_ACCEPTANCE.md"
-                                   },
-                                   {
-                                       "action_layer_id":  "app-self-help-v1",
-                                       "action_layer_path":  "action-layers/windows/end-user/app-self-help-v1",
-                                       "local_baseline_result":  "PASS",
-                                       "accepted_for_baseline":  true,
-                                       "accepted_for_mutation":  false,
-                                       "script_count":  100,
-                                       "launcher":  "action-layers/windows/end-user/app-self-help-v1/launchers/CLICK_ME_Run_App_Self_Help_V1.cmd",
-                                       "runner":  "action-layers/windows/end-user/app-self-help-v1/scripts/checks/000-Run-AppSelfHelp-V1.ps1",
-                                       "acceptance_record":  "action-layers/windows/end-user/app-self-help-v1/acceptance/LOCAL_BASELINE_ACCEPTANCE.md"
-                                   }
-                               ],
-    "catalog":  {
-                    "action_index_json":  "catalog/generated/action-index.json",
-                    "action_index_csv":  "catalog/generated/action-index.csv",
-                    "catalog_browser":  "catalog/views/action-catalog.html",
-                    "current_floor_doc":  "docs/CURRENT_FLOOR.md",
-                    "accepted_baseline_view":  "catalog/views/current-accepted-baseline.md",
-                    "brand_naming":  "docs/BRAND_NAMING.md",
-                    "site_front_door":  "index.html"
-                },
-    "safety_boundary":  {
-                            "mutation_approved":  false,
-                            "admin_actions_approved":  false,
-                            "enterprise_targeting_approved":  false,
-                            "credentials_allowed_in_git":  false,
-                            "raw_evidence_allowed_in_git":  false
-                        }
+  "schema_version": "1.0",
+  "release_type": "current_accepted_baseline",
+  "repo_name": "novak-b2-action-catalog",
+  "display_name": "NOVAK B2 Action Catalog",
+  "source_branch": "main",
+  "tested_source_commit": "cecbf0e1ae57129afd2f0c2b7ba5f6d5f06fd1eb",
+  "tested_source_commit_short": "cecbf0e",
+  "recorded_utc": "2026-05-03T00:00:19Z",
+  "accepted_for_baseline": true,
+  "accepted_for_mutation": false,
+  "privilege_level": "no-admin",
+  "credential_required": false,
+  "target_list_required": false,
+  "raw_evidence_in_git": false,
+  "catalog_action_count": 560,
+  "powershell_script_count": 583,
+  "approved_action_layers": [
+    {
+      "action_layer_id": "everyday-no-admin-v6",
+      "action_layer_path": "action-layers/windows/end-user/everyday-no-admin-v6",
+      "local_baseline_result": "PASS",
+      "accepted_for_baseline": true,
+      "accepted_for_mutation": false,
+      "script_count": 101,
+      "launcher": "action-layers/windows/end-user/everyday-no-admin-v6/launchers/CLICK_ME_Run_Everyday_No_Admin_Actions_V6.cmd",
+      "runner": "action-layers/windows/end-user/everyday-no-admin-v6/scripts/checks/000-Run-Everyday-NoAdmin-Actions-V6.ps1",
+      "acceptance_record": "action-layers/windows/end-user/everyday-no-admin-v6/acceptance/LOCAL_BASELINE_ACCEPTANCE.md"
+    },
+    {
+      "action_layer_id": "app-self-help-v1",
+      "action_layer_path": "action-layers/windows/end-user/app-self-help-v1",
+      "local_baseline_result": "PASS",
+      "accepted_for_baseline": true,
+      "accepted_for_mutation": false,
+      "script_count": 100,
+      "launcher": "action-layers/windows/end-user/app-self-help-v1/launchers/CLICK_ME_Run_App_Self_Help_V1.cmd",
+      "runner": "action-layers/windows/end-user/app-self-help-v1/scripts/checks/000-Run-AppSelfHelp-V1.ps1",
+      "acceptance_record": "action-layers/windows/end-user/app-self-help-v1/acceptance/LOCAL_BASELINE_ACCEPTANCE.md"
+    },
+    {
+      "action_layer_id": "help-desk-evidence-v1",
+      "action_layer_path": "action-layers/windows/end-user/help-desk-evidence-v1",
+      "local_baseline_result": "PASS",
+      "accepted_for_baseline": true,
+      "accepted_for_mutation": false,
+      "script_count": 20,
+      "launcher": null,
+      "runner": "action-layers/windows/end-user/help-desk-evidence-v1/scripts/checks/000-Run-HelpDeskEvidence-V1.ps1",
+      "acceptance_record": "action-layers/windows/end-user/help-desk-evidence-v1/acceptance/LOCAL_BASELINE_ACCEPTANCE.md"
+    }
+  ],
+  "catalog": {
+    "action_index_json": "catalog/generated/action-index.json",
+    "action_index_csv": "catalog/generated/action-index.csv",
+    "catalog_browser": "catalog/views/action-catalog.html",
+    "current_floor_doc": "docs/CURRENT_FLOOR.md",
+    "accepted_baseline_view": "catalog/views/current-accepted-baseline.md",
+    "brand_naming": "docs/BRAND_NAMING.md",
+    "site_front_door": "index.html"
+  },
+  "safety_boundary": {
+    "mutation_approved": false,
+    "admin_actions_approved": false,
+    "enterprise_targeting_approved": false,
+    "credentials_allowed_in_git": false,
+    "raw_evidence_allowed_in_git": false
+  }
 }
