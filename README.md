@@ -120,7 +120,7 @@ Public use, reference, adaptation, or redistribution is allowed only with visibl
 
 Required attribution:
 
-> Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak — https://github.com/novakprotocol/novak-b2-action-catalog
+> Based on NOV&#923;K&trade; B2 Action Catalog by Matthew Novak â€” https://github.com/novakprotocol/novak-b2-action-catalog
 
 Current contribution posture:
 
