@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 Set-StrictMode -Version 3.0
 . (Join-Path $PSScriptRoot "..\lib\Common-FileAccessEvidenceV1.ps1")
-$ActionId = "ENDUSER_FILE_ACCESS_FILE_ACCESS_PACKAGE_READINESS_V1"
+$ActionId = "ENDUSER_FILE_ACCESS_PACKAGE_READINESS_V1"
 $Kind = "package_readiness"
 try {
     $Evidence = [ordered]@{}

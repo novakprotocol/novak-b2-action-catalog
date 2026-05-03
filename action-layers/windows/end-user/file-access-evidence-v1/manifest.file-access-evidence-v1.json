@@ -1,11 +1,11 @@
 [
     {
         "schema_version":  "novak.b2.action.v1",
-        "action_id":  "ENDUSER_FILE_ACCESS_FILE_ACCESS_PACKAGE_READINESS_V1",
+        "action_id":  "ENDUSER_FILE_ACCESS_PACKAGE_READINESS_V1",
         "title":  "Enduser Check Dns Client Service Status V1",
         "action layer":  "action-layers/windows/end-user/no-input-v2",
         "script_path":  "action-layers/windows/end-user/file-access-evidence-v1/scripts/checks/561-file-access-package-readiness.ps1",
-        "script_sha256":  "b95285193a120c3c134f761246f756ae41b226a55aac9162dd81735a37140686",
+        "script_sha256":  "e4d0e86e62a1c513de57e897ec433c913f3c86de3290fbe90790f33d75478481",
         "tier":  "End User Self-Service",
         "status":  "candidate",
         "risk_tier":  "low",
