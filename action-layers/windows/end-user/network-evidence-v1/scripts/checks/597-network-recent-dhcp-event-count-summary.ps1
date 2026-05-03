@@ -1,0 +1,7 @@
+#requires -Version 5.1
+Set-StrictMode -Version 3.0
+$ErrorActionPreference = 'Stop'
+
+. (Join-Path $PSScriptRoot '..\lib\Common-NetworkEvidenceV1.ps1')
+
+Invoke-NetworkEvidenceAction -ActionId 'ENDUSER_NETWORK_RECENT_DHCP_EVENT_COUNT_SUMMARY_V1' -Slug 'network-recent-dhcp-event-count-summary'
