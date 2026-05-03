@@ -4,20 +4,20 @@
 
 TEXT-BEGIN
 RESULT=PASS
-TESTED_SOURCE_HEAD=cecbf0e
-TESTED_SOURCE_FULL_HEAD=cecbf0e1ae57129afd2f0c2b7ba5f6d5f06fd1eb
-RECORDED_UTC=2026-05-03T00:00:19Z
+ACCEPTED_SOURCE_HEAD=4b2ef62
+ACCEPTED_SOURCE_FULL_HEAD=4b2ef62d7559d0a93306357e6412d3013fefd693
+RECORDED_UTC=2026-05-03T12:57:58Z
 TEXT-END
 
 ## What is real now
 
-The public NOV&#923;K&trade; B2 Action Catalog is initialized, published, validated, and has three accepted no-admin baseline layers.
+The public NOV&#923;K&trade; B2 Action Catalog is initialized, published, validated, and has four accepted no-admin baseline layers.
 
 The catalog currently contains:
 
 TEXT-BEGIN
-CATALOG_ACTION_COUNT=560
-POWERSHELL_SCRIPT_COUNT=583
+CATALOG_ACTION_COUNT=580
+POWERSHELL_SCRIPT_COUNT=605
 TEXT-END
 
 ## Accepted local baselines
@@ -26,8 +26,17 @@ TEXT-BEGIN
 everyday-no-admin-v6=PASS
 app-self-help-v1=PASS
 help-desk-evidence-v1=PASS
+file-access-evidence-v1=PASS
 ACCEPTED_FOR_BASELINE=true
 ACCEPTED_FOR_MUTATION=false
+TEXT-END
+
+## SIS review
+
+TEXT-BEGIN
+SIS_SOURCE_HEAD=7a77285
+SIS_TAG=sis-atomic-jsonl-v3-7a77285
+SIS_TO_ACTION_CATALOG_REVIEW=PASS
 TEXT-END
 
 ## Validation
@@ -38,6 +47,7 @@ Action index: PASS
 No secrets or targets: PASS
 Current release pointer: PASS
 No brand mojibake: PASS
+File access local run: PASS
 TEXT-END
 
 ## Safety boundary
@@ -46,7 +56,7 @@ This floor does not approve mutation.
 
 This floor does not approve admin-required actions.
 
-This floor does not contain approved workplace targets, IPs, hostnames, credentials, tokens, or raw evidence.
+This floor does not contain approved workplace targets, IPs, hostnames, credentials, tokens, raw evidence, or raw SIS source pack data.
 
 ## Catalog browsing
 
@@ -59,5 +69,5 @@ TEXT-END
 ## Next recommended work
 
 1. Keep this floor stable.
-2. Add a public evidence-package explanation page.
-3. Add the next small support scenario pack only after preserving this accepted baseline.
+2. Push and merge the file-access-evidence-v1 Action Catalog branch after final review.
+3. Begin the next small scenario pack only after preserving this accepted baseline.
