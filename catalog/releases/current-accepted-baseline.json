@@ -4,9 +4,9 @@
   "repo_name": "novak-b2-action-catalog",
   "display_name": "NOVAK B2 Action Catalog",
   "source_branch": "main",
-  "tested_source_commit": "cecbf0e1ae57129afd2f0c2b7ba5f6d5f06fd1eb",
-  "tested_source_commit_short": "cecbf0e",
-  "recorded_utc": "2026-05-03T00:00:19Z",
+  "tested_source_commit": "e81230293568bc9984c94a9808dbbce18090f1d0",
+  "tested_source_commit_short": "e812302",
+  "recorded_utc": "2026-05-03T00:01:30Z",
   "accepted_for_baseline": true,
   "accepted_for_mutation": false,
   "privilege_level": "no-admin",
@@ -45,7 +45,7 @@
       "accepted_for_baseline": true,
       "accepted_for_mutation": false,
       "script_count": 20,
-      "launcher": null,
+      "launcher": "action-layers/windows/end-user/help-desk-evidence-v1/launchers/CLICK_ME_Run_Help_Desk_Evidence_V1.cmd",
       "runner": "action-layers/windows/end-user/help-desk-evidence-v1/scripts/checks/000-Run-HelpDeskEvidence-V1.ps1",
       "acceptance_record": "action-layers/windows/end-user/help-desk-evidence-v1/acceptance/LOCAL_BASELINE_ACCEPTANCE.md"
     }
@@ -65,5 +65,9 @@
     "enterprise_targeting_approved": false,
     "credentials_allowed_in_git": false,
     "raw_evidence_allowed_in_git": false
-  }
+  },
+  "source_commit": "e81230293568bc9984c94a9808dbbce18090f1d0",
+  "source_commit_short": "e812302",
+  "accepted_source_commit": "e81230293568bc9984c94a9808dbbce18090f1d0",
+  "accepted_source_commit_short": "e812302"
 }
