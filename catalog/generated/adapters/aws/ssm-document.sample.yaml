@@ -1,0 +1,17 @@
+schemaVersion: '2.2'
+description: 'NOVAK adapter preview. Echo-only metadata.'
+mainSteps:
+  - action: aws:runPowerShellScript
+    name: PreviewActionCatalogEvidenceContracts
+    inputs:
+      runCommand:
+        - 'Write-Output ACTION_ID=ENDUSER_GET_USER_COMPUTER_CONTEXT_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_GET_NETWORK_ADAPTER_STATUS_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_GET_DNS_CLIENT_SUMMARY_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_TEST_DNS_RESOLVE_NAME_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_TEST_PING_TARGET_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_TEST_TCP_PORT_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_TEST_URL_STATUS_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_TEST_UNC_PATH_ACCESS_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_OPEN_UNC_PARENT_FOLDER_V1'
+        - 'Write-Output ACTION_ID=ENDUSER_GET_MAPPED_DRIVES_V1'

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "catalog/schemas/adapter-manifest.v1.schema.json",
+  "title": "NOVAK Action Catalog Adapter Manifest v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "generated_utc",
+    "source_index",
+    "source_action_count",
+    "sample_count",
+    "bounded_preview",
+    "boundary",
+    "adapters",
+    "sample_actions"
+  ],
+  "properties": {
+    "schema_version": { "const": "adapter-manifest.v1" },
+    "generated_utc": { "type": "string" },
+    "source_index": { "const": "catalog/generated/action-index.json" },
+    "source_action_count": { "type": "integer", "minimum": 1 },
+    "sample_count": { "type": "integer", "minimum": 1, "maximum": 25 },
+    "bounded_preview": { "const": true },
+    "boundary": { "type": "object" },
+    "adapters": { "type": "array", "items": { "type": "string" } },
+    "sample_actions": { "type": "array", "items": { "type": "object" } }
+  }
+}
