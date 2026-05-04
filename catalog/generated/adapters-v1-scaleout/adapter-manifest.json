@@ -1,0 +1,77 @@
+{
+  "schema_version": "adapter-manifest.v1",
+  "export_layer": "adapter-export-layer-v1-scaleout",
+  "generated_utc": "2026-05-04T15:08:45Z",
+  "source_index": "catalog/generated/action-index.json",
+  "source_actions": 5000,
+  "exported_actions": 5000,
+  "export_limit": 0,
+  "mutation_allowed": false,
+  "approval_authority_granted": false,
+  "secret_policy": "no_secrets",
+  "target_policy": "no_raw_targets",
+  "network_scan_allowed": false,
+  "live_platform_api_calls": false,
+  "adapters": [
+    {
+      "name": "ai",
+      "path": "catalog/generated/adapters-v1-scaleout/ai/action-contracts.jsonl",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "human",
+      "path": "catalog/generated/adapters-v1-scaleout/human/runbook-index.md",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "ansible",
+      "path": "catalog/generated/adapters-v1-scaleout/ansible/action-catalog-vars.yml",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "awx",
+      "path": "catalog/generated/adapters-v1-scaleout/awx/job-template-candidates.json",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "aws",
+      "path": "catalog/generated/adapters-v1-scaleout/aws/ssm-document-candidates.yaml",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "kubernetes",
+      "path": "catalog/generated/adapters-v1-scaleout/kubernetes/job-candidates.yaml",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "openshift",
+      "path": "catalog/generated/adapters-v1-scaleout/openshift/job-candidates.yaml",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "servicenow",
+      "path": "catalog/generated/adapters-v1-scaleout/servicenow/import-set.json",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "cmdb",
+      "path": "catalog/generated/adapters-v1-scaleout/cmdb/ci-evidence-mapping.json",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    },
+    {
+      "name": "gitops",
+      "path": "catalog/generated/adapters-v1-scaleout/gitops/kustomization-preview.yaml",
+      "exported_actions": 5000,
+      "boundary": "preview_projection_only"
+    }
+  ]
+}

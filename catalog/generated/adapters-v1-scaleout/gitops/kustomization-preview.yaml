@@ -1,0 +1,14 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: novak-action-catalog-adapter-preview
+commonLabels:
+  novakprotocol.io/export-layer: adapter-v1-scaleout
+configMapGenerator:
+  - name: novak-action-catalog-adapter-preview
+    literals:
+      - mutation_allowed=false
+      - live_platform_api_calls=false
+      - exported_actions=5000
+      - source=catalog/generated/action-index.json
