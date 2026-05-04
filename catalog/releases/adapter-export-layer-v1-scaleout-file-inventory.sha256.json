@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-05-04T15:46:01.902595Z",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/adapter-manifest.json",
+      "sha256": "e60decd77475af6aca6a278aad11a01abb0f4e7982ba6669314daa1ffae7970b",
+      "size_bytes": 2490
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/ai/action-contracts.jsonl",
+      "sha256": "dedb5a22f5ddb91736e42ad3c738fe2de1b1b3c19bceb62b8450d4e28c318f36",
+      "size_bytes": 10967087
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/human/runbook-index.md",
+      "sha256": "ee6ac5a5fff31bcf18244bc0f9961931a2ec3a27cc7b1d0f11dd34890827732a",
+      "size_bytes": 1393696
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/ansible/action-catalog-vars.yml",
+      "sha256": "366858df631efbfdeb77c7256e94810ba1fc6cc070b8260e561a790ddc19fcda",
+      "size_bytes": 2553546
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/awx/job-template-candidates.json",
+      "sha256": "c34c0acaf8f9bfd35f4b4c810f6c4af1ff82a7352faeddd7986ba2088311c2c5",
+      "size_bytes": 4369521
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/aws/ssm-document-candidates.yaml",
+      "sha256": "24f30ba39f0b9a1466ff22a1ac28546d9ef13c67550955dfc0e4fb37a0462f83",
+      "size_bytes": 2591808
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/kubernetes/job-candidates.yaml",
+      "sha256": "9186f42c34edcda42acae5abf0f2b0047d37d39ea9cadaf2c317d970cc1fc142",
+      "size_bytes": 2523628
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/openshift/job-candidates.yaml",
+      "sha256": "964e6d4a3b4f0f60618aadf56e63522e0d4e77292ded3482e50eb2a7195500f3",
+      "size_bytes": 2523627
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/servicenow/import-set.json",
+      "sha256": "a6db026da3177f4bfc2d87a164706dc54627f5235d2e066388db82b64e6eaa03",
+      "size_bytes": 4125796
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/cmdb/ci-evidence-mapping.json",
+      "sha256": "e10ce89d7a593fa500ad21975f14a20be3a2e0289c228c97942b9f2ed811dd2a",
+      "size_bytes": 3854585
+    },
+    {
+      "path": "catalog/generated/adapters-v1-scaleout/gitops/kustomization-preview.yaml",
+      "sha256": "4bbcac240334e2e511b3abb3a5c73afd04b0852cd4dded0cbaa8fc80db3c7405",
+      "size_bytes": 421
+    },
+    {
+      "path": "catalog/releases/adapter-export-layer-v1-scaleout-accepted-baseline.json",
+      "sha256": "03f59218ed2c186434a10108a424896e5b74ac171dfbbbf1e37ca45af8f5358c",
+      "size_bytes": 2928
+    },
+    {
+      "path": "docs/ADAPTER_EXPORT_LAYER_V1_ACCEPTED_FLOOR.md",
+      "sha256": "2e22ecce68944e4353e83d82ce0ebed2088e9b9060319281de28919c335a57d8",
+      "size_bytes": 1712
+    },
+    {
+      "path": "docs/OPERATOR_HANDOFF_ACTION_CATALOG_ADAPTER_EXPORT_V1.md",
+      "sha256": "7bd3178cce8d146aab78212d9a464c2fed42abbbfca87b2d4d4d4ec216bb42c0",
+      "size_bytes": 1702
+    },
+    {
+      "path": "docs/WHAT_IS_REAL_NOW_ACTION_CATALOG.md",
+      "sha256": "839c7a6bc77a2963946d5ac3078c52ab2ff864ffc626a0ca537974d34800057d",
+      "size_bytes": 1637
+    },
+    {
+      "path": "docs/NEXT_ACTIONS_ACTION_CATALOG.md",
+      "sha256": "53e56b2f536af697923d51daec96b7326324fb591f2d00f49812c8687a05d979",
+      "size_bytes": 930
+    }
+  ],
+  "git_head": "cd80fa56eee85840dd099887cce9e99627c9fdf5",
+  "schema_version": "adapter_release_file_inventory.v1"
+}
