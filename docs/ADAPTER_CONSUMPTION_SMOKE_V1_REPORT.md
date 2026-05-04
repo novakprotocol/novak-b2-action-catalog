@@ -1,0 +1,22 @@
+# Adapter Consumption Smoke v1 Report
+
+``text
+BASE_MAIN_HEAD=ea7e4b3
+BASE_MAIN_FULL_HEAD=ea7e4b364d75a5fca31af62f1d41ce9ec2d0add8
+EXPECTED_ACTIONS=5000
+EXPECTED_ADAPTERS=10
+NO_LIVE_PLATFORM_CALLS=true
+NO_COMMAND_SHAPED_MUTATION=true
+PLAIN_REBOOT_WORD_ALLOWED=true
+TEXT_PROJECTIONS_DO_NOT_HAVE_TO_REPEAT_ACTION_ID=true
+GITOPS_CONFIGMAPGENERATOR_PREVIEW_ALLOWED=true
+NO_REMEDIATION=true
+NO_SECRETS=true
+NO_RAW_TARGETS=true
+``
+
+Primary generated report:
+
+``text
+catalog/releases/adapter-consumption-smoke-v1-report.json
+``

@@ -1,0 +1,156 @@
+{
+  "boundary_checks": {
+    "gitops_kustomization_allows_configmapgenerator_preview": true,
+    "no_command_shaped_mutation_or_live_platform_operations": true,
+    "no_raw_target_like_content": true,
+    "no_secret_like_content": true,
+    "plain_reboot_word_allowed": true,
+    "text_projection_action_id_repetition_not_required": true
+  },
+  "expected_actions": 5000,
+  "expected_adapters": 10,
+  "files_checked": [
+    {
+      "bytes": 2490,
+      "path": "catalog/generated/adapters-v1-scaleout/adapter-manifest.json",
+      "sha256": "e60decd77475af6aca6a278aad11a01abb0f4e7982ba6669314daa1ffae7970b"
+    },
+    {
+      "bytes": 10967087,
+      "path": "catalog/generated/adapters-v1-scaleout/ai/action-contracts.jsonl",
+      "sha256": "dedb5a22f5ddb91736e42ad3c738fe2de1b1b3c19bceb62b8450d4e28c318f36"
+    },
+    {
+      "bytes": 1393696,
+      "path": "catalog/generated/adapters-v1-scaleout/human/runbook-index.md",
+      "sha256": "ee6ac5a5fff31bcf18244bc0f9961931a2ec3a27cc7b1d0f11dd34890827732a"
+    },
+    {
+      "bytes": 2553546,
+      "path": "catalog/generated/adapters-v1-scaleout/ansible/action-catalog-vars.yml",
+      "sha256": "366858df631efbfdeb77c7256e94810ba1fc6cc070b8260e561a790ddc19fcda"
+    },
+    {
+      "bytes": 4369521,
+      "path": "catalog/generated/adapters-v1-scaleout/awx/job-template-candidates.json",
+      "sha256": "c34c0acaf8f9bfd35f4b4c810f6c4af1ff82a7352faeddd7986ba2088311c2c5"
+    },
+    {
+      "bytes": 2591808,
+      "path": "catalog/generated/adapters-v1-scaleout/aws/ssm-document-candidates.yaml",
+      "sha256": "24f30ba39f0b9a1466ff22a1ac28546d9ef13c67550955dfc0e4fb37a0462f83"
+    },
+    {
+      "bytes": 2523628,
+      "path": "catalog/generated/adapters-v1-scaleout/kubernetes/job-candidates.yaml",
+      "sha256": "9186f42c34edcda42acae5abf0f2b0047d37d39ea9cadaf2c317d970cc1fc142"
+    },
+    {
+      "bytes": 2523627,
+      "path": "catalog/generated/adapters-v1-scaleout/openshift/job-candidates.yaml",
+      "sha256": "964e6d4a3b4f0f60618aadf56e63522e0d4e77292ded3482e50eb2a7195500f3"
+    },
+    {
+      "bytes": 4125796,
+      "path": "catalog/generated/adapters-v1-scaleout/servicenow/import-set.json",
+      "sha256": "a6db026da3177f4bfc2d87a164706dc54627f5235d2e066388db82b64e6eaa03"
+    },
+    {
+      "bytes": 3854585,
+      "path": "catalog/generated/adapters-v1-scaleout/cmdb/ci-evidence-mapping.json",
+      "sha256": "e10ce89d7a593fa500ad21975f14a20be3a2e0289c228c97942b9f2ed811dd2a"
+    },
+    {
+      "bytes": 421,
+      "path": "catalog/generated/adapters-v1-scaleout/gitops/kustomization-preview.yaml",
+      "sha256": "4bbcac240334e2e511b3abb3a5c73afd04b0852cd4dded0cbaa8fc80db3c7405"
+    },
+    {
+      "bytes": 2928,
+      "path": "catalog/releases/adapter-export-layer-v1-scaleout-accepted-baseline.json",
+      "sha256": "03f59218ed2c186434a10108a424896e5b74ac171dfbbbf1e37ca45af8f5358c"
+    },
+    {
+      "bytes": 3457,
+      "path": "catalog/releases/adapter-export-layer-v1-scaleout-file-inventory.sha256.json",
+      "sha256": "65eecc1f3c49e98d4737f410553995417359822d59262571f0eb639d31d5b0f7"
+    }
+  ],
+  "json_files": {
+    "catalog/generated/adapters-v1-scaleout/adapter-manifest.json": {
+      "action_id_occurrences": 0,
+      "parsed": true,
+      "unique_action_ids": 0
+    },
+    "catalog/generated/adapters-v1-scaleout/awx/job-template-candidates.json": {
+      "action_id_occurrences": 5000,
+      "parsed": true,
+      "unique_action_ids": 5000
+    },
+    "catalog/generated/adapters-v1-scaleout/cmdb/ci-evidence-mapping.json": {
+      "action_id_occurrences": 5000,
+      "parsed": true,
+      "unique_action_ids": 5000
+    },
+    "catalog/generated/adapters-v1-scaleout/servicenow/import-set.json": {
+      "action_id_occurrences": 0,
+      "parsed": true,
+      "unique_action_ids": 0
+    },
+    "catalog/releases/adapter-export-layer-v1-scaleout-accepted-baseline.json": {
+      "action_id_occurrences": 0,
+      "parsed": true,
+      "unique_action_ids": 0
+    },
+    "catalog/releases/adapter-export-layer-v1-scaleout-file-inventory.sha256.json": {
+      "action_id_occurrences": 0,
+      "parsed": true,
+      "unique_action_ids": 0
+    }
+  },
+  "jsonl_files": {
+    "catalog/generated/adapters-v1-scaleout/ai/action-contracts.jsonl": {
+      "line_count": 5000,
+      "unique_action_ids": 5000
+    }
+  },
+  "schema_version": "adapter-consumption-smoke-v1",
+  "text_projection_files": {
+    "catalog/generated/adapters-v1-scaleout/ansible/action-catalog-vars.yml": {
+      "bytes": 2553546,
+      "consumption_shape": "safe text projection; canonical all-action count is proven by ai/action-contracts.jsonl",
+      "line_count": 40006,
+      "sha256": "366858df631efbfdeb77c7256e94810ba1fc6cc070b8260e561a790ddc19fcda"
+    },
+    "catalog/generated/adapters-v1-scaleout/aws/ssm-document-candidates.yaml": {
+      "bytes": 2591808,
+      "consumption_shape": "safe text projection; canonical all-action count is proven by ai/action-contracts.jsonl",
+      "line_count": 45006,
+      "sha256": "24f30ba39f0b9a1466ff22a1ac28546d9ef13c67550955dfc0e4fb37a0462f83"
+    },
+    "catalog/generated/adapters-v1-scaleout/gitops/kustomization-preview.yaml": {
+      "bytes": 421,
+      "consumption_shape": "safe text projection; canonical all-action count is proven by ai/action-contracts.jsonl",
+      "line_count": 14,
+      "sha256": "4bbcac240334e2e511b3abb3a5c73afd04b0852cd4dded0cbaa8fc80db3c7405"
+    },
+    "catalog/generated/adapters-v1-scaleout/human/runbook-index.md": {
+      "bytes": 1393696,
+      "consumption_shape": "safe text projection; canonical all-action count is proven by ai/action-contracts.jsonl",
+      "line_count": 5012,
+      "sha256": "ee6ac5a5fff31bcf18244bc0f9961931a2ec3a27cc7b1d0f11dd34890827732a"
+    },
+    "catalog/generated/adapters-v1-scaleout/kubernetes/job-candidates.yaml": {
+      "bytes": 2523628,
+      "consumption_shape": "safe text projection; canonical all-action count is proven by ai/action-contracts.jsonl",
+      "line_count": 40010,
+      "sha256": "9186f42c34edcda42acae5abf0f2b0047d37d39ea9cadaf2c317d970cc1fc142"
+    },
+    "catalog/generated/adapters-v1-scaleout/openshift/job-candidates.yaml": {
+      "bytes": 2523627,
+      "consumption_shape": "safe text projection; canonical all-action count is proven by ai/action-contracts.jsonl",
+      "line_count": 40010,
+      "sha256": "964e6d4a3b4f0f60618aadf56e63522e0d4e77292ded3482e50eb2a7195500f3"
+    }
+  }
+}
