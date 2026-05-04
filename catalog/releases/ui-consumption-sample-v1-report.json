@@ -1,0 +1,20 @@
+{
+  "adapters": 10,
+  "boundary": {
+    "browse_only": true,
+    "credentials": false,
+    "live_platform_calls": false,
+    "mutation_authority": false,
+    "network_calls": false
+  },
+  "files": [
+    "catalog/generated/ui-consumption-sample-v1/actions.sample.json",
+    "catalog/generated/ui-consumption-sample-v1/index.html"
+  ],
+  "result": "PASS",
+  "sample_actions": 50,
+  "sample_html_sha256": "5ab4969a0566efaa036476a41244b4e4b6951307527fa1eaeaefb8d351d0de04",
+  "sample_json_sha256": "7d2088f6150b49e794ad25dbc20b4c1efa1d76b54df9d20d231f504e3dbb3ab0",
+  "schema_version": "ui-consumption-sample-report.v1",
+  "source_actions": 5000
+}
