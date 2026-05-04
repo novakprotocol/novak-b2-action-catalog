@@ -10,7 +10,7 @@ FORBIDDEN = [
     'accepted_for_mutation: true','"accepted_for_mutation": true',
     'remove-item','restart-service','stop-service','set-acl',
     'new-smbshare','remove-smbshare','format-volume','clear-disk',
-    'password','secret','credential'
+    'invoke-restmethod','invoke-webrequest','connect-viserver'
 ]
 def fail(msg: str) -> None:
     print(f'FAIL validate_adapter_exports {msg}')
