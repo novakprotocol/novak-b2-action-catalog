@@ -1,0 +1,297 @@
+{
+  "boundary": {
+    "does_not_modify_generated_adapter_outputs": true,
+    "index_only": true,
+    "no_credentials": true,
+    "no_live_platform_api_calls": true,
+    "no_raw_targets": true,
+    "no_remediation": true,
+    "no_secrets": true
+  },
+  "counts": {
+    "files_indexed": 39,
+    "missing_files": 0,
+    "total_bytes": 35086659,
+    "total_lines": 424594
+  },
+  "expected_actions": 5000,
+  "expected_adapters": 10,
+  "files": [
+    {
+      "bytes": 3706,
+      "class": "bounded_preview_export",
+      "lines": 87,
+      "path": "catalog/generated/adapters/adapter-manifest.json",
+      "sha256": "a9c9b6a7549d10173dfca7f3f01058d75554c68b4445719fea34287f2236005f"
+    },
+    {
+      "bytes": 19674,
+      "class": "bounded_preview_export",
+      "lines": 475,
+      "path": "catalog/generated/adapters/ai/action-contract.sample.json",
+      "sha256": "e5bafb9f4b39ad0915c0fffa6f2c8b6f652a550b8f13afa1709d76b377bdbe67"
+    },
+    {
+      "bytes": 2049,
+      "class": "bounded_preview_export",
+      "lines": 14,
+      "path": "catalog/generated/adapters/human/runbook.sample.md",
+      "sha256": "62e9b7d05ca295113a470e815fd6786b0188bb0ff1e6c101a759d0894f55cf0c"
+    },
+    {
+      "bytes": 3958,
+      "class": "bounded_preview_export",
+      "lines": 75,
+      "path": "catalog/generated/adapters/ansible/playbook.sample.yml",
+      "sha256": "8376a8ebab70208e41d79686612e9bf969a46095ba034e701ee5a7e28304ef66"
+    },
+    {
+      "bytes": 19787,
+      "class": "bounded_preview_export",
+      "lines": 478,
+      "path": "catalog/generated/adapters/awx/job-template.sample.json",
+      "sha256": "ac5fa18c42b149239cc536c390a4a0ca206b39e59042a5531bc6309972d1295b"
+    },
+    {
+      "bytes": 871,
+      "class": "bounded_preview_export",
+      "lines": 17,
+      "path": "catalog/generated/adapters/aws/ssm-document.sample.yaml",
+      "sha256": "c61314ce861f68cf6d0159259791d9a14ab09b9c38a3a13daa3ed974433597ae"
+    },
+    {
+      "bytes": 19792,
+      "class": "bounded_preview_export",
+      "lines": 479,
+      "path": "catalog/generated/adapters/servicenow/import-set.sample.json",
+      "sha256": "b8f79706ce932afe50c5d1a1af161756bb88b0d17251d097eedbd983c3039f86"
+    },
+    {
+      "bytes": 19755,
+      "class": "bounded_preview_export",
+      "lines": 477,
+      "path": "catalog/generated/adapters/cmdb/ci-evidence-mapping.sample.json",
+      "sha256": "b88f04f363e29bd924147fc6ba0cec2e3448a0ed2cb6a651fc64eb6eb043d04e"
+    },
+    {
+      "bytes": 2490,
+      "class": "scaleout_export",
+      "lines": 77,
+      "path": "catalog/generated/adapters-v1-scaleout/adapter-manifest.json",
+      "sha256": "e60decd77475af6aca6a278aad11a01abb0f4e7982ba6669314daa1ffae7970b"
+    },
+    {
+      "bytes": 10967087,
+      "class": "scaleout_export",
+      "lines": 5000,
+      "path": "catalog/generated/adapters-v1-scaleout/ai/action-contracts.jsonl",
+      "sha256": "dedb5a22f5ddb91736e42ad3c738fe2de1b1b3c19bceb62b8450d4e28c318f36"
+    },
+    {
+      "bytes": 1393696,
+      "class": "scaleout_export",
+      "lines": 5012,
+      "path": "catalog/generated/adapters-v1-scaleout/human/runbook-index.md",
+      "sha256": "ee6ac5a5fff31bcf18244bc0f9961931a2ec3a27cc7b1d0f11dd34890827732a"
+    },
+    {
+      "bytes": 2553546,
+      "class": "scaleout_export",
+      "lines": 40006,
+      "path": "catalog/generated/adapters-v1-scaleout/ansible/action-catalog-vars.yml",
+      "sha256": "366858df631efbfdeb77c7256e94810ba1fc6cc070b8260e561a790ddc19fcda"
+    },
+    {
+      "bytes": 4369521,
+      "class": "scaleout_export",
+      "lines": 80008,
+      "path": "catalog/generated/adapters-v1-scaleout/awx/job-template-candidates.json",
+      "sha256": "c34c0acaf8f9bfd35f4b4c810f6c4af1ff82a7352faeddd7986ba2088311c2c5"
+    },
+    {
+      "bytes": 2591808,
+      "class": "scaleout_export",
+      "lines": 45006,
+      "path": "catalog/generated/adapters-v1-scaleout/aws/ssm-document-candidates.yaml",
+      "sha256": "24f30ba39f0b9a1466ff22a1ac28546d9ef13c67550955dfc0e4fb37a0462f83"
+    },
+    {
+      "bytes": 2523628,
+      "class": "scaleout_export",
+      "lines": 40010,
+      "path": "catalog/generated/adapters-v1-scaleout/kubernetes/job-candidates.yaml",
+      "sha256": "9186f42c34edcda42acae5abf0f2b0047d37d39ea9cadaf2c317d970cc1fc142"
+    },
+    {
+      "bytes": 2523627,
+      "class": "scaleout_export",
+      "lines": 40010,
+      "path": "catalog/generated/adapters-v1-scaleout/openshift/job-candidates.yaml",
+      "sha256": "964e6d4a3b4f0f60618aadf56e63522e0d4e77292ded3482e50eb2a7195500f3"
+    },
+    {
+      "bytes": 4125796,
+      "class": "scaleout_export",
+      "lines": 80008,
+      "path": "catalog/generated/adapters-v1-scaleout/servicenow/import-set.json",
+      "sha256": "a6db026da3177f4bfc2d87a164706dc54627f5235d2e066388db82b64e6eaa03"
+    },
+    {
+      "bytes": 3854585,
+      "class": "scaleout_export",
+      "lines": 85009,
+      "path": "catalog/generated/adapters-v1-scaleout/cmdb/ci-evidence-mapping.json",
+      "sha256": "e10ce89d7a593fa500ad21975f14a20be3a2e0289c228c97942b9f2ed811dd2a"
+    },
+    {
+      "bytes": 421,
+      "class": "scaleout_export",
+      "lines": 14,
+      "path": "catalog/generated/adapters-v1-scaleout/gitops/kustomization-preview.yaml",
+      "sha256": "4bbcac240334e2e511b3abb3a5c73afd04b0852cd4dded0cbaa8fc80db3c7405"
+    },
+    {
+      "bytes": 2928,
+      "class": "release_evidence",
+      "lines": 51,
+      "path": "catalog/releases/adapter-export-layer-v1-scaleout-accepted-baseline.json",
+      "sha256": "03f59218ed2c186434a10108a424896e5b74ac171dfbbbf1e37ca45af8f5358c"
+    },
+    {
+      "bytes": 3457,
+      "class": "release_evidence",
+      "lines": 88,
+      "path": "catalog/releases/adapter-export-layer-v1-scaleout-file-inventory.sha256.json",
+      "sha256": "65eecc1f3c49e98d4737f410553995417359822d59262571f0eb639d31d5b0f7"
+    },
+    {
+      "bytes": 6415,
+      "class": "release_evidence",
+      "lines": 156,
+      "path": "catalog/releases/adapter-consumption-smoke-v1-report.json",
+      "sha256": "ba28964eb893efcddf02458c9944d798481dc17335e09815a7300754b3b9bb3e"
+    },
+    {
+      "bytes": 1712,
+      "class": "operator_documentation",
+      "lines": 59,
+      "path": "docs/ADAPTER_EXPORT_LAYER_V1_ACCEPTED_FLOOR.md",
+      "sha256": "2e22ecce68944e4353e83d82ce0ebed2088e9b9060319281de28919c335a57d8"
+    },
+    {
+      "bytes": 1702,
+      "class": "operator_documentation",
+      "lines": 60,
+      "path": "docs/OPERATOR_HANDOFF_ACTION_CATALOG_ADAPTER_EXPORT_V1.md",
+      "sha256": "7bd3178cce8d146aab78212d9a464c2fed42abbbfca87b2d4d4d4ec216bb42c0"
+    },
+    {
+      "bytes": 1121,
+      "class": "operator_documentation",
+      "lines": 39,
+      "path": "docs/ADAPTER_CONTRACT_HARDENING_V2.md",
+      "sha256": "2461266627b35c7930404d0a62e9acca394c5b7078572f9c39b9e1cc5874788c"
+    },
+    {
+      "bytes": 1555,
+      "class": "operator_documentation",
+      "lines": 14,
+      "path": "docs/PLATFORM_CONSUMPTION_BOUNDARY_MATRIX.md",
+      "sha256": "eef01e540ba9ee35d6b7824c66a1b19bbd994737ffbc72549b837f789d526563"
+    },
+    {
+      "bytes": 806,
+      "class": "operator_documentation",
+      "lines": 24,
+      "path": "docs/ADAPTER_CONSUMPTION_SMOKE_V1.md",
+      "sha256": "69288e8a6fc72a132dbb1fb38ca902191f51d3852a400429eb96f2527ff16f04"
+    },
+    {
+      "bytes": 520,
+      "class": "operator_documentation",
+      "lines": 22,
+      "path": "docs/ADAPTER_CONSUMPTION_SMOKE_V1_REPORT.md",
+      "sha256": "cf4a2508328b9f034190cd5126d0961a0a20485d511ed84b628d34b324bf90ef"
+    },
+    {
+      "bytes": 974,
+      "class": "operator_documentation",
+      "lines": 33,
+      "path": "docs/ADAPTER_CONSUMPTION_SMOKE_V1B_READONLY.md",
+      "sha256": "26d31d8f9c0bd2b5385acf204dfe3ad6d91d4a20dc4ac8f2cf00c08054fb0315"
+    },
+    {
+      "bytes": 704,
+      "class": "operator_documentation",
+      "lines": 22,
+      "path": "docs/ADAPTER_CONSUMPTION_SMOKE_V1B_READONLY_REPORT.md",
+      "sha256": "fa82e6df7b35f5f806db295c7448479d8718f5d8a6851b8ec0be291bff866cd8"
+    },
+    {
+      "bytes": 11491,
+      "class": "validation_or_generation_tool",
+      "lines": 221,
+      "path": "tools/python/generate_adapter_exports.py",
+      "sha256": "197264b01ec67c45407674c2072466605e1d87b6034a3f8959fdcae272da649e"
+    },
+    {
+      "bytes": 2618,
+      "class": "validation_or_generation_tool",
+      "lines": 58,
+      "path": "tools/python/validate_adapter_exports.py",
+      "sha256": "fe5368fcfe66f4523b1a83f3fa9b72759b3fd533bb324f60eb464fd9623c4c6d"
+    },
+    {
+      "bytes": 2279,
+      "class": "validation_or_generation_tool",
+      "lines": 52,
+      "path": "tools/python/validate_action_contract_required_fields.py",
+      "sha256": "45c802ced44ffe6c6e6561eae3e6dcfeb40c45e8c4058f99fa07918b24525a31"
+    },
+    {
+      "bytes": 21673,
+      "class": "validation_or_generation_tool",
+      "lines": 609,
+      "path": "tools/python/generate_adapter_exports_v1_scaleout.py",
+      "sha256": "ebbcd3cff2220e55e92a717acb9bacb93eb1cc268c32674860137167211f5b4d"
+    },
+    {
+      "bytes": 5696,
+      "class": "validation_or_generation_tool",
+      "lines": 173,
+      "path": "tools/python/validate_adapter_exports_v1_scaleout.py",
+      "sha256": "581a35cfb92b03a1e56b87a32228795a5a8526b42454d2973ec771f4a29694ba"
+    },
+    {
+      "bytes": 8375,
+      "class": "validation_or_generation_tool",
+      "lines": 220,
+      "path": "tools/python/validate_adapter_contract_hardening_v2.py",
+      "sha256": "5f10ddf57a07a848f57549524c5caa9db42687b4927de4996ddd952f391021f0"
+    },
+    {
+      "bytes": 3050,
+      "class": "validation_or_generation_tool",
+      "lines": 84,
+      "path": "tools/python/generate_adapter_release_inventory.py",
+      "sha256": "a47962c2e6e46f68cbc45fc18ca0c01adcbb1c6d744b0128e7d88ac5ef4d9f4a"
+    },
+    {
+      "bytes": 1837,
+      "class": "validation_or_generation_tool",
+      "lines": 55,
+      "path": "tools/python/validate_adapter_release_inventory.py",
+      "sha256": "a1924a1d342897a1326b846c2f1dc741155155d0cf717e9823edaab5247d3203"
+    },
+    {
+      "bytes": 11949,
+      "class": "validation_or_generation_tool",
+      "lines": 292,
+      "path": "tools/python/validate_adapter_consumption_smoke_v1.py",
+      "sha256": "eac34d9f347e7a04a3da5f8d490d2f93b9faac461cf3e2b1ead038d103ab6d26"
+    }
+  ],
+  "generated_at_utc": "2026-05-04T18:33:36+00:00",
+  "missing": [],
+  "schema_version": "adapter-export-package-index-v1"
+}
