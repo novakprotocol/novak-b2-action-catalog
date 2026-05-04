@@ -1,0 +1,51 @@
+{
+    "schema_version":  "adapter_export_release.v1",
+    "release_name":  "adapter-export-layer-v1-scaleout",
+    "accepted":  true,
+    "accepted_utc":  "2026-05-04T15:18:11Z",
+    "source_branch":  "main",
+    "source_head":  "a766c809ef81ebda83b716f417e3ba66fc475cf5",
+    "source_short_head":  "a766c80",
+    "source_action_count":  5000,
+    "powershell_script_count":  5070,
+    "adapter_preview_sample_actions":  10,
+    "adapter_preview_adapters":  7,
+    "adapter_scaleout_exported_actions":  5000,
+    "adapter_scaleout_adapters":  10,
+    "generated_root":  "catalog/generated/adapters-v1-scaleout",
+    "boundaries":  [
+                       "evidence_only",
+                       "no_mutation",
+                       "no_credentials",
+                       "no_secrets",
+                       "no_raw_targets",
+                       "no_network_scanning",
+                       "no_remediation",
+                       "no_service_restart",
+                       "no_live_platform_api_calls",
+                       "consolidated_exports_only"
+                   ],
+    "validations":  {
+                        "validate_action_index":  "PASS actions=5000",
+                        "powershell_syntax":  "PASS scripts=5070",
+                        "validate_no_secrets_or_targets":  "PASS files_checked=5274",
+                        "validate_current_release_pointer":  "PASS layers=4",
+                        "validate_no_brand_mojibake":  "PASS",
+                        "validate_action_contract_required_fields":  "PASS actions=10",
+                        "validate_adapter_exports":  "PASS adapters=7 exported_actions=10",
+                        "validate_adapter_exports_v1_scaleout":  "PASS adapters=10 exported_actions=5000"
+                    },
+    "artifacts":  {
+                      "ai":  "catalog/generated/adapters-v1-scaleout/ai/action-contracts.jsonl",
+                      "human":  "catalog/generated/adapters-v1-scaleout/human/runbook-index.md",
+                      "ansible":  "catalog/generated/adapters-v1-scaleout/ansible/action-catalog-vars.yml",
+                      "awx":  "catalog/generated/adapters-v1-scaleout/awx/job-template-candidates.json",
+                      "aws_ssm":  "catalog/generated/adapters-v1-scaleout/aws/ssm-document-candidates.yaml",
+                      "kubernetes":  "catalog/generated/adapters-v1-scaleout/kubernetes/job-candidates.yaml",
+                      "openshift":  "catalog/generated/adapters-v1-scaleout/openshift/job-candidates.yaml",
+                      "servicenow":  "catalog/generated/adapters-v1-scaleout/servicenow/import-set.json",
+                      "cmdb":  "catalog/generated/adapters-v1-scaleout/cmdb/ci-evidence-mapping.json",
+                      "gitops":  "catalog/generated/adapters-v1-scaleout/gitops/kustomization-preview.yaml"
+                  },
+    "next_step":  "adapter-contract-hardening-v2"
+}
