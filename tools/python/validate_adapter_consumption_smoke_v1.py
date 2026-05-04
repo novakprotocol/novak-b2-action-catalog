@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import argparse
 import hashlib
 import json
@@ -177,11 +177,32 @@ def validate_text_projection(path: Path, rel: str, body: str, expected_actions: 
         "consumption_shape": "safe text projection; canonical all-action count is proven by ai/action-contracts.jsonl",
     }
 
+def compare_existing_report(report: dict, out_path: Path) -> None:
+    if not out_path.exists():
+        fail(f"missing_existing_report file={out_path.as_posix()} run_with=--update-report")
+
+    try:
+        existing = json.loads(read_text(out_path))
+    except Exception as exc:
+        fail(f"existing_report_parse_failed file={out_path.as_posix()} error={exc}")
+
+    if existing != report:
+        fail(f"existing_report_semantic_drift file={out_path.as_posix()} run_with=--update-report")
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--expected-actions", type=int, default=5000)
     parser.add_argument("--expected-adapters", type=int, default=10)
-    parser.add_argument("--write-report", default="catalog/releases/adapter-consumption-smoke-v1-report.json")
+    parser.add_argument(
+        "--write-report",
+        default="catalog/releases/adapter-consumption-smoke-v1-report.json",
+        help="Report path. Default mode checks this tracked report without rewriting it.",
+    )
+    parser.add_argument(
+        "--update-report",
+        action="store_true",
+        help="Rewrite the tracked report. Omit this for read-only validation.",
+    )
     args = parser.parse_args()
 
     root = Path(".").resolve()
@@ -247,14 +268,22 @@ def main() -> int:
             fail(f"manifest_adapters expected={args.expected_adapters} actual={adapters}")
 
     out_path = root / args.write_report
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    rendered = json.dumps(report, indent=2, sort_keys=True) + "\n"
+
+    if args.update_report:
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(rendered, encoding="utf-8")
+        report_mode = "updated"
+    else:
+        compare_existing_report(report, out_path)
+        report_mode = "checked_read_only"
 
     print(
         "PASS validate_adapter_consumption_smoke_v1 "
         f"files={len(report['files_checked'])} "
         f"actions={args.expected_actions} "
         f"adapters={args.expected_adapters} "
+        f"report_mode={report_mode} "
         f"report={out_path.as_posix()}"
     )
     return 0
